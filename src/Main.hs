@@ -3,7 +3,7 @@
 import Data.Monoid (mappend)
 import Hakyll
 import Metaplasm.Config
-import System.FilePath (replaceDirectory)
+import System.FilePath (combine, takeFileName)
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -15,7 +15,7 @@ main = hakyll $ do
     compile copyFileCompiler
 
   match (fromList $ vendorScriptFiles engineConf) $ do
-    route $ customRoute (replaceDirectory "js/vendor" . toFilePath)
+    route $ customRoute (combine "js/vendor" . takeFileName . toFilePath)
     compile copyFileCompiler
 
   match (fromList $ lessFiles engineConf) $ do
