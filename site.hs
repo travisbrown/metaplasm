@@ -15,14 +15,14 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.rst", "contact.markdown"]) $ do
-        route   $ setExtension "html"
+    match (fromList ["content/about.rst", "content/contact.markdown"]) $ do
+        route   $ stripContent `composeRoutes` setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    match "posts/*" $ do
-        route $ setExtension "html"
+    match "content/posts/*" $ do
+        route   $ stripContent `composeRoutes` setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
@@ -42,8 +42,8 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 
-    match "index.html" $ do
-        route idRoute
+    match "content/index.html" $ do
+        route $ stripContent
         compile $ do
             let indexCtx = field "posts" $ \_ ->
                                 postList $ fmap (take 3) . recentFirst
@@ -66,7 +66,13 @@ postCtx =
 --------------------------------------------------------------------------------
 postList :: ([Item String] -> Compiler [Item String]) -> Compiler String
 postList sortFilter = do
-    posts   <- sortFilter =<< loadAll "posts/*"
+    posts   <- sortFilter =<< loadAll "content/posts/*"
     itemTpl <- loadBody "templates/post-item.html"
     list    <- applyTemplateList itemTpl postCtx posts
     return list
+
+
+--------------------------------------------------------------------------------
+stripContent :: Routes
+stripContent = gsubRoute "content/" $ const ""
+
