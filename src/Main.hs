@@ -1,75 +1,74 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
-import           Hakyll
-
+import Data.Monoid (mappend)
+import Hakyll
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
-        route   idRoute
-        compile copyFileCompiler
+  match "images/*" $ do
+    route idRoute
+    compile copyFileCompiler
 
-    match "css/*" $ do
-        route   idRoute
-        compile compressCssCompiler
+  match "css/*" $ do
+    route idRoute
+    compile compressCssCompiler
 
-    match (fromList ["content/about.rst", "content/contact.markdown"]) $ do
-        route   $ stripContent `composeRoutes` setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
+  match (fromList ["content/about.rst", "content/contact.markdown"]) $ do
+    route $ stripContent `composeRoutes` setExtension "html"
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/default.html" defaultContext
+      >>= relativizeUrls
 
-    match "content/posts/*" $ do
-        route   $ stripContent `composeRoutes` setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
+  match "content/posts/*" $ do
+    route $ stripContent `composeRoutes` setExtension "html"
+    compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/post.html" postCtx
+      >>= loadAndApplyTemplate "templates/default.html" postCtx
+      >>= relativizeUrls
 
-    create ["archive.html"] $ do
-        route idRoute
-        compile $ do
-            let archiveCtx =
-                    field "posts" (\_ -> postList recentFirst) `mappend`
-                    constField "title" "Archives"              `mappend`
-                    defaultContext
+  create ["archive.html"] $ do
+    route idRoute
+    compile $ do
+      let archiveCtx =
+            field "posts" (\_ -> postList recentFirst) `mappend`
+            constField "title" "Archives" `mappend`
+            defaultContext
 
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-                >>= relativizeUrls
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
+        >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+        >>= relativizeUrls
 
 
-    match "content/index.html" $ do
-        route $ stripContent
-        compile $ do
-            let indexCtx = field "posts" $ \_ ->
-                                postList $ fmap (take 3) . recentFirst
+  match "content/index.html" $ do
+    route $ stripContent
+    compile $ do
+      let indexCtx = field "posts" $ \_ ->
+            postList $ fmap (take 3) . recentFirst
 
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" postCtx
-                >>= relativizeUrls
+      getResourceBody
+        >>= applyAsTemplate indexCtx
+        >>= loadAndApplyTemplate "templates/default.html" postCtx
+        >>= relativizeUrls
 
-    match "templates/*" $ compile templateCompiler
+  match "templates/*" $ compile templateCompiler
 
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
+  dateField "date" "%B %e, %Y" `mappend`
+  defaultContext
 
 
 --------------------------------------------------------------------------------
 postList :: ([Item String] -> Compiler [Item String]) -> Compiler String
 postList sortFilter = do
-    posts   <- sortFilter =<< loadAll "content/posts/*"
-    itemTpl <- loadBody "templates/post-item.html"
-    list    <- applyTemplateList itemTpl postCtx posts
-    return list
+  posts <- sortFilter =<< loadAll "content/posts/*"
+  itemTpl <- loadBody "templates/post-item.html"
+  list <- applyTemplateList itemTpl postCtx posts
+  return list
 
 
 --------------------------------------------------------------------------------
