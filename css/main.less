@@ -1,17 +1,26 @@
 @import './css/bootstrap.less';
 @import './css/syntax.less';
 
+
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+.container {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+footer {
+  color: @grayDark;
+  border-top: 1px solid @grayLighter;
+  font-size: @fontSizeSmall;
+  padding: @paddingSmall;
 }
 
 div#logo a {
@@ -22,11 +31,11 @@ div#logo a {
     text-decoration: none;
 }
 
-div#header #navigation {
+header #navigation {
     text-align: right;
 }
 
-div#header #navigation a {
+header #navigation a {
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -35,25 +44,3 @@ div#header #navigation a {
     text-transform: uppercase;
 }
 
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
-}
