@@ -1,0 +1,6 @@
+[submodule "lib/bootstrap"]
+	path = lib/bootstrap
+	url = git://github.com/twitter/bootstrap.git
+[submodule "lib/initializr"]
+	path = lib/initializr
+	url = git://github.com/verekia/initializr.git
