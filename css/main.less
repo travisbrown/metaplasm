@@ -1,7 +1,6 @@
 @import './css/bootstrap.less';
 @import './css/syntax.less';
 
-
 body {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -23,24 +22,71 @@ footer {
   padding: @paddingSmall;
 }
 
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+nav.navbar {
+  div.navbar-inner {
+    border-top: 1px solid @grayLighter;
+    border-right: none;
+    border-bottom: 1px solid @grayLighter;
+    border-left: none;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0px;
+
+    .nav > li > a {
+      padding: 9px 32px 0px 4px;
+    }
+  }
+
+  form.navbar-form input[type="text"] {
+    height: 18px;
+    box-shadow: none;
+    color: @grayDarker;
+    margin: 6px 0px 0px 0px;
+  }
+
+  a.subscribe {
+    margin: 9px 0px 0px 6px;
+
+   img {
+      background-color: @grayLighter;
+      border-style: none;
+    }
+  }
 }
 
-header #navigation {
-    text-align: right;
-}
-
-header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
+h1#logo {
+  a {
     text-decoration: none;
-    text-transform: uppercase;
+  }
+
+  span {
+    font-family: "Fjalla One";
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  span.left {
+    .border-left-radius(@borderRadiusLarge);
+    background-color: @color-a;
+    color: @color-f;
+    padding-left: 9px;
+    padding-right: 3px;
+  }
+
+  span.center {
+    background-color: @color-l;
+    color: @color-m;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  span.right {
+    .border-right-radius(@borderRadiusLarge);
+    background-color: @color-b;
+    color: @color-h;
+    padding-left: 3px;
+    padding-right: 9px;
+  }
 }
 
