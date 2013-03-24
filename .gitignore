@@ -1,7 +1,5 @@
 _cache/
 _site/
+dist/
 tmp/
-site
-site.hi
-site.o
 
