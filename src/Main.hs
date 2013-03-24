@@ -81,7 +81,8 @@ main = hakyll $ do
     route idRoute
     compile $ do
       let feedCtx = (postCtx siteConf) `mappend` bodyField "description"
-      posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "content/posts/*" "content"
+      posts <- fmap (take 10) . recentFirst =<<
+        loadAllSnapshots "content/posts/*" "content"
       renderAtom feedConf feedCtx posts
 
   match "templates/*" $ compile templateCompiler
@@ -101,7 +102,8 @@ postCtx siteConf = dateField "date" "%e %B %Y" `mappend` siteCtx siteConf
 
 
 --------------------------------------------------------------------------------
-postList :: SiteConfiguration -> ([Item String] -> Compiler [Item String]) -> Compiler String
+postList :: SiteConfiguration
+  -> ([Item String] -> Compiler [Item String]) -> Compiler String
 postList siteConf sortFilter = do
   posts <- sortFilter =<< loadAll "content/posts/*"
   itemTpl <- loadBody "templates/post-item.html"
