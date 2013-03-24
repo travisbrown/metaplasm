@@ -2,17 +2,27 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Data.Monoid (mappend)
 import Hakyll
+import Metaplasm.Config
+import System.FilePath (replaceDirectory)
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+  let engineConf = defaultEngineConfiguration
+
   match "images/*" $ do
     route idRoute
     compile copyFileCompiler
 
-  match "css/*" $ do
-    route idRoute
-    compile compressCssCompiler
+  match (fromList $ vendorScriptFiles engineConf) $ do
+    route $ customRoute (replaceDirectory "js/vendor" . toFilePath)
+    compile copyFileCompiler
+
+  match (fromList $ lessFiles engineConf) $ do
+    route $ setExtension "css"
+    compile $ getResourceString
+      >>= withItemBody 
+        (unixFilter (lessCommand engineConf) $ "-" : (lessOptions engineConf))
 
   match (fromList ["content/about.rst", "content/contact.markdown"]) $ do
     route $ stripContent `composeRoutes` setExtension "html"
