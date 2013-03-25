@@ -1,6 +1,8 @@
 @import './css/bootstrap.less';
 @import './css/syntax.less';
 
+@specialHeadingFont: "Fjalla One";
+
 body {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -11,8 +13,40 @@ body {
   padding-right: 18px;
 }
 
-header {
+div.container > header {
   margin-bottom: 24px;
+}
+
+div#content {
+  margin-bottom: 24px;
+
+  ul {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  ul.posts {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    li > article {
+      border-bottom: 1px solid @grayLighter;
+      padding-bottom: 18px;
+      margin-bottom: 18px; 
+    }
+
+    li:last-child > article {
+      border-bottom: none;
+      padding-bottom: 0px;
+      margin-bottom: 0px; 
+    }
+  }
+
+  h1 {
+    color: @color-e;
+    margin-bottom: 18px;
+  }
 }
 
 footer {
@@ -20,6 +54,11 @@ footer {
   border-top: 1px solid @grayLighter;
   font-size: @fontSizeSmall;
   padding: @paddingSmall;
+}
+
+h1 {
+  font-family: @specialHeadingFont, sans-serif;
+  font-weight: normal;
 }
 
 nav.navbar {
@@ -60,8 +99,6 @@ h1#logo {
   }
 
   span {
-    font-family: "Fjalla One";
-    font-weight: normal;
     padding-top: 6px;
     padding-bottom: 6px;
   }
@@ -87,6 +124,36 @@ h1#logo {
     color: @color-h;
     padding-left: 3px;
     padding-right: 9px;
+  }
+}
+
+article {
+  header {
+    position: relative;
+    padding-top: 1.5em;
+    padding-bottom: 6px;
+
+    .meta {
+      color: @gray;
+      margin-bottom: 0px;
+      position: absolute;
+      top: 0px;
+
+      time {
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      div.tags {
+        a {
+          color: @orange;
+        }
+        display: inline-block;
+        font-variant: small-caps;
+        margin-left: 12px;
+        vertical-align: 1px;
+      }
+    }
   }
 }
 
