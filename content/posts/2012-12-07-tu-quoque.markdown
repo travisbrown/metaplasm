@@ -1,5 +1,6 @@
 ---
 title: Tu Quoque
+tags: scala, macros, latin, boilerplate
 ---
 
 Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula.
@@ -7,7 +8,35 @@ Pellentesque tristique, velit eget scelerisque scelerisque, est dolor ultrices
 arcu, quis ullamcorper justo arcu luctus mauris. Integer congue molestie nisi id
 posuere. Fusce pellentesque gravida tempus. Integer viverra tortor nec eros
 mollis quis convallis sem laoreet. Nulla id libero ac erat varius laoreet. Proin
-sed est est. Curabitur lacinia fermentum lorem, elementum malesuada ipsum
+sed est est.
+
+``` scala
+import scala.language.experimental.macros
+import scala.reflect.macros.Context
+
+object TupleExample {
+  def fill[A](arity: Int)(a: A): Product = macro fill_impl[A]
+
+  def fill_impl[A](c: Context)(arity: c.Expr[Int])(a: c.Expr[A]) = {
+    import c.universe._
+
+    arity.tree match {
+      case Literal(Constant(n: Int)) if n < 23 => c.Expr(
+        Apply(
+          Select(Ident("Tuple" + n.toString), "apply"),
+          List.fill(n)(a.tree)
+        )
+      )
+      case _ => c.abort(
+        c.enclosingPosition,
+        "Desired arity must be a compile-time constant less than 23!"
+      )
+    }
+  }
+}
+```
+
+Curabitur lacinia fermentum lorem, elementum malesuada ipsum
 malesuada ut. Donec suscipit elit id leo vehicula mattis non sed leo. Morbi
 varius eleifend varius. Nulla vestibulum, neque vitae aliquam eleifend, nisi
 tellus placerat nunc, quis suscipit elit turpis eu tortor. Etiam euismod
