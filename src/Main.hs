@@ -105,8 +105,8 @@ main = hakyllWith hakyllConf $ do
         >>= relativizeUrls
 
   match "content/index.html" $ do
-    route stripContent
-    compile $ do
+    route stripContent
+    compile $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
       loadAllSnapshots "content/posts/*" "content"
@@ -114,8 +114,8 @@ main = hakyllWith hakyllConf $ do
         >>= applyTemplateList tpl (postCtx tags)
         >>= makeItem
         >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
-        >>= loadAndApplyTemplate "templates/default.html" siteCtx
-        >>= relativizeUrls
+        >>= loadAndApplyTemplate "templates/default.html" siteCtx
+        >>= relativizeUrls
 
   create ["atom.xml"] $ do
     route idRoute
