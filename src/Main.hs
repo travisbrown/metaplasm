@@ -40,7 +40,7 @@ main = hakyllWith hakyllConf $ do
   let pandocHtml5Compiler =
         pandocCompilerWith defaultHakyllReaderOptions writerOptions
 
-  tags <- buildTags "content/posts/*" (fromCapture "tags/*.html")
+  tags <- buildTags "content/posts/*" (fromCapture "tags/*/index.html")
 
   match "images/*.png" $ do
     route idRoute
@@ -64,7 +64,7 @@ main = hakyllWith hakyllConf $ do
       >>= relativizeUrls
 
   tagsRules tags $ \tag pattern -> do
-    let title = "Posts tagged <a href=\"/tags/" ++ tag ++ ".html\">" ++ tag ++ "</a>"
+    let title = "Posts tagged <a href=\"/tags/" ++ tag ++ "\">" ++ tag ++ "</a>"
 
     route idRoute
     compile $ do

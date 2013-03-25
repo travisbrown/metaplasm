@@ -1,5 +1,6 @@
 ---
 title: S.P.Q.R.
+tags: rome, latin, boilerplate
 ---
 
 Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl
