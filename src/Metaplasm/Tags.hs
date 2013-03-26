@@ -6,7 +6,6 @@ import Data.Maybe (catMaybes)
 import Control.Monad (forM)
 import Data.Monoid (mconcat)
 import Hakyll
-import System.FilePath (dropFileName, dropTrailingPathSeparator)
 import Text.Blaze.Html (toHtml, toValue, (!))
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Text.Blaze.Html5 as H
@@ -33,5 +32,5 @@ tagsFieldWith' getTags' key tags = field key $ \item -> do
     renderLink _   Nothing         = Nothing
     renderLink tag (Just filePath) = Just $
       H.a ! A.href
-        (toValue . toUrl . dropTrailingPathSeparator . dropFileName $ filePath) $ toHtml tag
+        (toValue . toUrl $ filePath) $ toHtml tag
 

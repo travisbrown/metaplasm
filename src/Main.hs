@@ -1,12 +1,14 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import Control.Applicative ((<$>))
+import Control.Applicative (Alternative (..), (<$>))
 import Control.Monad (filterM)
+import Data.List (intersperse, isSuffixOf)
+import Data.List.Split (splitOn)
 import Data.Monoid (mappend)
 import Hakyll
 import Metaplasm.Config
 import Metaplasm.Tags
-import System.FilePath (combine, takeFileName)
+import System.FilePath (combine, splitExtension, takeFileName)
 import Text.Pandoc.Options (writerHtml5)
 
 
@@ -62,20 +64,22 @@ main = hakyllWith hakyllConf $ do
       >>= loadAndApplyTemplate "templates/about.html"  siteCtx
       >>= loadAndApplyTemplate "templates/default.html" siteCtx
       >>= relativizeUrls
+      >>= deIndexUrls
 
   tagsRules tags $ \tag pattern -> do
-    let title = "Posts tagged <a href=\"/tags/" ++ tag ++ "\">" ++ tag ++ "</a>"
+    let title = "Posts tagged " ++ tag
 
     route idRoute
     compile $ do
       list <- postList tags (\t -> recentFirst t >>= filterM (fmap (elem tag) . getTags . itemIdentifier))
       makeItem ""
-        >>= loadAndApplyTemplate "templates/posts.html"
-              (constField "title" title `mappend`
+        >>= loadAndApplyTemplate "templates/tag-posts.html"
+              (constField "tag" tag `mappend`
                constField "posts" list `mappend`
                siteCtx)
-        >>= loadAndApplyTemplate "templates/default.html" siteCtx
+        >>= loadAndApplyTemplate "templates/default.html" (constField "title" title `mappend` siteCtx)
         >>= relativizeUrls
+        >>= deIndexUrls
 
     version "rss" $ do
       let feedCtx = postCtx tags `mappend` bodyField "description"
@@ -85,12 +89,13 @@ main = hakyllWith hakyllConf $ do
         >>= renderAtom (feedConf title) feedCtx
 
   match "content/posts/*" $ do
-    route $ stripContent `composeRoutes` setExtension "html"
+    route $ directorizeDate `composeRoutes` stripContent `composeRoutes` setExtension "html"
     compile $ pandocHtml5Compiler
         >>= loadAndApplyTemplate "templates/post.html" (postCtx tags)
         >>= saveSnapshot "content"
         >>= loadAndApplyTemplate "templates/default.html" (postCtx tags)
         >>= relativizeUrls
+        >>= deIndexUrls
 
   create ["archive.html"] $ do
     route idRoute
@@ -116,14 +121,15 @@ main = hakyllWith hakyllConf $ do
         >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
         >>= loadAndApplyTemplate "templates/default.html" siteCtx
         >>= relativizeUrls
+        >>= deIndexUrls
 
   create ["atom.xml"] $ do
     route idRoute
     compile $ do
       let feedCtx = postCtx tags `mappend` bodyField "description"
-      posts <- fmap (take 10) . recentFirst =<<
+      posts <- mapM deIndexUrls =<< fmap (take 10) . recentFirst =<<
         loadAllSnapshots "content/posts/*" "content"
-      renderAtom (feedConf "blog") feedCtx posts
+      renderAtom (feedConf "blog") feedCtx (posts)
 
   match "templates/*" $ compile templateCompiler
 
@@ -139,7 +145,9 @@ siteCtx =
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
 postCtx tags =
+  deIndexedUrlField "url" `mappend`
   dateField "date" "%e %B %Y" `mappend`
+  dateField "datetime" "%Y-%m-%d" `mappend`
   (tagsFieldWith' getTags) "tags" tags `mappend`
   siteCtx
 
@@ -159,4 +167,23 @@ stripContent = gsubRoute "content/" $ const ""
 
 
 --------------------------------------------------------------------------------
+directorizeDate :: Routes
+directorizeDate = customRoute (\i -> directorize $ toFilePath i)
+  where
+    directorize path = dirs ++ "/index" ++ ext 
+      where
+        (dirs, ext) = splitExtension $ concat $ (intersperse "/" date) ++ ["/"] ++ (intersperse "-" rest)
+        (date, rest) = splitAt 3 $ splitOn "-" path
+
+stripIndex :: String -> String
+stripIndex url = if "index.html" `isSuffixOf` url && elem (head url) "/."
+  then take (length url - 10) url else url
+
+deIndexUrls :: Item String -> Compiler (Item String)
+deIndexUrls item = return $ fmap (withUrls stripIndex) item
+
+deIndexedUrlField :: String -> Context a
+deIndexedUrlField key = field key
+  $ fmap (stripIndex . maybe empty toUrl) . getRoute . itemIdentifier
+
 
