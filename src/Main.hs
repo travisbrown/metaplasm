@@ -72,12 +72,16 @@ main = hakyllWith hakyllConf $ do
     route idRoute
     compile $ do
       list <- postList tags (\t -> recentFirst t >>= filterM (fmap (elem tag) . getTags . itemIdentifier))
+      let ctx =
+            constField "tag" tag `mappend`
+            constField "posts" list `mappend`
+            constField "feedTitle" title `mappend`
+            constField "title" title `mappend`
+            constField "feedUrl" ("/tags/" ++ tag ++ "/index.xml") `mappend`
+            siteCtx
       makeItem ""
-        >>= loadAndApplyTemplate "templates/tag-posts.html"
-              (constField "tag" tag `mappend`
-               constField "posts" list `mappend`
-               siteCtx)
-        >>= loadAndApplyTemplate "templates/default.html" (constField "title" title `mappend` siteCtx)
+        >>= loadAndApplyTemplate "templates/tag-posts.html" ctx
+        >>= loadAndApplyTemplate "templates/default.html" ctx
         >>= relativizeUrls
         >>= deIndexUrls
 
@@ -139,6 +143,8 @@ siteCtx :: Context String
 siteCtx =
   constField "root" (siteRoot siteConf) `mappend`
   constField "gaId" (siteGaId siteConf) `mappend`
+  constField "feedTitle" "Posts" `mappend`
+  constField "feedUrl" "/atom.xml" `mappend`
   defaultContext
 
 
