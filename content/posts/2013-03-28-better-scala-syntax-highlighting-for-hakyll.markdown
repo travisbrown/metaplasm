@@ -174,7 +174,7 @@ object TupleExample {
 }
 ```
 
-It's not perfect, but it is vastly better,
+It's not perfect, but it _is_ vastly better,
 and I don't really feel like spending any more time this evening fussing
 with a syntax highlighter for an editor I don't even use. You can watch
 [this space](https://github.com/travisbrown/metaplasm/blob/master/syntax/scala.xml)
