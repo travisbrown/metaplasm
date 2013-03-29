@@ -122,7 +122,7 @@ This means that we're going to have to rebuild both the
 
 We start by unpacking the source for `highlighting-kate` (note that these instructions are based in part on
 [a post by John Baker](http://bakerjd99.wordpress.com/2012/09/20/pandoc-based-j-syntax-highlighting/)
-that explains how to add syntax highlighting for J to Pandoc):
+that explains how to add syntax highlighting for [J](http://www.jsoftware.com/) to Pandoc):
 
 ``` bash
 cabal unpack highlighting-kate-0.5.3.8
