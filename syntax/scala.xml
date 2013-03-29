@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE language SYSTEM "language.dtd">
-<language name="Scala" version="1.0" kateversion="2.4" section="Sources"
-          extensions="*.scala" mimetype="text/x-scala" license="LGPL"
-          author="Stephane Micheloud (stephane.micheloud@epfl.ch)">
-<!--
-First version added to reository was 1.0 downloaded from
-https://lampsvn.epfl.ch/trac/scala/browser/scala-tool-support/trunk/src/kate/scala.xml?format=raw
-
-adapted from "java.xml" by Alfredo Luiz Foltran Fialho (alfoltran@ig.com.br)
--->
+<language
+  name="Scala"
+  version="1.1"
+  kateversion="2.4"
+  section="Sources"
+  extensions="*.scala"
+  mimetype="text/x-scala"
+  license="ALv2"
+  author="Travis Brown (travisrobertbrown@gmail.com)">
+  <!--
+    Adapted by Stephane Micheloud (stephane.micheloud@epfl.ch)
+      from "java.xml" by Alfredo Luiz Foltran Fialho (alfoltran@ig.com.br)
+      and further refined by Travis Brown (travisrobertbrown@gmail.com).
+  -->
   <highlighting>
     <list name="keywords">
       <item> abstract </item>
