@@ -1,5 +1,5 @@
 ---
-title: Better Scala syntax highlighting in Hakyll
+title: Better Scala syntax highlighting for Hakyll
 date: Thu Mar 28 21:35:58 EDT 2013
 tags: scala, hakyll, pandoc
 ---
@@ -114,9 +114,9 @@ And three new contexts to go with them:
 </context>
 ```
 
-Now for the unpleasant part: getting Pandoc to use this syntax file.
-Pandoc uses a library called [`highlighting-kate`](http://johnmacfarlane.net/highlighting-kate/),
-which actually compiles Kate syntax files to Haskell code.
+Now for the unpleasant part: getting Pandoc to see this syntax file.
+Pandoc uses a library called [`highlighting-kate`](http://johnmacfarlane.net/highlighting-kate/)
+(also developed by MacFarlane) that actually compiles Kate syntax files to Haskell code.
 This means that we're going to have to rebuild both the
 `highlighting-kate` and `pandoc` packages 
 
@@ -128,9 +128,10 @@ that explains how to add syntax highlighting for J to Pandoc):
 cabal unpack highlighting-kate-0.5.3.8
 ```
 
-Note that I'm using `hakyll-4.2.2.0`, which depends on `pandoc-1.11.1`, which depends on `highlighting-kate-0.5.3.8`—your versions may vary.
+Note that I'm using `hakyll-4.2.2.0`, which depends on `pandoc-1.11.1`, which depends on `highlighting-kate-0.5.3.8`.
+Your versions may vary.
 
-The next step is to copy the new `scala.xml` file into the `xml` subdirectory of the `highlighting-kate-0.5.3.8` directory you just unpacked.
+The next step is to copy your new `scala.xml` file into the `xml` subdirectory of the `highlighting-kate-0.5.3.8` directory you just unpacked.
 Then you build the thing, generate the Haskell code from the syntax files, and rebuild:
 
 ``` bash

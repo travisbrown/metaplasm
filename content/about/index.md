@@ -26,10 +26,10 @@ Some of my projects are on [GitHub](https://github.com/travisbrown/).
 I used to be more active on [Stack Overflow](http://stackoverflow.com/users/334519/travis-brown),
 but I've almost got that under control.
 I collect computers, and most of them run [Arch Linux](https://www.archlinux.org/).
-I like type systems,
+I like functional programming, type systems,
 [macro systems](http://stackoverflow.com/tags/scala-macros/topusers),
 [type-level programming](https://github.com/milessabin/shapeless),
-and static program analysis.
+and machine learning.
 I [take photographs](http://www.flickr.com/photos/travisbrown/),
 [sometimes](http://www.flickr.com/photos/travisbrown/sets/72157632492975714/)
 [for](http://www.flickr.com/photos/travisbrown/sets/72157632484974739/)
