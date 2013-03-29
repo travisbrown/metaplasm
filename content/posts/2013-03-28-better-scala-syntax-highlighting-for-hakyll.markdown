@@ -34,6 +34,8 @@ the package path in an `import` statement to be a different color from the rest 
 Pandoc uses the [Kate](http://kate-editor.org/) editor's syntax files,
 and Kate's default syntax file for Scala is derived from one that's
 [included in the Scala distribution](https://github.com/scala/scala-dist/blob/b885ebd4affe39f6713aa71b0df6257fb05adfe0/tool-support/src/kate/scala.xml).
+I got no responses to [a query](https://twitter.com/travisbrown/status/317017224571392001)
+about better Kate syntax files for Scala, so we'll have to make our own.
 We'll start by grabbing a copy of Kate's version of the file,
 which is probably somewhere like this on your system:
 
@@ -65,7 +67,7 @@ A little further down we see a similar list of Java's names for primitives (i.e.
 That [can go](https://github.com/travisbrown/metaplasm/commit/1413c61b18cb6644b4954646c8040bd42a1f02ce),
 too. Now our syntax file is 3,351 lines lighter, and it's easier to see how
 [to add](https://github.com/travisbrown/metaplasm/commit/d103e75c4d8467f465d78b3e1ce454b3b2d80de6)
-our macro keyword—it's just an `item` in the `keyword` list.
+our `macro` keyword—it's just an `item` in the `keyword` list.
 
 Kate's [Highlight Definition XML format](http://kate-editor.org/2005/03/24/writing-a-syntax-highlighting-file/)
 is a little more verbose than e.g. Vim's language for doing the same thing, but it's pretty straightforward.
