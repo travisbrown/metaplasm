@@ -53,23 +53,11 @@ adapted from "java.xml" by Alfredo Luiz Foltran Fialho (alfoltran@ig.com.br)
       <item> with </item>
       <item> yield </item>
     </list>
-    <list name="types">
-      <item> boolean </item>
-      <item> byte </item>
-      <item> char </item>
-      <item> double </item>
-      <item> float </item>
-      <item> int </item>
-      <item> long </item>
-      <item> short </item>
-      <item> unit </item>
-    </list>
     <contexts>
       <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
         <!-- Comment next line if you don't use Javadoc tool -->
         <IncludeRules context="##Javadoc"/>
         <keyword attribute="Keyword" context="#stay" String="keywords"/>
-        <keyword attribute="Data Type" context="#stay" String="types"/>
         <Float attribute="Float" context="#stay">
           <AnyChar String="fF" attribute="Float" context="#stay"/>
         </Float>
