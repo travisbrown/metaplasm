@@ -28,6 +28,7 @@ adapted from "java.xml" by Alfredo Luiz Foltran Fialho (alfoltran@ig.com.br)
       <item> implicit </item>
       <item> import </item>
       <item> lazy </item>
+      <item> macro </item>
       <item> match </item>
       <item> new </item>
       <item> null </item>
