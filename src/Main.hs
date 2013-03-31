@@ -44,6 +44,8 @@ main = hakyllWith hakyllConf $ do
 
   tags <- buildTags "content/posts/*" (fromCapture "tags/*/index.html")
 
+  let postTagsCtx = postCtx tags
+
   match "images/*.png" $ do
     route idRoute
     compile copyFileCompiler
@@ -94,10 +96,13 @@ main = hakyllWith hakyllConf $ do
 
   match "content/posts/*" $ do
     route $ directorizeDate `composeRoutes` stripContent `composeRoutes` setExtension "html"
-    compile $ pandocHtml5Compiler
-        >>= loadAndApplyTemplate "templates/post.html" (postCtx tags)
-        >>= saveSnapshot "content"
-        >>= loadAndApplyTemplate "templates/default.html" (postCtx tags)
+    compile $ do
+      compiled <- pandocHtml5Compiler
+      full <- loadAndApplyTemplate "templates/post.html" postTagsCtx compiled
+      teaser <- loadAndApplyTemplate "templates/post-teaser.html" postTagsCtx $ dropMore compiled
+      saveSnapshot "content" full
+      saveSnapshot "teaser" teaser
+      loadAndApplyTemplate "templates/default.html" (postCtx tags) full
         >>= relativizeUrls
         >>= deIndexUrls
 
@@ -118,7 +123,7 @@ main = hakyllWith hakyllConf $ do
     compile $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
-      loadAllSnapshots "content/posts/*" "content"
+      loadAllSnapshots "content/posts/*" "teaser"
         >>= fmap (take 10) . recentFirst
         >>= applyTemplateList tpl (postCtx tags)
         >>= makeItem
@@ -178,7 +183,8 @@ directorizeDate = customRoute (\i -> directorize $ toFilePath i)
   where
     directorize path = dirs ++ "/index" ++ ext 
       where
-        (dirs, ext) = splitExtension $ concat $ (intersperse "/" date) ++ ["/"] ++ (intersperse "-" rest)
+        (dirs, ext) = splitExtension $ concat $
+          (intersperse "/" date) ++ ["/"] ++ (intersperse "-" rest)
         (date, rest) = splitAt 3 $ splitOn "-" path
 
 stripIndex :: String -> String
@@ -192,4 +198,6 @@ deIndexedUrlField :: String -> Context a
 deIndexedUrlField key = field key
   $ fmap (stripIndex . maybe empty toUrl) . getRoute . itemIdentifier
 
+dropMore :: Item String -> Item String
+dropMore = fmap (unlines . takeWhile (/= "<!-- MORE -->") . lines)
 

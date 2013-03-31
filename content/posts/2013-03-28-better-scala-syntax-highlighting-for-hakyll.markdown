@@ -36,6 +36,9 @@ and Kate's default syntax file for Scala is derived from one that's
 [included in the Scala distribution](https://github.com/scala/scala-dist/blob/b885ebd4affe39f6713aa71b0df6257fb05adfe0/tool-support/src/kate/scala.xml).
 I got no responses to [a query](https://twitter.com/travisbrown/status/317017224571392001)
 about better Kate syntax files for Scala, so we'll have to make our own.
+
+<!-- MORE -->
+
 We'll start by grabbing a copy of Kate's version of the file,
 which is probably somewhere like this on your system:
 
