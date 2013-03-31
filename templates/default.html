@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width"/>
     <link rel="alternate" type="application/atom+xml" title="$feedTitle$" href="$feedUrl$"/>
     <link type="image/png" rel="icon" href="/images/favicon.png"/>
-    <link type="text/css" rel="canonical" href="$root$">
+    <link type="text/css" rel="canonical" href="$root$/">
     <link type="text/css" rel="stylesheet" href="/css/responsive.css"/>
     <link type="text/css" rel="stylesheet" href="/css/main.css"/>
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fjalla+One">
@@ -49,6 +49,15 @@
 
       <div id="content">
         $body$
+      </div>
+
+      <div class="social-share">
+        <ul>
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="$root$$url$" data-text="$title$" data-via="travisbrown">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </li>
+        </ul>
       </div>
 
       <footer role="contentinfo">

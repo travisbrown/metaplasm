@@ -20,7 +20,7 @@ hakyllConf = defaultConfiguration
 
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
-  { siteRoot = "http://meta.plasm.us/"
+  { siteRoot = "http://meta.plasm.us"
   , siteGaId = "UA-36422511-1"
   }
 
@@ -141,6 +141,7 @@ main = hakyllWith hakyllConf $ do
 --------------------------------------------------------------------------------
 siteCtx :: Context String
 siteCtx =
+  deIndexedUrlField "url" `mappend`
   constField "root" (siteRoot siteConf) `mappend`
   constField "gaId" (siteGaId siteConf) `mappend`
   constField "feedTitle" "Posts" `mappend`
@@ -151,7 +152,6 @@ siteCtx =
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
 postCtx tags =
-  deIndexedUrlField "url" `mappend`
   dateField "date" "%e %B %Y" `mappend`
   dateField "datetime" "%Y-%m-%d" `mappend`
   (tagsFieldWith' getTags) "tags" tags `mappend`
