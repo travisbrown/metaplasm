@@ -6,8 +6,8 @@ I am currently the Assistant Director of Research and Development at
 the [Maryland Institute for Technology in the Humanities](http://mith.umd.edu/)
 at the [University of Maryland, College Park](http://www.umd.edu).
 
-I'm [from Texas](http://www.flickr.com/photos/anixopol/6595914709/in/faves-travisbrown/lightbox/).
-My undergraduate thesis was on the novels of Henry James, and several years ago I earned an M.A. in English at the
+I'm from Texas.
+My undergraduate thesis was on the late novels of Henry James, and several years ago I earned an M.A. in English at the
 [University of Texas at Austin](http://www.utexas.edu/) for
 work on copyright cases involving Percy Shelley and Lord Byron
 (see [this blog](http://terminalirony.com/) for some details).

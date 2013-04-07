@@ -1,11 +1,8 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 module Metaplasm.Config where
 
 import Hakyll
 
-
---------------------------------------------------------------------------------
 data EngineConfiguration = EngineConfiguration
   { lessCommand :: String
   , lessFiles :: [Identifier]
@@ -22,12 +19,14 @@ defaultEngineConfiguration = EngineConfiguration
     , "css/main.less"
     ]
   , lessOptions = ["--compress"]
-  , vendorScriptFiles =
-    [ "lib/initializr/war/builder/modules/jquerymin/jquery-1.9.1.min.js"
-    , "lib/initializr/war/builder/modules/boot-scripts/bootstrap.min.js"
-    , "lib/initializr/war/builder/modules/modernizrrespond/modernizr-2.6.2-respond-1.1.0.min.js"
+  , vendorScriptFiles = map (fromFilePath . (modulePath ++))
+    [ "jquerymin/jquery-1.9.1.min.js"
+    , "boot-scripts/bootstrap.min.js"
+    , "modernizrrespond/modernizr-2.6.2-respond-1.1.0.min.js"
     ]
   }
+  where
+    modulePath = "lib/initializr/war/builder/modules/"
 
 data SiteConfiguration = SiteConfiguration
   { siteRoot :: String

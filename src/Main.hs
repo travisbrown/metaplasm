@@ -1,4 +1,3 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Applicative (Alternative (..), (<$>))
 import Control.Monad (filterM)
@@ -11,8 +10,6 @@ import Metaplasm.Tags
 import System.FilePath (combine, splitExtension, takeFileName)
 import Text.Pandoc.Options (writerHtml5)
 
-
---------------------------------------------------------------------------------
 hakyllConf :: Configuration
 hakyllConf = defaultConfiguration
   { deployCommand = "rsync -ave 'ssh' _site/* meta.plasm.us:www/meta.plasm.us"
@@ -33,7 +30,6 @@ feedConf title = FeedConfiguration
   , feedRoot = "http://meta.plasm.us"
   }
 
---------------------------------------------------------------------------------
 main :: IO ()
 main = hakyllWith hakyllConf $ do
   let engineConf = defaultEngineConfiguration
@@ -47,6 +43,10 @@ main = hakyllWith hakyllConf $ do
   let postTagsCtx = postCtx tags
 
   match "images/*.png" $ do
+    route idRoute
+    compile copyFileCompiler
+
+  match "extra/*" $ do
     route idRoute
     compile copyFileCompiler
 
@@ -142,8 +142,6 @@ main = hakyllWith hakyllConf $ do
 
   match "templates/*" $ compile templateCompiler
 
-
---------------------------------------------------------------------------------
 siteCtx :: Context String
 siteCtx =
   deIndexedUrlField "url" `mappend`
@@ -153,8 +151,6 @@ siteCtx =
   constField "feedUrl" "/atom.xml" `mappend`
   defaultContext
 
-
---------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
 postCtx tags =
   dateField "date" "%e %B %Y" `mappend`
@@ -162,8 +158,6 @@ postCtx tags =
   (tagsFieldWith' getTags) "tags" tags `mappend`
   siteCtx
 
-
---------------------------------------------------------------------------------
 postList :: Tags -> ([Item String] -> Compiler [Item String]) -> Compiler String
 postList tags sortFilter = do
   posts <- sortFilter =<< loadAll "content/posts/*"
@@ -171,13 +165,9 @@ postList tags sortFilter = do
   list <- applyTemplateList itemTpl (postCtx tags) posts
   return list
 
-
---------------------------------------------------------------------------------
 stripContent :: Routes
 stripContent = gsubRoute "content/" $ const ""
 
-
---------------------------------------------------------------------------------
 directorizeDate :: Routes
 directorizeDate = customRoute (\i -> directorize $ toFilePath i)
   where

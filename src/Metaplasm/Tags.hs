@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Metaplasm.Tags where
-
+import Control.Applicative ((<$>))
 import Data.List (intercalate, intersperse)
 import Data.Maybe (catMaybes)
 import Control.Monad (forM)
@@ -10,7 +10,6 @@ import Text.Blaze.Html (toHtml, toValue, (!))
 import Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A
-
 
 renderSimpleTagList :: Tags -> Compiler (String)
 renderSimpleTagList = renderTags makeLink (intercalate " | ")
@@ -24,13 +23,11 @@ tagsFieldWith' :: (Identifier -> Compiler [String])
   -> Context a
 tagsFieldWith' getTags' key tags = field key $ \item -> do
   tags' <- getTags' $ itemIdentifier item
-  links <- forM tags' $ \tag -> do
-    route' <- getRoute $ tagsMakeId tags tag
-    return $ renderLink tag route'
-  return $ renderHtml $ mconcat $ intersperse " | " $ catMaybes $ links
+  links <- forM tags' $ \tag ->
+    renderLink tag <$> getRoute (tagsMakeId tags tag)
+  return . renderHtml . mconcat . intersperse " | " . catMaybes $ links
   where
-    renderLink _   Nothing         = Nothing
-    renderLink tag (Just filePath) = Just $
-      H.a ! A.href
-        (toValue . toUrl $ filePath) $ toHtml tag
+    renderLink tag route = pathToUrl <$> route
+      where
+        pathToUrl path = H.a ! A.href (toValue . toUrl $ path) $ toHtml tag
 
