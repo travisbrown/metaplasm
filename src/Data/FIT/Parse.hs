@@ -99,7 +99,7 @@ parseBytes contents = G.runGet (runEitherT $ parseFIT crc) contents
   where
     crc = computeCRC16 $ B.take (B.length contents - 2) contents
 
--- | A convenience function that 
+-- | A convenience function that parses a file and ignores errors. 
 parseFile :: FilePath -> IO [PointRecord] 
 parseFile file = do
   contents <- B.readFile file 
