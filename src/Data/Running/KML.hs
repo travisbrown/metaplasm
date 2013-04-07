@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings, QuasiQuotes #-}
-module Data.FIT.Parse.KML
+module Data.Running.KML
   ( trailToKML
   ) where
-import Data.FIT.Parse
+import Data.Running
 import Text.XML
 import Text.Hamlet.XML
 import qualified Data.Map as M

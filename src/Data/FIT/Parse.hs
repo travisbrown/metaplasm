@@ -1,13 +1,7 @@
 {-# LANGUAGE DoAndIfThenElse, OverloadedStrings, TupleSections #-}
 module Data.FIT.Parse
-  ( PointRecord (PointRecord)
-  , parseBytes
+  ( parseBytes
   , parseFile
-  , pointDistance
-  , pointLat
-  , pointLng
-  , pointTime
-  , pointSpeed
 ) where
 import Control.Applicative ((*>), (<$>), (<*>))
 import Control.Monad.State
@@ -18,22 +12,13 @@ import qualified Data.ByteString.Lazy as B
 import Data.Int (Int64)
 import Data.FIT.Parse.Format (fieldGetter, isSignedField)
 import Data.FIT.Parse.Util
-import Data.List (find)
 import qualified Data.Map as M
 import Data.Maybe (catMaybes, maybeToList)
+import Data.Running
 import Data.Text (Text)
 import Data.Text.Encoding (decodeUtf8)
-import Data.Time.Clock (UTCTime)
 import Data.Time.Format ()
 import Data.Word (Word8, Word16)
-
-data PointRecord = PointRecord
-  { pointTime :: UTCTime
-  , pointLat :: Double
-  , pointLng :: Double
-  , pointDistance :: Double
-  , pointSpeed :: Double
-  } deriving (Eq, Ord, Show)
 
 data Data = Data
   { dataId :: Word8

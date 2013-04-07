@@ -14,8 +14,9 @@ library
   exposed-modules:
     Data.FIT.Parse,
     Data.FIT.Parse.Format,
-    Data.FIT.Parse.KML,
-    Data.FIT.Parse.Util
+    Data.FIT.Parse.Util,
+    Data.Running,
+    Data.Running.KML
   build-depends:
     array >= 0.4.0.1,
     base >= 2,
@@ -30,6 +31,7 @@ library
     old-locale >= 1.0.0.5,
     pandoc >= 1.11.1,
     split >= 0.2.1.2,
+    statistics >= 0.10.2.0,
     text >= 0.11.2.3,
     time >= 1.4.0.1,
     transformers >= 0.3.0.0,
