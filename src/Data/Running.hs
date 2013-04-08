@@ -18,5 +18,3 @@ data PointRecord = PointRecord
   , pointSpeed :: Double
   } deriving (Eq, Ord, Show)
 
-
-

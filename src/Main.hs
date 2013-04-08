@@ -1,14 +1,18 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Control.Applicative (Alternative (..), (<$>))
 import Control.Monad (filterM)
+import Data.FIT.Parse (parseBytes)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import Data.Monoid (mappend)
+import Data.Running.KML
 import Hakyll
 import Metaplasm.Config
+import Metaplasm.Running
 import Metaplasm.Tags
 import System.FilePath (combine, splitExtension, takeFileName)
 import Text.Pandoc.Options (writerHtml5)
+import Text.XML
 
 hakyllConf :: Configuration
 hakyllConf = defaultConfiguration
@@ -140,7 +144,37 @@ main = hakyllWith hakyllConf $ do
         loadAllSnapshots "content/posts/*" "content"
       renderAtom (feedConf "blog") feedCtx (posts)
 
+  tracks <- fitTracks "content/running/*.FIT"
+
+  match "content/running/*.FIT" $ do
+    route $ fitRoute tracks
+    compile $ do
+      Item _ (Right points) <- fmap parseBytes <$> getResourceLBS
+      let ctx = fitCtx points siteCtx
+      body <- fitBody tracks points
+      makeItem body
+        >>= loadAndApplyTemplate "templates/running/run.html" ctx
+        >>= saveSnapshot "content"
+        >>= loadAndApplyTemplate "templates/default.html" ctx
+        >>= relativizeUrls
+        >>= deIndexUrls
+
+  match "content/running/index.html" $ do
+    route stripContent
+    compile $ do
+      tpl <- loadBody "templates/post-item-full.html"
+      body <- readTemplate . itemBody <$> getResourceBody
+      fitRecentFirst tracks <$> loadAllSnapshots "content/running/*.FIT" "content"
+        >>= applyTemplateList tpl siteCtx
+        >>= makeItem
+        >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
+        >>= loadAndApplyTemplate "templates/default.html" (constField "gMapsApiScript" gMapsApiScript `mappend` siteCtx)
+        >>= relativizeUrls
+        >>= deIndexUrls
+      
+
   match "templates/*" $ compile templateCompiler
+  match "templates/*/*" $ compile templateCompiler
 
 siteCtx :: Context String
 siteCtx =
@@ -149,6 +183,7 @@ siteCtx =
   constField "gaId" (siteGaId siteConf) `mappend`
   constField "feedTitle" "Posts" `mappend`
   constField "feedUrl" "/atom.xml" `mappend`
+  constField "gMapsApiScript" "" `mappend`
   defaultContext
 
 postCtx :: Tags -> Context String
