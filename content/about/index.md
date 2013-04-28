@@ -36,4 +36,9 @@ I [take photographs](http://www.flickr.com/photos/travisbrown/),
 [MITH](http://www.flickr.com/photos/travisbrown/sets/72157631427840226/),
 but mostly for fun.
 
+I occasionally do contract programming work.
+My [Stack Overflow profile](http://stackoverflow.com/users/334519/travis-brown)
+should give you an idea of my areas of expertise and interest.
+Please [contact me](mailto:travisrobertbrown@gmail.com) if you have questions
+about rates or availability.
 
