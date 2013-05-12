@@ -71,8 +71,7 @@ pointRecords = catMaybes . map selectPointRecord
   where
     selectPointRecord (Data 5 fields) = PointRecord
       <$> (toUTCTime <$> lookup 253 fields)
-      <*> (toDegree <$> lookup 0 fields)
-      <*> (toDegree <$> lookup 1 fields)
+      <*> (curry Coord <$> (toDegree <$> lookup 0 fields) <*> (toDegree <$> lookup 1 fields))
       <*> ((/ 100) . fromIntegral <$> lookup 5 fields)
       <*> ((/ 1000) . fromIntegral <$> lookup 5 fields)
     selectPointRecord _ = Nothing 

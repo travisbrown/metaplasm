@@ -15,6 +15,7 @@ library
     Data.FIT.Parse,
     Data.FIT.Parse.Format,
     Data.FIT.Parse.Util,
+    --Data.Path,
     Data.Running,
     Data.Running.KML
   build-depends:
@@ -37,6 +38,7 @@ library
     text >= 0.11.2.3,
     time >= 1.4.0.1,
     transformers >= 0.3.0.0,
+    vector-space >= 0.8.6,
     xml-conduit >= 1.1.0.3,
     xml-hamlet >= 0.4.0.4
 

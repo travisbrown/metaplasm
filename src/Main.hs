@@ -4,6 +4,7 @@ import Control.Monad (filterM)
 import Data.FIT.Parse (parseBytes)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
+import qualified Data.Map as M
 import Data.Monoid (mappend)
 import Data.Running.KML
 import Hakyll
@@ -45,6 +46,10 @@ main = hakyllWith hakyllConf $ do
   tags <- buildTags "content/posts/*" (fromCapture "tags/*/index.html")
 
   let postTagsCtx = postCtx tags
+
+  match "content/tmp/*" $ do
+    route stripContent
+    compile copyFileCompiler
 
   match "images/*.png" $ do
     route idRoute
@@ -151,7 +156,7 @@ main = hakyllWith hakyllConf $ do
     compile $ do
       Item _ (Right points) <- fmap parseBytes <$> getResourceLBS
       let ctx = fitCtx points siteCtx
-      body <- fitBody tracks points
+      body <- fitBody tracks points 1.0 4
       makeItem body
         >>= loadAndApplyTemplate "templates/running/run.html" ctx
         >>= saveSnapshot "content"
@@ -172,6 +177,17 @@ main = hakyllWith hakyllConf $ do
         >>= relativizeUrls
         >>= deIndexUrls
       
+  match "content/running/all/index.html" $ do
+    route stripContent
+    compile $ do
+      let points = concat $ M.elems tracks
+      body <- fitBody tracks points 0.5 3
+      let ctx = fitCtx points siteCtx
+      makeItem body
+        >>= loadAndApplyTemplate "templates/running/run.html" ctx
+        >>= loadAndApplyTemplate "templates/default.html" ctx
+        >>= relativizeUrls
+        >>= deIndexUrls
 
   match "templates/*" $ compile templateCompiler
   match "templates/*/*" $ compile templateCompiler

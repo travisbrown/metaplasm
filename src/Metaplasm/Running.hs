@@ -6,6 +6,7 @@ import Data.Aeson.Types (toJSON)
 import Data.FIT.Parse (parseFile)
 import qualified Data.Map as M
 import Data.List (elemIndex, intersperse, sortBy)
+import Data.List.Split (splitWhen)
 import Data.Monoid (Sum, mappend, mempty)
 import Data.Ord (comparing)
 import Data.Running
@@ -44,7 +45,7 @@ fitTracks pattern = do
 
 fitId :: Tracks -> Identifier -> [String]
 fitId tracks i = 
-  maybe (throw MissingIdentifierException)
+  maybe [] -- (throw MissingIdentifierException)
   pointsToPath
   (M.lookup i tracks)
   where
@@ -56,8 +57,8 @@ fitId tracks i =
           . map fst
           . sortBy (comparing snd)
           . M.toList
-          $ M.filter ((== date) . pointDate . last) tracks 
-        date = pointDate $ last points
+          $ M.filter ((== date) . pointDate . head) tracks 
+        date = pointDate $ head points
         pointDate point = [pointY point, pointM point, pointD point]
         pointY = formatTime defaultTimeLocale "%Y" .  pointTime
         pointM = formatTime defaultTimeLocale "%m" .  pointTime
@@ -85,8 +86,8 @@ fitCtx points ctx =
   `mappend` constField "title" (printf "%0.2f miles" $ totalMiles points)
   `mappend` ctx
 
-fitBody :: Tracks -> [PointRecord] -> Compiler String
-fitBody tracks points = do
+fitBody :: Tracks -> [PointRecord] -> Double -> Int -> Compiler String
+fitBody tracks points opacity weight = do
   path <- fitId tracks <$> getUnderlying
   let fitDivId = pack . concat $ intersperse "-" $ "run" : path
   let fitInitName = pack . concat $ intersperse "_" $ "init" : path
@@ -109,8 +110,8 @@ fitBody tracks points = do
         var track = new google.maps.Polyline({
           path: trackCoords,
           strokeColor: '#C0362C',
-          strokeOpacity: 1.0,
-          strokeWeight: 4
+          strokeOpacity: #{toJSON opacity},
+          strokeWeight: #{toJSON weight}
         });
 
         track.setMap(map);
@@ -126,17 +127,32 @@ fitRecentFirst tracks = reverse . sortBy (comparing $ fitId tracks . itemIdentif
 metersToMiles :: Double -> Double
 metersToMiles m = m * 0.000621371
 
+splitPointRecords :: [PointRecord] -> [[PointRecord]]
+splitPointRecords points =
+  map (map fst) . splitWhen (\(a, b) -> pointDistance a > pointDistance b) $ zip points (tail points)
+
 totalMinutes :: [PointRecord] -> Int
-totalMinutes points = (round $ diffUTCTime end start) `div` 60
+totalMinutes = sum . map totalMinutes' . splitPointRecords
+
+totalMiles :: [PointRecord] -> Double
+totalMiles = sum . map totalMiles' . splitPointRecords
+
+averageSpeed :: [PointRecord] -> Double
+averageSpeed points = dist / time
+  where
+    (dist, time) = foldl1 (\(td, tt) (d, t) -> (td + d, tt + t)) . map (averageSpeed') $ splitPointRecords points
+
+totalMinutes' :: [PointRecord] -> Int
+totalMinutes' points = (round $ diffUTCTime end start) `div` 60
   where
     start = pointTime $ head points
     end = pointTime $ last points
 
-totalMiles :: [PointRecord] -> Double
-totalMiles = metersToMiles . pointDistance . last
+totalMiles' :: [PointRecord] -> Double
+totalMiles' = metersToMiles . pointDistance . last
 
-averageSpeed :: [PointRecord] -> Double
-averageSpeed points = totalMiles points / ((fromRational . toRational $ diffUTCTime end start) / 3600)
+averageSpeed' :: [PointRecord] -> (Double, Double)
+averageSpeed' points = (totalMiles points, (fromRational . toRational $ diffUTCTime end start) / 3600)
   where
     start = pointTime $ head points
     end = pointTime $ last points

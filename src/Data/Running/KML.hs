@@ -31,7 +31,7 @@ trailToKML points = Document (Prologue [] Nothing []) root []
     |]
 
 renderPoint :: (Int, PointRecord) -> [Node]
-renderPoint (i, PointRecord _ lat lng _ speed) =
+renderPoint (i, PointRecord _ (Coord (lat, lng)) _ speed) =
   [xml|
     <{http://www.opengis.net/kml/2.2}Placemark id="point-#{pack $ show i}">
       <{http://www.opengis.net/kml/2.2}name>Point #{pack $ show i}
@@ -43,6 +43,6 @@ renderPoint (i, PointRecord _ lat lng _ speed) =
   |]
 
 showCoord :: PointRecord -> Text
-showCoord (PointRecord _ lat lng _ _) =
+showCoord (PointRecord _ (Coord (lat, lng)) _ _) =
   pack $ show lng ++ "," ++ show lat ++ "\n"
 
