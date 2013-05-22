@@ -160,24 +160,22 @@ cabal copy
 
 Now you just rebuild your Hakyll project, and bingo:
 
-``` scala
-import scala.language.experimental.macros
-import scala.reflect.macros.Context
+<pre class="sourceCode scala"><code class="sourceCode scala"><span class="kw">import</span> scala.language.experimental.macros
+<span class="kw">import</span> scala.reflect.macros.Context
 
-object TupleExample {
-  def fill[A](arity: Int)(a: A): Product = macro fill_impl[A]
-  def fill_impl[A](c: Context)(arity: c.Expr[Int])(a: c.Expr[A]) = {
-    import c.universe._
+<span class="kw">object</span> TupleExample {
+  <span class="kw">def</span> fill[<span class="dt">A</span>](arity: <span class="dt">Int</span>)(a: <span class="dt">A</span>): <span class="dt">Product</span> = <span class="kw">macro</span> fill_impl[<span class="dt">A</span>]
+  <span class="kw">def</span> fill_impl[<span class="dt">A</span>](c: <span class="dt">Context</span>)(arity: <span class="dt">c.Expr[Int]</span>)(a: <span class="dt">c.Expr[A]</span>) = {
+    <span class="kw">import</span> c.universe._
 
-    arity.tree match {
-      case Literal(Constant(n: Int)) if n < 23 => c.Expr(
-        Apply(Select(Ident("Tuple" + n.toString), "apply"), List.fill(n)(a.tree))
+    arity.<span class="fu">tree</span> <span class="kw">match</span> {
+      <span class="kw">case</span> <span class="fu">Literal</span>(<span class="fu">Constant</span>(n: <span class="dt">Int</span>)) <span class="kw">if</span> n &lt; <span class="dv">23</span> =&gt; c.<span class="fu">Expr</span>(
+        <span class="fu">Apply</span>(<span class="fu">Select</span>(<span class="fu">Ident</span>(<span class="st">&quot;Tuple&quot;</span> + n.<span class="fu">toString</span>), <span class="st">&quot;apply&quot;</span>), List.<span class="fu">fill</span>(n)(a.<span class="fu">tree</span>))
       )
-      // Not going to worry about not getting what we expect.
+      <span class="co">// Not going to worry about not getting what we expect.</span>
     }
   }
-}
-```
+}</code></pre>
 
 It's not perfect, but it _is_ vastly better,
 and I don't really feel like spending any more time this evening fussing
