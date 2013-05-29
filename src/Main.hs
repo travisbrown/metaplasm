@@ -169,7 +169,7 @@ main = hakyllWith hakyllConf $ do
     compile $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
-      fitRecentFirst tracks <$> loadAllSnapshots "content/running/*.FIT" "content"
+      take 10 . fitRecentFirst tracks <$> loadAllSnapshots "content/running/*.FIT" "content"
         >>= applyTemplateList tpl siteCtx
         >>= makeItem
         >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
