@@ -21,7 +21,7 @@ when you have four gigs of memory and your XML files are approaching a gigabyte 
 Push-based APIs like SAX are inherently imperative: we register callbacks with the parser that specify how to handle events,
 and then it calls them as it parses the XML file. With a pull parser, on the other hand, the programmer sees
 the events as an iterator or lazy collection that he or she is responsible for iterating through.
-Newer frameworks that support streaming XML parsing tend to provide pull-based APIs,
+Newer frameworks that support streaming XML processing tend to provide pull-based APIs,
 and many developers find pull parsing more intuitive than SAX (or at least slightly less miserable).
 
 <!-- MORE -->
