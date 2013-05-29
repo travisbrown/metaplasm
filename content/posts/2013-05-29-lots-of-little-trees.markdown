@@ -30,7 +30,7 @@ Either approach is reasonably convenient for the database-as-big-XML-file proble
 when the record elements have a simple structure—if the record
 elements are empty and fields are represented as attributes, for example.
 As the record element schema becomes more complex (optional elements, deeper nesting, etc.),
-writing a streaming parser—either SAX or pull—quickly becomes painful.
+writing a streaming processor—either SAX or pull—quickly becomes painful.
 
 One alternative approach would be to load the XML file into some kind of XML database
 (like [BaseX](http://basex.org/), or [eXist](http://exist-db.org/exist/apps/homepage/index.html))
