@@ -47,7 +47,7 @@ provides [for JSON processing](http://www.cowtowncoder.com/blog/archives/2010/11
 > objects: this allows processing of huge files without excessive memory usage,
 > but with full convenience of data binding.
 
-[This Stack Overflow question](http://stackoverflow.com/q/16668649/334519)
+This [Stack Overflow question](http://stackoverflow.com/q/16668649/334519)
 suggests that there's no straightforward equivalent for XML in Java or Scala.
 
 I've been working with [conduits](http://hackage.haskell.org/package/conduit) in Haskell recently,
