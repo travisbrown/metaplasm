@@ -53,7 +53,7 @@ suggests that there's no straightforward equivalent for XML in Java or Scala.
 I've been working with [conduits](http://hackage.haskell.org/package/conduit) in Haskell recently,
 and when I found myself needing to parse
 the large [IndexCat XML files](http://www.nlm.nih.gov/hmd/indexcat/indexcatxml.html)
-distributed by the [U.S. National Library of Medicine](http://www.nlm.nih.gov/),
+published by the [U.S. National Library of Medicine](http://www.nlm.nih.gov/),
 I decided to take a stab at building on [xml-conduit](http://hackage.haskell.org/package/xml-conduit)'s
 streaming XML parser to add support for this kind of multi-mode parsing.
 
