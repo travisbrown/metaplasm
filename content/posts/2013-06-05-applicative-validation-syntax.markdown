@@ -1,16 +1,16 @@
 ---
-title: Applicative validation syntax experiments
+title: Applicative validation syntax
 date: Wed Jun  5 19:00:38 EDT 2013
 tags: scala, scalaz, shapeless, validation
 ---
 
-Validation isn't fun. Most people don't particularly enjoy the process of making sure that
-their programs handle bad input gracefully (and securely), and tasks
-that people don't enjoy are a lot more likely to get done badly than
-tasks that they do.
+People say that `Validation` is Scalaz's gateway drug,
+which might be accurate if you ignore the suggestion that there's
+anying even remotely fun about validation. In my book, making sure that
+your program doesn't choke on bad input is always a chore.
 
-Applicative validation is a step in the right direction—it lets us
-write less code, make fewer errors, and draw clearer lines
+Applicative validation is at least a step in the right direction—it makes it easier to
+write less code, introduce fewer bugs, and draw clearer lines
 between our validation logic and our data models. Suppose we have the
 following case class in Scala, for example:
 
@@ -18,13 +18,13 @@ following case class in Scala, for example:
 case class Foo(a: Int, b: Char, c: String)
 ```
 
-And that we have a form with three fields that we want to use to
+Suppose also that we have a form with three fields that we want to use to
 create instances of `Foo`. We receive input from this form as
 strings, and we want to be sure that these strings have certain properties.
 
 <!-- MORE -->
 
-Using [Scalaz 7](http://stackoverflow.com/a/12309023/334519), we can write the following:
+Using [Scalaz 7](https://github.com/scalaz/scalaz), we can write the following, for example:
 
 ``` scala
 type ErrorsOr[A] = ValidationNel[String, A]
@@ -47,14 +47,18 @@ val checkC: Validator[String] = (s: String) =>
 
 Now we can write a method that will lift our constructor into the
 `ValidationNel` applicative functor and apply it to our input
-using these validation methods:
+(after running each piece of that input through the appropriate validator):
 
 ``` scala
 def validateFoo(a: String, b: String, c: String) =
   (checkA(a) |@| checkB(b) |@| checkC(c))(Foo.apply _)
 ```
 
-And we can confirm that it works as expected:
+See my Stack Overflow answer [here](http://stackoverflow.com/a/12309023/334519) for some
+additional discussion of this syntax (and applicative functors more generally) in the
+context of validation.
+
+We can confirm that this method works as expected:
 
 ``` scala
 scala> println(validateFoo("ab", "cd", "ef"))
@@ -66,10 +70,6 @@ Failure(NonEmptyList(Not a lower case letter!, Wrong size!))
 scala> println(validateFoo("42", "x", "what"))
 Success(Foo(42,x,what))
 ```
-
-See my Stack Overflow answer [here](http://stackoverflow.com/a/12309023/334519) for some
-additional discussion of this syntax (and applicative functors more generally) in the
-context of validation.
 
 Unfortunately the `|@|` syntax is kind of ugly—especially compared to Haskell,
 where we'd write the following:
@@ -90,13 +90,13 @@ def validateFoo(a: String, b: String, c: String) =
 
 It's horrible—the arguments are in the wrong order and there are parentheses everywhere.
 
-When I saw that question this morning I started wondering about
+When I saw that question this morning, I started wondering about
 ways that [Shapeless](https://github.com/milessabin/shapeless) might be able to
-make the situation a little better, and the rest of this post is a sketch of some
+make the situation a little better. The rest of this post is a sketch of some
 quick experiments in that direction.
 
 First of all, it's not too hard to write a general operator for lifting
-functions of arbitrary arity in any applicative functor:
+functions of arbitrary arity into any applicative functor:
 
 ``` scala
 import scalaz._, Scalaz._
@@ -158,6 +158,6 @@ val validateFoo = validate(Foo.apply _)(checkA :: checkB :: checkC :: HNil)
 Which we can use in exactly the same way as our original `validateFoo` above.
 
 I'm not sure I want to argue that this approach is in any sense better than
-using the applicative builder syntax (when you can), but it does give an example
+going with the applicative builder syntax that comes with Scalaz (when that's an option), but it does give an example
 of how we can use Shapeless to add flexibility to an existing library without a lot of boilerplate. 
 
