@@ -6,13 +6,13 @@ tags: scala, scalaz, shapeless, validation
 
 People say that `Validation` is Scalaz's gateway drug,
 which might be accurate if you ignore the suggestion that there's
-anying even remotely fun about validation. In my book, making sure that
+anything even remotely fun about validation. In my book, making sure that
 your program doesn't choke on bad input is always a chore.
 
 Applicative validation is at least a step in the right direction—it makes it easier to
 write less code, introduce fewer bugs, and draw clearer lines
-between our validation logic and our data models. Suppose we have the
-following case class in Scala, for example:
+between data models and validation logic. Suppose for example that we have the
+following case class in Scala:
 
 ``` scala
 case class Foo(a: Int, b: Char, c: String)
@@ -24,7 +24,7 @@ strings, and we want to be sure that these strings have certain properties.
 
 <!-- MORE -->
 
-Using [Scalaz 7](https://github.com/scalaz/scalaz), we can write the following, for example:
+Using [Scalaz 7](https://github.com/scalaz/scalaz), we can write the following:
 
 ``` scala
 type ErrorsOr[A] = ValidationNel[String, A]
@@ -134,8 +134,8 @@ def validateFoo(a: String, b: String, c: String) =
 
 One (possibly) more interesting approach would be to write a method
 that would take a constructor and a heterogeneously-typed list
-of validators and would build our top-level validation method for us.
-This also isn't too hard. First for some more general machinery:
+of validators and then build our top-level validation function for us.
+This also isn't too hard. First for some more general-purpose machinery:
 
 ``` scala
 def validate[F[_], G, H, V <: HList, I <: HList, M <: HList, A <: HList, R]
