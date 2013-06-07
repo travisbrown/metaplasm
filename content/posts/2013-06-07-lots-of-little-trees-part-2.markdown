@@ -32,7 +32,7 @@ val processor = new StreamingTransform {
 }
 ```
 
-We're not really tranforming anything here, of course—just performing a
+We're not really transforming anything here, of course—just performing a
 side effect as we iterate through the records. We could just as easily
 be adding some representation of the record to a mutable collection, sending a message
 to an actor, etc.
