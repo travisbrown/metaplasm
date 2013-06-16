@@ -88,7 +88,12 @@ implicit def hlistHasChecksum[H <: Nat, T <: HList, S <: Nat, TS <: Nat](
 ) = new HasChecksum[H :: T, S] {}
 ```
 
-We also need to know the length of `T` in order to compute the checksum of `H :: T`, so we'll ask the compiler to find an instance of `LengthAux[T, TL]` (which also means we need to add a type parameter `TL <: Nat`):
+We also need to know the length of `T` in order to compute the checksum of `H :: T`,
+so we'll ask the compiler to find an instance of `LengthAux[T, TL]`.
+`LengthAux` is a type class provided by Shapeless that plays a role similar
+to that of our `HasChecksum`—it just provides evidence that some `T: HList`
+has length `TL <: Nat`.
+(Note that this also means we need to add a new type parameter `TL <: Nat`.)
 
 ``` scala
 implicit def hlistHasChecksum[
@@ -154,7 +159,7 @@ which doesn't even need a body, since all we care about is the fact that the
 compiler can assemble the appropriate pieces of evidence:
 
 ``` scala
-def isValid[L <: HList](implicit l: LengthAux[L, _9], c: HasChecksum[L, _0]) {}
+def isValid[L <: HList](implicit l: LengthAux[L, _9], c: HasChecksum[L, _0]) = ()
 ```
  
 And we're done:
