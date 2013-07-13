@@ -12,6 +12,7 @@ import qualified Data.ByteString.Lazy as B
 import Data.Int (Int64)
 import Data.FIT.Parse.Format (fieldGetter, isSignedField)
 import Data.FIT.Parse.Util
+import Data.List (find)
 import qualified Data.Map as M
 import Data.Maybe (catMaybes, maybeToList)
 import Data.Running
@@ -21,26 +22,31 @@ import Data.Time.Format ()
 import Data.Word (Word8, Word16)
 
 data Data = Data
-  { dataId :: Word8
+  { dataId :: Word16
   , dataFields :: [(Word8, Int64)]
   } deriving (Eq, Ord, Show)
 
 type Definition = [(Word8, G.Get Int64)]
-type Definitions = M.Map Word8 Definition
+type Definitions = [((Word8, Word16), Definition)]
 
 lGetWord8 :: MonadTrans t => t G.Get Word8
 lGetWord8 = lift G.getWord8
 
-parseDefinition :: EitherT Text G.Get Definition
-parseDefinition = lift (G.skip 4)
-  *> (fromIntegral <$> lGetWord8)
-  >>= flip replicateM parseField
+parseDefinition :: EitherT Text G.Get (Word16, Definition)
+parseDefinition =
+  do
+    _      <- lift (G.skip 2)
+    global <- lift G.getWord16le
+    count  <- fromIntegral <$> lGetWord8
+    def <- replicateM count $ parseField global
+    return (global, def)
   where
     action :: G.Get (Either Text (G.Get Int64))
     action = fieldGetter <$> G.getWord8 <*> (isSignedField <$> G.getWord8)
 
-    parseField :: EitherT Text G.Get (Word8, G.Get Int64)
-    parseField = (,) <$> lGetWord8 <*> (hoistEither =<< lift action)
+    parseField :: Word16 -> EitherT Text G.Get (Word8, G.Get Int64)
+    parseField global =
+      (,) <$> lGetWord8 <*> (hoistEither =<< lift action)
 
 -- | Note that we're not actually using the either monad here.
 parseDataFields :: Definition -> EitherT Text G.Get [(Word8, Int64)]
@@ -53,10 +59,10 @@ parseRecord = do
   header <- lift lGetWord8
   let recordId = header .&. 0xf
   if (header .&. 0x40) == 0x40
-  then (lift parseDefinition >>= modify . M.insert recordId) *> return Nothing
+  then (lift parseDefinition >>= \(global, def) -> modify (((recordId, global), def) :)) *> return Nothing
   else do
-    definition <- (maybe typeError return . M.lookup recordId) =<< get
-    Just . Data recordId <$> lift (parseDataFields definition)
+    ((_, global), definition) <- (maybe typeError return . find ((== recordId) . fst . fst)) =<< get
+    Just . Data global <$> lift (parseDataFields definition)
     where typeError = lift $ left "Unknown data message type!"
 
 parseRecords :: Int -> StateT Definitions (EitherT Text G.Get) [Data]
@@ -69,7 +75,7 @@ parseRecords size = do
 pointRecords :: [Data] -> [PointRecord]
 pointRecords = catMaybes . map selectPointRecord
   where
-    selectPointRecord (Data 5 fields) = PointRecord
+    selectPointRecord (Data 20 fields) = PointRecord
       <$> (toUTCTime <$> lookup 253 fields)
       <*> (curry Coord <$> (toDegree <$> lookup 0 fields) <*> (toDegree <$> lookup 1 fields))
       <*> ((/ 100) . fromIntegral <$> lookup 5 fields)
@@ -85,7 +91,7 @@ parseFIT crc = do
   ext <- decodeUtf8 <$> lift (G.getByteString 4)
   when (ext /= ".FIT") $ left "Invalid file header!"
   _ <- lift . G.skip $ headerSize - 12
-  records <- evalStateT (parseRecords $ contentSize + headerSize) M.empty
+  (records, defs) <- runStateT (parseRecords $ contentSize + headerSize) []
   check <- (crc ==) <$> lift G.getWord16le
   unless check $ left "File corrupted (invalid checksum)!"
   return $ pointRecords records
