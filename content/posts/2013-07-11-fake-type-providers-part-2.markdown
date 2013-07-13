@@ -1,6 +1,6 @@
 ---
 title: Fake type providers, part 2
-date: Thu Jul 11 17:42:47 EDT 2013
+date: Thu Jul 11 19:11:35 EDT 2013
 tags: scala, macros
 ---
 
@@ -10,7 +10,7 @@ especially when I'm writing code.
 are a particularly nice way not to write code. They let you take some
 kind of schema (for a relational database, RDF vocabulary, etc.) and
 turn it directly into binding classes at compile time—with no worrying
-about managing (possibly customized) generated code, etc.
+about managing generated code, etc.
 
 I've wanted type providers in Scala for a long time (heck, I wanted
 type providers ten years ago when I was a Java programmer who had no
@@ -58,7 +58,7 @@ If you're following along at home, grab the lines above and stick them in a file
 called `schema.txt` in whatever directory you want to work in, and you can copy
 and paste the rest of the code below into a REPL that you start in that directory.
 
-Now suppose we have a trait that just marks that something is a schema:
+First suppose we have a trait that just marks that something is a schema:
 
 ```
 trait Schema
@@ -85,8 +85,8 @@ object oreGen extends Schema {
 }
 ```
 
-But if we've got a lot of these things writing the bindings by hand isn't going to be fun
-and is likely to result in errors. So we write a code generator:
+But if we've got a lot of these things, writing the bindings by hand isn't going to be fun
+and is likely to result in errors. So we write a code generator instead:
 
 ``` scala
 trait SchemaParsingUtils {
@@ -118,7 +118,7 @@ object CodeGenSchemaMaker extends SchemaParsingUtils {
 ```
 
 And this works just fine—if we run the following, we should see the code
-defining the `ord` object above:
+defining the `oreGen` object above:
 
 ``` scala
 println(CodeGenSchemaMaker("/schema.txt", "oreGen"))
@@ -128,7 +128,7 @@ But now we have to incorporate this code-generation step
 into our build process, etc. There are frameworks that can help with this, but 
 it always still ends up feeling more or less ad-hoc and unpleasant.
 
-So we turn to compile-time metaprogramming instead. First for some imports and utilities:
+So we decide to try compile-time metaprogramming. First for some imports and utilities:
 
 ``` scala
 import scala.language.experimental.macros
@@ -224,12 +224,12 @@ object StructuralTypeSchemaMaker extends ReflectionUtils with SchemaParsingUtils
 
 It's a lot of code, but the idea is pretty simple—we parse the schema file into a list
 of `val`-definition ASTs, and then we stick these in an anonymous class that extends `Schema`.
-This is in fact almost exactly what we did in the code generation version, except that
+This is in fact almost exactly what we did in the code-generation version, except that
 here we're working with syntax trees instead of source code text, and we can't introduce
 top-level definitions (like an object) in a macro—we can only define an anonymous class
 and instantiate it.
 
-We can try it out:
+We try it out:
 
 ``` scala
 val oreStr = StructuralTypeSchemaMaker("/schema.txt")
@@ -252,13 +252,15 @@ res0: java.net.URI = http://www.openarchives.org/ore/terms/proxyIn
 
 So it works—but everyone who uses this code will either
 have to import `language.reflectiveCalls` or put up with these stupid warnings.
-See [that previous post](/posts/2013/06/19/macro-supported-dsls-for-schema-bindings/) for more discussion about the problems with reflective access here.
+See [that previous post](/posts/2013/06/19/macro-supported-dsls-for-schema-bindings/)
+I keep mentioning for more discussion about the problems with reflective access here.
 
 Yesterday [Eugene Burmako](http://xeno.by) [suggested on Twitter](https://twitter.com/xeno_by/status/354923990676025348)
 that I try [`Dynamic`](http://www.scala-lang.org/api/current/index.html#scala.Dynamic) instead, so I did.
-I'd always hated the idea of `Dynamic` in Scala before macros came along, but compile-time
-dynamism (i.e., implementing `selectDynamic` and friends with macros) can actually be pretty nifty,
-as [Aki Saarinen](http://akisaarinen.fi/) showed in his [Rillit](https://github.com/akisaarinen/rillit) lens library (to take just one example).
+I'd always hated the idea of `Dynamic` in Scala before macros came along, but at compile-time
+(i.e., implementing `selectDynamic` and friends with macros) it can actually be pretty nifty,
+as [Aki Saarinen](http://akisaarinen.fi/) showed in his [Rillit](https://github.com/akisaarinen/rillit) lens library
+(to take just one example).
 
 Solving this problem with `Dynamic` is a little trickier than just defining and
 instantiating an anonymous class. It's reasonable not to want the compile-time
@@ -268,7 +270,7 @@ once. This means that somehow you have to share the compile-time schema represen
 call that creates the schema instance, and the subsequent macro calls to `selectDynamic`
 on that instance.
 
-At first I got hung up on the idea of [attachments](http://www.scala-lang.org/api/current/index.html#scala.reflect.macros.Attachments),
+Last night I got hung up on the idea of [attachments](http://www.scala-lang.org/api/current/index.html#scala.reflect.macros.Attachments),
 which allow you to attach arbitrary (type-indexed) metadata to trees or symbols.
 It's a neat bit of macro functionality that I hadn't played with before,
 but I'm pretty sure [it's not going to help in this case](http://stackoverflow.com/q/17580781/334519),
@@ -277,7 +279,7 @@ not trees or symbols.
 
 If I'm wrong about this, [_please help me out_](http://stackoverflow.com/q/17580781/334519)!
 
-So [we start thinking crazy](https://twitter.com/milessabin/status/355073188893433857).
+Next [we start thinking crazy](https://twitter.com/milessabin/status/355073188893433857).
 We can't attach stuff to the instance using attachments, and we can't access its value members for this
 purpose (even if we wanted to, which we don't). So we make up a subclass of `Schema` with
 a type parameter and fill it with the singleton type for a string literal
