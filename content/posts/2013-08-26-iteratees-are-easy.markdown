@@ -1,13 +1,13 @@
 ---
 title: Iteratees are easy
 date: Mon Aug 26 19:13:37 EDT 2013
-tags: haskell, iteratees, streams
+tags: haskell, scala, iteratees, streams
 ---
 
 This blog post is a short response to my [MITH](http://mith.umd.edu/) colleague
 [Jim Smith](https://twitter.com/jgsmith), who several weeks ago published
 [a blog post](http://www.jamesgottlieb.com/2013/08/streams-part-ii/)
-about a stream processing library that he's developing.
+about a stream processing language that he's developing.
 His post walks through an example of how this language
 could allow you to take a stream of characters,
 add some location metadata to each, and then group them into words, while still
