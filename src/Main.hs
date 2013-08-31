@@ -133,7 +133,7 @@ main = hakyllWith hakyllConf $ do
       tpl <- loadBody "templates/post-item-full.html"
       body <- readTemplate . itemBody <$> getResourceBody
       loadAllSnapshots "content/posts/*" "teaser"
-        >>= fmap (take 10) . recentFirst
+        >>= fmap (take 100) . recentFirst
         >>= applyTemplateList tpl (postCtx tags)
         >>= makeItem
         >>= applyTemplate body (siteCtx `mappend` bodyField "posts")
