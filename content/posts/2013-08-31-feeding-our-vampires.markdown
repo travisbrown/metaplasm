@@ -7,10 +7,10 @@ tags: scala, macros
 I've written [several](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
 [times](http://stackoverflow.com/a/18485004/334519)
 about _vampire methods_, which are macro
-methods inside a macro-defined type whose implementations are provided in
+methods inside a macro-defined type, where the macro method's implementation is provided in
 an annotation. Normally when we define a type in a `def` macro, it looks like
 a structural type to the outside world, and calling methods on a structural
-type involves reflective access. Vampire methods allow us to avoid that ugly
+type involves reflective access in Scala. Vampire methods allow us to avoid that ugly
 bit of runtime reflection.
 
 This trick (which was [first discovered](https://twitter.com/xeno_by/status/355003437844398083)
@@ -21,11 +21,13 @@ for example.
 It's also just really clever.
 
 For methods with no parameters, the execution of the trick is pretty straightforward.
-It's a little more tricky when we do have parameters,
+It's a little more complicated when we do have parameters,
 as [Eric Torreborre](http://etorreborre.blogspot.com/)
-notes in a question [here](http://stackoverflow.com/q/18523871/334519), since in that
+observes in a question [here](http://stackoverflow.com/q/18523871/334519), since in that
 case the annotation will need to contain a function instead of just a simple
 constant of some kind.
+
+<!-- MORE -->
 
 Let's take a first quick stab at an example:
 
@@ -79,7 +81,8 @@ object VampireExample {
 ```
 
 Here `VampireExample.demo` takes a name for a method and returns an instance
-of a structural type with an integer increment method with that name.
+of a structural type with a method with that name that will increment any
+integers we throw at it.
 
 ``` scala
 scala> val fooer = VampireExample.demo("foo")
@@ -101,11 +104,11 @@ by `method_impl` (you can see Eric's
 [Stack Overflow question](http://stackoverflow.com/q/18523871/334519) for the details).
 
 Unfortunately I don't think there's any way to use the `substituteThis` method
-on `Tree`, since I'm not sure how we'd get the symbol for our class at that point.
+on the tree, since I'm not sure how we'd get the symbol for our class at that point.
 But we can manually replace the references to `this` with the macro's prefix using
 a tree transformer:
 
-```
+``` scala
 object VampireExample {
   def demo(name: String) = macro demo_impl
 
@@ -180,6 +183,11 @@ scala> fooer.foo(13)
 res0: Int = 23
 ```
 
-Is it pretty? No. But it's potentially very useful, and could be packaged up more nicely
+I want to highlight one of the neatest things about this approach: the function
+that provides the implementation of the vampire method doesn't exist at runtime.
+There's no function application overhead—we've just written the function body
+in place of the call the `foo`.
+
+Is the implementation pretty? Not really. But it's potentially very useful, and could be packaged up more nicely
 with a little work.
 
