@@ -1,6 +1,6 @@
 ---
 title: The most horrible code I've ever written
-date: Tue Aug 27 08:05:47 EDT 2013
+date: Fri Aug 30 17:52:19 EDT 2013
 tags: scala, macros
 ---
 
@@ -9,7 +9,9 @@ year, many Scala developers
 [responded with skepticism or distaste](http://blog.empathybox.com/post/19126121307/scala-macros-oh-god-why).
 They argued that macros were a distraction from work on more urgent problems with
 the language, that they would lead to even more complex and reader-unfriendly
-code, etc. After a year and a half I think these arguments have less weight,
+code, etc.
+
+After a year and a half I think these arguments have less weight,
 as macros have proven extremely useful in a wide range of applications:
 [string interpolation](http://docs.scala-lang.org/sips/pending/string-interpolation.html),
 [serialization](https://github.com/scala/pickling),
@@ -23,7 +25,7 @@ This post is _not_ about a useful application of macros.
 It's inspired by
 [a couple](http://stackoverflow.com/q/18537093/334519)
 [of questions](http://stackoverflow.com/q/18535356/334519) on Stack Overflow today,
-and is an example of exactly the kind of thing macros _should not_ be used for.
+and is an example of exactly the kind of thing macros _should not ever_ be used for.
 But it's Friday evening and I'm drinking beer in the office and I think this trick
 is pretty clever, so here we go.
 
@@ -64,7 +66,7 @@ car set { c =>
 }
 ```
 
-But suppose we're not satisfied with those nine or ten extra characters,
+But suppose we're not happy about those nine or ten extra characters,
 or that we don't want the overhead of the extra function application.
 The problem is that `color` and `speed` doesn't mean anything on their own.
 The argument to the macro needs to typecheck before the macro is expanded, so
