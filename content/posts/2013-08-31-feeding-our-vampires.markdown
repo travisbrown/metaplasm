@@ -77,6 +77,7 @@ object VampireExample {
     )
 
     c.Expr(q"val $arg = $x; $body")
+  }
 }
 ```
 
@@ -95,11 +96,12 @@ res0: Int = 14
 Note that we have to import `scala.language.reflectiveCalls` if we don't
 want to see warnings about reflective access here. This is because the compiler
 is being stupid—there's not actually any reflective access happening, as you
-can confirm for yourself if you're working in a REPL with `-Xprint:cleanup`.
+can confirm for yourself if you're working in a REPL with `-Xprint:cleanup`
+(update: Eugene's [on it](https://github.com/scala/scala/pull/2902)).
 
 We have a problem, though. Suppose we want to refer to some other methods
 in our macro-generated type in our annotation-borne implementation function.
-In that case we'll end up with lost `this` references in the tree build
+In that case we'll end up with lost `this` references in the tree built
 by `method_impl` (you can see Eric's
 [Stack Overflow question](http://stackoverflow.com/q/18523871/334519) for the details).
 
@@ -183,10 +185,14 @@ scala> fooer.foo(13)
 res0: Int = 23
 ```
 
+One footnote: as written above, this example _does_ require a reflective
+call—not for `foo`, which is vampirized, but for `baz`, which isn't. We
+could easily vampirize `baz` as well, but I won't here, for the sake of clarity.
+
 I want to highlight one of the neatest things about this approach: the function
 that provides the implementation of the vampire method doesn't exist at runtime.
 There's no function application overhead—we've just written the function body
-in place of the call the `foo`.
+in place of the call to `foo`.
 
 Is the implementation pretty? Not really. But it's potentially very useful, and could be packaged up more nicely
 with a little work.
