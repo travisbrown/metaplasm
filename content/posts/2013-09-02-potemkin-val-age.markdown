@@ -7,7 +7,7 @@ tags: scala, macros, puns
 My attempt to sneak the terms [_vampire_](http://meta.plasm.us/posts/2013/08/31/feeding-our-vampires/) and [_zombie_](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
 into the Scala vernacular [seems to be succeeding](https://github.com/scala/scala/pull/2902), so here's a new one:
 
-> _Potemkin val-age_: definitions in a macro-constructed structural type that
+> _Potemkin definitions_: definitions in a macro-constructed structural type that
 > are intended only to make an expression passed as an argument to another macro method
 > typecheck before that macro rewrites it.
 
@@ -38,8 +38,6 @@ macro implementation replaces them with something useful.
 
 This is a little like an [untyped macro](http://docs.scala-lang.org/overviews/macros/untypedmacros.html),
 although instead of just turning off typechecking for the argument to `set`,
-we're coming up with an elaborate lie to trick the compiler into signing off.
-
-My pen is at the bottom of a page, so I'll finish by apologizing for the puns.
-I'm sorry. I can't help it—I used to be a Byronist.
+we're coming up with an elaborate lie to trick the compiler into signing off
+on something that wouldn't make any sense otherwise.
 
