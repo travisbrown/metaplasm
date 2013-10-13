@@ -106,7 +106,7 @@ scala> OrderingHelper[Bar]
 ```
 
 And even that could be pretty easily improved. It's still arguably kind
-of clunky and ad-hoc, though, which is where Shapeless comes in. With
+of clunky and ad-hoc, though, which is [where Shapeless comes in](https://twitter.com/milessabin/status/389444004393541632). With
 [Lars Hupel](https://twitter.com/larsr_h)'s `ProductTypeClass` type class, we
 can just describe how to build up lexicographic ordering instances:
 
