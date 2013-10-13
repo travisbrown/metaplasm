@@ -17,8 +17,6 @@ quick sketch of two approaches to filling this gap: one using macros, and
 one using [Shapeless 2.0](https://github.com/milessabin/shapeless)'s new `Generic` machinery
 and the `TypeClass` type class.
 
-<!-- MORE -->
-
 First for a case class to use as a running example, along with some instances:
 
 ``` scala
@@ -30,6 +28,19 @@ val c = Foo(9, "w")
 
 val foos = List(a, b, c)
 ```
+
+Let's quickly confirm that there's no `Ordering[Foo]` already sitting around:
+
+``` scala
+scala> foos.sorted
+<console>:14: error: No implicit Ordering defined for Foo.
+              foos.sorted
+                   ^
+```
+
+Yep, we're going to have to take care of this ourselves.
+
+<!-- MORE -->
 
 First for the macro solution (note that I'm using [quasiquotes](http://meta.plasm.us/posts/2013/09/06/quasiquotes-for-multiple-parameter-lists/),
 which are available in Scala 2.10 as [a plugin](http://docs.scala-lang.org/overviews/macros/paradise.html)):
