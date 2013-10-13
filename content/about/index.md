@@ -7,7 +7,7 @@ the [Maryland Institute for Technology in the Humanities](http://mith.umd.edu/)
 at the [University of Maryland, College Park](http://www.umd.edu).
 
 I'm from Texas.
-My undergraduate thesis was on the late novels of Henry James, and several years ago I earned an M.A. in English at the
+My undergraduate thesis was on Henry James's last few novels, and several years ago I earned an M.A. in English at the
 [University of Texas at Austin](http://www.utexas.edu/) for
 work on copyright cases involving Percy Shelley and Lord Byron
 (see [this blog](http://terminalirony.com/) for some details).

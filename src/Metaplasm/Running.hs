@@ -13,6 +13,7 @@ import Data.Running
 import Data.Text (Text, pack)
 import Data.Time.Clock (diffUTCTime)
 import Data.Time.Format (formatTime)
+import Data.Time.LocalTime (utcToLocalZonedTime)
 import Data.Typeable (Typeable)
 import Hakyll.Core.Compiler (Compiler, getUnderlying)
 import Hakyll.Core.Identifier (Identifier, toFilePath)
@@ -22,6 +23,7 @@ import Hakyll.Core.Metadata (getMatches)
 import Hakyll.Core.Routes (Routes, customRoute)
 import Hakyll.Core.Rules (Rules, preprocess)
 import Hakyll.Web.Template.Context (Context, constField)
+import System.IO.Unsafe (unsafePerformIO)
 import System.Locale (defaultTimeLocale)
 import Text.Blaze.Html (toHtml, toValue, (!))
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -43,6 +45,8 @@ fitTracks pattern = do
   parsed <- preprocess $ mapM (parseFile . toFilePath) matches
   return . M.fromList $ zip matches parsed
 
+zonedTime = unsafePerformIO . utcToLocalZonedTime
+
 fitId :: Tracks -> Identifier -> [String]
 fitId tracks i = 
   maybe [] -- (throw MissingIdentifierException)
@@ -57,12 +61,12 @@ fitId tracks i =
           . map fst
           . sortBy (comparing snd)
           . M.toList
-          $ M.filter ((== date) . pointDate . head) tracks 
+          $ M.filter ((== date) . pointDate . last) tracks 
         date = pointDate $ head points
         pointDate point = [pointY point, pointM point, pointD point]
-        pointY = formatTime defaultTimeLocale "%Y" .  pointTime
-        pointM = formatTime defaultTimeLocale "%m" .  pointTime
-        pointD = formatTime defaultTimeLocale "%d" .  pointTime
+        pointY = formatTime defaultTimeLocale "%Y" . zonedTime . pointTime
+        pointM = formatTime defaultTimeLocale "%m" . zonedTime . pointTime
+        pointD = formatTime defaultTimeLocale "%d" . zonedTime . pointTime
 
 fitPath :: Tracks -> Identifier -> FilePath
 fitPath tracks i =
@@ -79,8 +83,8 @@ gMapsApiScript = renderHtml
 fitCtx :: [PointRecord] -> Context String -> Context String
 fitCtx points ctx =
   constField "gMapsApiScript" gMapsApiScript
-  `mappend` constField "date" (formatTime defaultTimeLocale "%e %B %Y" . pointTime . last $ points)
-  `mappend` constField "datetime" (formatTime defaultTimeLocale "%Y-%m-%d" . pointTime . last $ points)
+  `mappend` constField "date" (formatTime defaultTimeLocale "%e %B %Y" . zonedTime . pointTime . last $ points)
+  `mappend` constField "datetime" (formatTime defaultTimeLocale "%Y-%m-%d" . zonedTime . pointTime . last $ points)
   `mappend` constField "time" (printf "%d minutes" $ totalMinutes points)
   `mappend` constField "speed" (printf "%0.2f miles per hour" $ averageSpeed points)
   `mappend` constField "title" (printf "%0.2f miles" $ totalMiles points)
