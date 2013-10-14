@@ -11,7 +11,7 @@ just because lexicographic order isn't what you want for case classes as
 often as it is for tuples.
 
 Sometimes [you actually do want a lexicographic ordering](http://stackoverflow.com/q/19345030/334519)
-for your tuples, though, and Scala unfortunately doesn't provide any nice
+for your case classes, though, and Scala unfortunately doesn't provide any nice
 boilerplate-free way to create such orderings. This post will provide a
 quick sketch of two approaches to filling this gap: one using macros, and
 one using [Shapeless 2.0](https://github.com/milessabin/shapeless)'s new `Generic` machinery
