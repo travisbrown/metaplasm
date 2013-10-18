@@ -43,7 +43,7 @@ object DefaultFinder {
     import c.universe._
 
     c.enclosingUnit.body.collect {
-      case a @ Apply(Select(New(classId), nme.CONSTRUCTOR), args) =>
+      case Apply(Select(New(classId), nme.CONSTRUCTOR), args) =>
         args.collectFirst {
           case AssignOrNamedArg(Ident(argName), rhs)
             if rhs.exists(_.pos == c.macroApplication.pos) =>
