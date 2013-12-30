@@ -1,7 +1,7 @@
 ---
 title: Potemkin val-age
 date: Mon Sep  2 11:46:10 EDT 2013
-tags: scala, macros, puns
+tags: scala, macros
 ---
 
 My attempt to sneak the terms [_vampire_](http://meta.plasm.us/posts/2013/08/31/feeding-our-vampires/) and [_zombie_](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)

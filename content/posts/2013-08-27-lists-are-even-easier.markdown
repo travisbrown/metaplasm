@@ -1,7 +1,7 @@
 ---
 title: Lists are even easier
 date: Tue Aug 27 08:05:47 EDT 2013
-tags: haskell, scala, lists, streams
+tags: haskell, scala
 ---
 
 This is a quick follow-up to [my post last night](http://meta.plasm.us/posts/2013/08/26/iteratees-are-easy/)

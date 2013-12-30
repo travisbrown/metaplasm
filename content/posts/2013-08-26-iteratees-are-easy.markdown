@@ -1,7 +1,7 @@
 ---
 title: Iteratees are easy
 date: Mon Aug 26 19:13:37 EDT 2013
-tags: haskell, scala, iteratees, streams
+tags: haskell, scala, iteratees
 ---
 
 This blog post is a short response to my [MITH](http://mith.umd.edu/) colleague

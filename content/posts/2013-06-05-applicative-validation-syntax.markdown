@@ -1,7 +1,7 @@
 ---
 title: Applicative validation syntax
 date: Wed Jun  5 19:00:38 EDT 2013
-tags: scala, scalaz, shapeless, validation
+tags: scala, scalaz, shapeless
 ---
 
 People say that `Validation` is Scalaz's gateway drug,

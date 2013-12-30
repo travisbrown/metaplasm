@@ -1,7 +1,7 @@
 ---
 title: Lots of little trees, part 2
 date: Fri Jun  7 17:08:52 EDT 2013
-tags: xml, scala, java, nux, xom
+tags: xml, scala, java
 ---
 
 I just noticed that the Lawrence Berkeley National Laboratory's

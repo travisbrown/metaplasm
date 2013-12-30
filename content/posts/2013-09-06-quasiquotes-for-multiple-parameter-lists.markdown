@@ -1,7 +1,7 @@
 ---
 title: Quasiquotes for multiple parameter lists
 date: Fri Sep  6 08:00:29 EDT 2013
-tags: scala, macros, quasiquotes
+tags: scala, macros
 ---
 
 Quasiquotation is an old idea

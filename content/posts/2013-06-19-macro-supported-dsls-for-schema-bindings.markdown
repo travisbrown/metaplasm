@@ -1,7 +1,7 @@
 ---
 title: Macro-supported DSLs for schema bindings
 date: Wed Jun 19 16:07:10 EDT 2013
-tags: scala, banana-rdf, macros, rdf, dh
+tags: scala, macros, rdf, dh
 ---
 
 We've recently started using the [W3C](http://www.w3.org/)'s
