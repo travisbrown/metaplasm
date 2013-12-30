@@ -4,3 +4,6 @@
 [submodule "lib/initializr"]
 	path = lib/initializr
 	url = git://github.com/verekia/initializr.git
+[submodule "lib/Font-Awesome"]
+	path = lib/Font-Awesome
+	url = git@github.com:FortAwesome/Font-Awesome.git

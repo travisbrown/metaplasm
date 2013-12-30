@@ -13,16 +13,13 @@ data EngineConfiguration = EngineConfiguration
 defaultEngineConfiguration :: EngineConfiguration
 defaultEngineConfiguration = EngineConfiguration
   { lessCommand = "lessc"
-  , lessFiles =
-    [ "css/bootstrap.less"
-    , "css/responsive.less"
-    , "css/main.less"
-    ]
+  , lessFiles = [ "css/main.less" ]
   , lessOptions = ["--compress"]
   , vendorScriptFiles = map (fromFilePath . (modulePath ++))
-    [ "jquerymin/jquery-1.9.1.min.js"
+    [ "jquerymin/jquery-1.10.1.min.js"
     , "boot-scripts/bootstrap.min.js"
-    , "modernizrrespond/modernizr-2.6.2-respond-1.1.0.min.js"
+    --, "modernizrrespond/modernizr-2.6.2-respond-1.1.0.min.js"
+    , "modernizr/modernizr-2.6.2.min.js"
     ]
   }
   where

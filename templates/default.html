@@ -13,7 +13,6 @@
     <link rel="alternate" type="application/atom+xml" title="$feedTitle$" href="$feedUrl$"/>
     <link type="image/png" rel="icon" href="/images/favicon.png"/>
     <link type="text/css" rel="canonical" href="$root$/">
-    <link type="text/css" rel="stylesheet" href="/css/responsive.css"/>
     <link type="text/css" rel="stylesheet" href="/css/main.css"/>
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fjalla+One">
     <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -21,32 +20,35 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <hgroup>
+      <nav class="navbar navbar-default" role="navigation">
+        <!--<form action="http://google.com/search" method="get" class="navbar-form navbar-right">
+          <fieldset role="search">
+            <input type="hidden" name="q" value="site:meta.plasm.us"/>
+            <input type="text" name="q" results="0" placeholder="Search" class="span2"/>
+          </fieldset>
+        </form>-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <h1 id="logo">
             <a href="/">
               <span class="left">meta</span><span class="center">plasm</span><span class="right">us</span>
             </a>
-          </h1>
-        </hgroup>
-      </header>
-
-      <nav class="navbar">
-        <a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS" class="subscribe pull-right"><img alt="RSS" src="/images/rss.png"/></a>
-        <form action="http://google.com/search" method="get" class="navbar-form pull-right">
-          <fieldset role="search">
-            <input type="hidden" name="q" value="site:meta.plasm.us" />
-            <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
-          </fieldset>
-        </form>
-        <div class="navbar-inner">
-          <ul class="nav">
-            <li><a href="/">Posts</a></li>
-            <li><a href="/running/">Running</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="http://github.com/travisbrown/metaplasm">Source</a></li>
-            <li><a href="http://twitter.com/travisbrown">Twitter</a></li>
-          </ul>
+          </h1>        
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ol class="nav navbar-nav navbar-right">
+            <li><a href="http://twitter.com/travisbrown"><i class="fa fa-twitter fa-1x"></i></a></li>
+            <li><a href="http://github.com/travisbrown"><i class="fa fa-github-alt fa-1x"></i></a></li>
+            <li><a href="http://stackoverflow.com/users/334519/travis-brown"><i class="fa fa-stack-overflow fa-1x"></i></a></li>
+            <li><a href="http://github.com/travisbrown/metaplasm"><i class="fa fa-code fa-1x"></i></a></li>
+            <li><a href="/about/"><i class="fa fa-question fa-1x"></i></a></li>
+            <li><a href="/atom.xml" rel="subscribe-rss" title="Subscribe via Atom"><i class="fa fa-rss fa-1x"></i></a></li>
+          </ol>
         </div>
       </nav>
 

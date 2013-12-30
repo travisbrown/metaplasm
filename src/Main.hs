@@ -55,6 +55,10 @@ main = hakyllWith hakyllConf $ do
     route idRoute
     compile copyFileCompiler
 
+  match "lib/Font-Awesome/fonts/*" $ do
+    route $ customRoute (combine "fonts" . takeFileName . toFilePath)
+    compile copyFileCompiler
+
   match "extra/*" $ do
     route idRoute
     compile copyFileCompiler

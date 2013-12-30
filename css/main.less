@@ -1,37 +1,30 @@
-@import './css/bootstrap.less';
-@import './css/syntax.less';
+@import './css/bootstrap/imports.less';
+@import './css/font-awesome/imports.less';
+@import './css/pandoc/syntax.less';
 
-@specialHeadingFont: "Fjalla One";
-
-body {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-code {
-  color: @grayDarker;
-}
+@special-heading-font: "Fjalla One";
 
 .container {
-  padding-left: 18px;
-  padding-right: 18px;
+  max-width: 820px;
 }
 
-div.container > header {
-  margin-bottom: 24px;
+pre {
+  font-size: 12px;
+  line-height: @line-height-base * 1.1;
 }
 
 code {
+  border: 1px solid @code-border-color;
   padding-top: -2px;
   padding-bottom: -2px;
 }
 
 blockquote {
   p {
-    color: @grayDarker; 
-    font-size: @baseFontSize;
+    color: @gray-darker; 
+    font-size: @font-size-base;
     font-weight: normal;
-    line-height: @baseLineHeight;
+    line-height: @line-height-base;
   }
 
   border-color: @red;
@@ -52,7 +45,7 @@ div#content {
     list-style-type: none;
 
     li > article {
-      border-bottom: 1px solid @grayLighter;
+      border-bottom: 1px solid @gray-lighter;
       padding-bottom: 18px;
       margin-bottom: 18px; 
     }
@@ -71,10 +64,10 @@ div#content {
 }
 
 footer {
-  color: @grayDark;
-  border-top: 1px solid @grayLighter;
-  font-size: @fontSizeSmall;
-  padding: @paddingSmall;
+  color: @gray-dark;
+  border-top: 1px solid @gray-lighter;
+  font-size: @font-size-small;
+  padding: 6px 0px;
 
   span.credit {
     float: right;
@@ -82,41 +75,26 @@ footer {
 }
 
 h1 {
-  font-family: @specialHeadingFont, sans-serif;
+  font-family: @special-heading-font, sans-serif;
   font-weight: normal;
 }
 
 nav.navbar {
-  div.navbar-inner {
-    border-top: 1px solid @grayLighter;
-    border-right: none;
-    border-bottom: 1px solid @grayLighter;
-    border-left: none;
-    border-radius: 0px;
-    box-shadow: none;
-    padding: 0px;
+  h1 { margin: 0px; }
 
-    .nav > li > a {
-      outline: 0px;
-      padding: 9px 32px 0px 4px;
-    }
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  div.navbar-header {
+    padding-bottom: 10px;
   }
 
-  form.navbar-form input[type="text"] {
-    height: 18px;
-    box-shadow: none;
-    color: @grayDarker;
-    margin: 6px 0px 0px 0px;
+  div ol.navbar-nav {
+    font-size: 1.25em;
   }
 
-  a.subscribe {
-    margin: 9px 0px 0px 6px;
-
-   img {
-      background-color: @grayLighter;
-      border-style: none;
-    }
-  }
+  border-style: none none solid none;
 }
 
 h1#logo {
@@ -130,7 +108,7 @@ h1#logo {
   }
 
   span.left {
-    .border-left-radius(@borderRadiusLarge);
+    .border-left-radius(@border-radius-large);
     background-color: @color-a;
     color: @color-f;
     padding-left: 9px;
@@ -145,7 +123,7 @@ h1#logo {
   }
 
   span.right {
-    .border-right-radius(@borderRadiusLarge);
+    .border-right-radius(@border-radius-large);
     background-color: @color-b;
     color: @color-h;
     padding-left: 3px;
@@ -156,12 +134,15 @@ h1#logo {
 article {
   header {
     position: relative;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     padding-bottom: 6px;
 
     .meta {
       color: @gray;
       margin-bottom: 0px;
+
+      //clear: both;
+      //display: block;
       position: absolute;
       top: 0px;
 
@@ -179,6 +160,9 @@ article {
         margin-left: 12px;
         vertical-align: 1px;
       }
+    }
+
+    h1.entry-title {
     }
 
     p.run-value {
@@ -199,11 +183,14 @@ article {
 }
 
 div.social-share {
-  padding-top: 5px;
-  border-top: 1px solid @grayLighter;
+  padding: 6px 0px 0px 0px;
+  border-top: 1px solid @gray-lighter;
   ul {
     margin: 0px;
+    padding: 0px;
     li {
+      margin: 0px;
+      padding: 0px;
       display: inline;
       list-style-type: none;
     }
