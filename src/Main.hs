@@ -6,6 +6,7 @@ import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as M
 import Data.Monoid (mappend)
+import Data.Running (Coord (..), PointRecord (..))
 import Data.Running.KML
 import Hakyll
 import Metaplasm.Config
@@ -184,9 +185,11 @@ main = hakyllWith hakyllConf $ do
   match "content/running/all/index.html" $ do
     route stripContent
     compile $ do
-      let points = concat $ M.elems tracks
-      body <- fitBody tracks points 0.5 3
-      let ctx = fitCtx points siteCtx
+      let onlyClose ((PointRecord _ (Coord (lat, lng)) _ _) : _) = sqrt ((38.976646 - lat) ** 2 +  (-76.936947 - lng) ** 2) < 0.2
+      let onlyCloseTracks = M.filter onlyClose tracks
+      let points = concat $ M.elems onlyCloseTracks
+      body <- fitBody onlyCloseTracks points 0.5 3
+      let ctx = fitCtx (concat $ M.elems tracks) siteCtx
       makeItem body
         >>= loadAndApplyTemplate "templates/running/run.html" ctx
         >>= loadAndApplyTemplate "templates/default.html" ctx
