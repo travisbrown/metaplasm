@@ -96,7 +96,7 @@ fitBody tracks points opacity weight = do
   let fitDivId = pack . concat $ intersperse "-" $ "run" : path
   let fitInitName = pack . concat $ intersperse "_" $ "init" : path
   let (centerX, centerY) = simpleCentroid points
-  let coords = pack . concat . intersperse "," $ map (\p -> printf "new google.maps.LatLng(%f, %f)" (pointLat p) (pointLng p)) points
+  let coords = pack . concat . intersperse "," $ map (\p -> printf "[%.8f,%.8f]" (pointLat p) (pointLng p)) points
   let script = renderJavascriptUrl (\_ _ -> undefined) [julius|
       function #{rawJS fitInitName}() {
         var centroid = new google.maps.LatLng(#{toJSON centerX}, #{toJSON centerY});
@@ -108,11 +108,16 @@ fitBody tracks points opacity weight = do
 
         var map = new google.maps.Map(document.getElementById(#{toJSON fitDivId}), mapOptions);
 
-        var trackCoords = [
-          #{rawJS coords}
-        ];
+        var trackCoords = [#{rawJS coords}];
+        var trackLatLngs = [];
+        
+        for (var i = 0; i < trackCoords.length; i++) {
+          var coords = trackCoords[i];
+          trackLatLngs.push(new google.maps.LatLng(coords[0], coords[1]));
+        }
+
         var track = new google.maps.Polyline({
-          path: trackCoords,
+          path: trackLatLngs,
           strokeColor: '#C0362C',
           strokeOpacity: #{toJSON opacity},
           strokeWeight: #{toJSON weight}
