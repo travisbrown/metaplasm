@@ -68,7 +68,7 @@ car set { c =>
 
 But suppose we're not happy about those nine or ten extra characters,
 or that we don't want the overhead of the extra function application.
-The problem is that `color` and `speed` doesn't mean anything on their own.
+The problem is that `color` and `speed` don't mean anything on their own.
 The argument to the macro needs to typecheck before the macro is expanded, so
 we can't for example write a macro that would just prepend `import car._` to
 the block (as proposed [here](http://stackoverflow.com/q/18537093/334519)).
