@@ -18,7 +18,6 @@ defaultEngineConfiguration = EngineConfiguration
   , vendorScriptFiles = map (fromFilePath . (modulePath ++))
     [ "jquerymin/jquery-1.10.1.min.js"
     , "boot-scripts/bootstrap.min.js"
-    --, "modernizrrespond/modernizr-2.6.2-respond-1.1.0.min.js"
     , "modernizr/modernizr-2.6.2.min.js"
     ]
   }

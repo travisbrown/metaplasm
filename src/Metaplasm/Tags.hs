@@ -11,7 +11,7 @@ import Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A
 
-renderSimpleTagList :: Tags -> Compiler (String)
+renderSimpleTagList :: Tags -> Compiler String
 renderSimpleTagList = renderTags makeLink (intercalate " | ")
   where
     makeLink tag url _ _ _ = renderHtml $
@@ -23,8 +23,7 @@ tagsFieldWith' :: (Identifier -> Compiler [String])
   -> Context a
 tagsFieldWith' getTags' key tags = field key $ \item -> do
   tags' <- getTags' $ itemIdentifier item
-  links <- forM tags' $ \tag ->
-    renderLink tag <$> getRoute (tagsMakeId tags tag)
+  links <- forM tags' $ \tag -> renderLink tag <$> getRoute (tagsMakeId tags tag)
   return . renderHtml . mconcat . intersperse " | " . catMaybes $ links
   where
     renderLink tag route = pathToUrl <$> route

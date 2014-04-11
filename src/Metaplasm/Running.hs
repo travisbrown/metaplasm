@@ -96,7 +96,7 @@ fitBody tracks points opacity weight = do
   let fitDivId = pack . concat $ intersperse "-" $ "run" : path
   let fitInitName = pack . concat $ intersperse "_" $ "init" : path
   let (centerX, centerY) = simpleCentroid points
-  let coords = pack . concat . intersperse "," $ map (\p -> printf "[%.8f,%.8f]" (pointLat p) (pointLng p)) points
+  let coords = pack . concat . intersperse "," $ map (\p -> printf "[%.6f,%.6f]" (pointLat p) (pointLng p)) points
   let script = renderJavascriptUrl (\_ _ -> undefined) [julius|
       function #{rawJS fitInitName}() {
         var centroid = new google.maps.LatLng(#{toJSON centerX}, #{toJSON centerY});
@@ -145,6 +145,9 @@ totalMinutes = sum . map totalMinutes' . splitPointRecords
 
 totalMiles :: [PointRecord] -> Double
 totalMiles = sum . map totalMiles' . splitPointRecords
+
+--totalTracksMiles :: Tracks -> Double
+--totalTracksMiles 
 
 averageSpeed :: [PointRecord] -> Double
 averageSpeed points = dist / time
