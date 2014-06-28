@@ -66,7 +66,7 @@ object Partitioner {
   }
 }
 
-implicit def partition[A, C <: Coproduct, Out <: HList](as: List[A])(implicit
+def partition[A, C <: Coproduct, Out <: HList](as: List[A])(implicit
   gen: Generic.Aux[A, C],
   partitioner: Partitioner.Aux[C, Out],
   tupler: ops.hlist.Tupler[Out]
@@ -132,7 +132,7 @@ object Partitioner {
   }
 }
 
-implicit def partition[A, C <: Coproduct, Out <: HList](as: List[A])(implicit
+def partition[A, C <: Coproduct, Out <: HList](as: List[A])(implicit
   gen: LabelledGeneric.Aux[A, C],
   partitioner: Partitioner.Aux[C, Out]
 ) = partitioner(as.map(gen.to))
