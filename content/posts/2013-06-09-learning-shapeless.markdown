@@ -4,7 +4,7 @@ date: Sun Jun  9 14:07:47 EDT 2013
 tags: shapeless, scala
 ---
 
-I began writing this post as an answer to [this Stack Overflow question](http://stackoverflow.com/q/17009675/334519) about
+I began writing this post as an answer to [this Stack Overflow question](https://stackoverflow.com/q/17009675/334519) about
 learning how to use [Shapeless](https://github.com/milessabin/shapeless),
 but it ended up a little long for a Stack Overflow answer, so I'm posting it here instead.
 

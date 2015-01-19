@@ -53,7 +53,7 @@ And it'll print some more stuff you don't need to worry about.
 
 The `makeInstance` method here is pretty simple:
 we're just defining a class and instantiating it (using the workaround
-I identified [here](http://stackoverflow.com/q/14370842/334519)).
+I identified [here](https://stackoverflow.com/q/14370842/334519)).
 The inferred type of the instance will be a structural type with `z` and `v`
 methods.
 
@@ -87,7 +87,7 @@ This is what the trait's constructor looks like after the `cleanup` phase.
 Notice all the ugly reflection business happening in the initialization of
 `zombie`—this is why you get warnings about reflective access when you use
 structural types in Scala, and why calling methods on structural types is
-([at least a little](http://meta.plasm.us/posts/2013/07/11/fake-type-providers-part-2/))
+([at least a little](https://meta.plasm.us/posts/2013/07/11/fake-type-providers-part-2/))
 slower.
 
 Now look at the initialization for `vampire`.

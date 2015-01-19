@@ -7,7 +7,7 @@ tags: xml, scala, java
 I just noticed that the Lawrence Berkeley National Laboratory's
 [Nux](http://acs.lbl.gov/software/nux/) library provides streaming
 XQuery functionality that makes it very easy to do the kind of XML
-processing that I described in [this post](http://meta.plasm.us/posts/2013/05/29/lots-of-little-trees/)
+processing that I described in [this post](https://meta.plasm.us/posts/2013/05/29/lots-of-little-trees/)
 last week.
 
 Using Scala, for example, we can start with some imports: 

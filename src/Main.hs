@@ -23,7 +23,7 @@ hakyllConf = defaultConfiguration
 
 siteConf :: SiteConfiguration
 siteConf = SiteConfiguration
-  { siteRoot = "http://meta.plasm.us"
+  { siteRoot = "https://meta.plasm.us"
   , siteGaId = "UA-36422511-1"
   }
 
@@ -33,7 +33,7 @@ feedConf title = FeedConfiguration
   , feedDescription = "Mostly Scala, some computational humanities"
   , feedAuthorName = "Travis Brown"
   , feedAuthorEmail = "travisrobertbrown@gmail.com"
-  , feedRoot = "http://meta.plasm.us"
+  , feedRoot = "https://meta.plasm.us"
   }
 
 main :: IO ()

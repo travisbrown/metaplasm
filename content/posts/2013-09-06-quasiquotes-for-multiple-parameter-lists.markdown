@@ -16,7 +16,7 @@ that's required to construct abstract syntax trees manually in our macros.
 
 Quasiquotes are a little like reification, but much more flexible about
 what kinds of things can be "spliced" into the tree, and where they can be spliced. For example,
-we couldn't use `reify` in the [following code](http://stackoverflow.com/q/14370842/334519), because there's no way to
+we couldn't use `reify` in the [following code](https://stackoverflow.com/q/14370842/334519), because there's no way to
 splice in the name of the type member:
 
 ``` scala
@@ -102,8 +102,8 @@ val quoted = paramss.map(_.map { case (name, tpe) => q"$name: $tpe" })
 q"def foo..${quoted.map(ps => q"($ps)")} = ???"
 ```
 
-This was [confusing the hell out of me](http://stackoverflow.com/q/18559559/334519)
-until yesterday Den [pointed out](http://stackoverflow.com/a/18644097/334519) the correct
+This was [confusing the hell out of me](https://stackoverflow.com/q/18559559/334519)
+until yesterday Den [pointed out](https://stackoverflow.com/a/18644097/334519) the correct
 syntax:
 
 ``` scala

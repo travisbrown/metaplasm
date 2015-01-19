@@ -11,7 +11,7 @@ DOM-like structure.
 
 This is exactly the kind of problem that streaming XML parsers are designed to solve.
 There are two dominant approaches to parsing XML streams:
-_push_-based models (like [SAX](http://en.wikipedia.org/wiki/Simple_API_for_XML), the "Simple API for XML"),
+_push_-based models (like [SAX](https://en.wikipedia.org/wiki/Simple_API_for_XML), the "Simple API for XML"),
 and _pull_-based models (like [StAX](https://sjsxp.java.net/), or—_shudder_—[`scala.xml.pull`](http://www.scala-lang.org/api/current/index.html#scala.xml.pull.package)).
 Both of these approaches save memory by producing streams of _events_ (`BeginElement`, `Comment`, etc.)
 instead of reconstructing a tree-based representation of the file in
@@ -47,19 +47,19 @@ provides [for JSON processing](http://www.cowtowncoder.com/blog/archives/2010/11
 > objects: this allows processing of huge files without excessive memory usage,
 > but with full convenience of data binding.
 
-This [Stack Overflow question](http://stackoverflow.com/q/16668649/334519)
+This [Stack Overflow question](https://stackoverflow.com/q/16668649/334519)
 suggests that there's no straightforward equivalent for XML in Java or Scala.
 
-I've been working with [conduits](http://hackage.haskell.org/package/conduit) in Haskell recently,
+I've been working with [conduits](https://hackage.haskell.org/package/conduit) in Haskell recently,
 and when I found myself needing to parse
 the large [IndexCat XML files](http://www.nlm.nih.gov/hmd/indexcat/indexcatxml.html)
 published by the [U.S. National Library of Medicine](http://www.nlm.nih.gov/),
-I decided to take a stab at building on [xml-conduit](http://hackage.haskell.org/package/xml-conduit)'s
+I decided to take a stab at building on [xml-conduit](https://hackage.haskell.org/package/xml-conduit)'s
 streaming XML parser to add support for this kind of multi-mode parsing.
 
 This was actually incredibly easy.
 I started
-by adapting [some code](http://hackage.haskell.org/packages/archive/xml-conduit/1.1.0.3/doc/html/src/Text-XML-Unresolved.html#toEvents)
+by adapting [some code](https://hackage.haskell.org/packages/archive/xml-conduit/1.1.0.3/doc/html/src/Text-XML-Unresolved.html#toEvents)
 from `Text.XML.Unresolved` for parsing event streams.
 The original version built a document from a complete event
 stream, while [mine](https://github.com/travisbrown/xml-nodestream/blob/419b2a7ddfddde9cb4126066ba3c5f3352437595/src/Text/XML/Stream/Node.hs#L28)
@@ -77,7 +77,7 @@ buildElementCursor :: MonadThrow m => Consumer Event m (Maybe Cursor)
 
 This ignores any non-element nodes and returns the elements as cursors
 that we can manipulate with the handy XPath-like combinators
-in [`Text.XML.Cursor`](http://hackage.haskell.org/packages/archive/xml-conduit/1.1.0.3/doc/html/Text-XML-Cursor.html).
+in [`Text.XML.Cursor`](https://hackage.haskell.org/packages/archive/xml-conduit/1.1.0.3/doc/html/Text-XML-Cursor.html).
 The following function, for example, parses an `IndexCatalogueRecord` element and
 returns its identifier and a list of places of publication, without any fussy streaming parser business:
 

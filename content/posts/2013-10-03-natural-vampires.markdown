@@ -4,7 +4,7 @@ date: Thu Oct  3 21:31:38 EDT 2013
 tags: scala, macros
 ---
 
-[This Stack Overflow question](http://stackoverflow.com/q/19170137/334519) is interesting—it asks whether we can use
+[This Stack Overflow question](https://stackoverflow.com/q/19170137/334519) is interesting—it asks whether we can use
 Scala macros to create a value class for positive integers where the positiveness is checked at compile-time,
 and where it's not possible to create an invalid instance.
 
@@ -14,7 +14,7 @@ but inheriting from a universal trait forces us to give up most (all?) of the ad
 this case, and of course it's not actually possible to make the value class private,
 anyway.
 
-So I don't have an answer, but I do have a pretty neat trick involving [vampire methods](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
+So I don't have an answer, but I do have a pretty neat trick involving [vampire methods](https://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
 that gives us some of the benefits of value classes.
 
 <!-- MORE -->

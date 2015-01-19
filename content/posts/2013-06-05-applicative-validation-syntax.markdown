@@ -54,7 +54,7 @@ def validateFoo(a: String, b: String, c: String) =
   (checkA(a) |@| checkB(b) |@| checkC(c))(Foo.apply _)
 ```
 
-See my Stack Overflow answer [here](http://stackoverflow.com/a/12309023/334519) for some
+See my Stack Overflow answer [here](https://stackoverflow.com/a/12309023/334519) for some
 additional discussion of this syntax (and applicative functors more generally) in the
 context of validation.
 
@@ -79,8 +79,8 @@ validateFoo = Foo <$> checkA a <*> checkB b <*> checkC c
 ```
 
 It gets even worse if you have more than twelve fields,
-as [this Stack Overflow question](http://stackoverflow.com/q/16930347/334519) points out.
-In that case [you have to fall back](http://stackoverflow.com/a/16943233/334519)
+as [this Stack Overflow question](https://stackoverflow.com/q/16930347/334519) points out.
+In that case [you have to fall back](https://stackoverflow.com/a/16943233/334519)
 to calling `ap` (or, equivalently, Scalaz's version of `<*>`) directly, which looks like this:
 
 ``` scala

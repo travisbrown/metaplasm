@@ -4,7 +4,7 @@ date: Wed Jun 19 16:07:10 EDT 2013
 tags: scala, macros, rdf, dh
 ---
 
-We've recently started using the [W3C](http://www.w3.org/)'s
+We've recently started using the [W3C](https://www.w3.org/)'s
 [`banana-rdf`](https://github.com/w3c/banana-rdf) library
 at [MITH](http://mith.umd.edu/), and it's allowing us to make
 a lot of our code for working with [RDF](http://www.w3.org/RDF/) graphs
@@ -53,7 +53,7 @@ or some other kind of documentation.
 
 Since this is Scala, I decided that I'd take a stab at using macros to
 make the process of writing these things a little easier. It's not
-too hard to use [this trick](http://stackoverflow.com/q/14370842/334519) to write
+too hard to use [this trick](https://stackoverflow.com/q/14370842/334519) to write
 a macro that will parse a given RDF schema at compile time and generate an
 anonymous subclass of `Prefix` with the appropriate members. The usage looks like this:
 

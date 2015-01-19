@@ -273,11 +273,11 @@ on that instance.
 Last night I got hung up on the idea of [attachments](http://www.scala-lang.org/api/current/index.html#scala.reflect.macros.Attachments),
 which allow you to attach arbitrary (type-indexed) metadata to trees or symbols.
 It's a neat bit of macro functionality that I hadn't played with before,
-but I'm pretty sure [it's not going to help in this case](http://stackoverflow.com/q/17580781/334519),
+but I'm pretty sure [it's not going to help in this case](https://stackoverflow.com/q/17580781/334519),
 since I need to associate my compile-time schema representations with instances,
 not trees or symbols.
 
-If I'm wrong about this, [_please help me out_](http://stackoverflow.com/q/17580781/334519)!
+If I'm wrong about this, [_please help me out_](https://stackoverflow.com/q/17580781/334519)!
 
 Next [we start thinking crazy](https://twitter.com/milessabin/status/355073188893433857).
 We can't attach stuff to the instance using attachments, and we can't access its value members for this

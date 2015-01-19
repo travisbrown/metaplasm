@@ -23,8 +23,8 @@ in surprising ways.
 
 This post is _not_ about a useful application of macros.
 It's inspired by
-[a couple](http://stackoverflow.com/q/18537093/334519)
-[of questions](http://stackoverflow.com/q/18535356/334519) on Stack Overflow today,
+[a couple](https://stackoverflow.com/q/18537093/334519)
+[of questions](https://stackoverflow.com/q/18535356/334519) on Stack Overflow today,
 and is an example of exactly the kind of thing macros _should not ever_ be used for.
 But it's Friday evening and I'm drinking beer in the office and I think this trick
 is pretty clever, so here we go.
@@ -71,12 +71,12 @@ or that we don't want the overhead of the extra function application.
 The problem is that `color` and `speed` don't mean anything on their own.
 The argument to the macro needs to typecheck before the macro is expanded, so
 we can't for example write a macro that would just prepend `import car._` to
-the block (as proposed [here](http://stackoverflow.com/q/18537093/334519)).
+the block (as proposed [here](https://stackoverflow.com/q/18537093/334519)).
 
 If we had [untyped macros](http://docs.scala-lang.org/overviews/macros/untypedmacros.html),
 this would be easy, but they've been thrown out of paradise. We're not completely
 out of luck with plain old `def` macros, though, since it's possible to use them to
-introduce [structural types with arbitrarily named and typed methods](http://stackoverflow.com/q/14370842/334519).
+introduce [structural types with arbitrarily named and typed methods](https://stackoverflow.com/q/14370842/334519).
 This means
 we can bring some dummy methods into scope that have the same shape as the 
 setters for `Car`. The compiler will see these methods when it typechecks the macro

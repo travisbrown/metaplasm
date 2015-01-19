@@ -4,12 +4,12 @@ date: Thu Oct 17 21:10:00 EDT 2013
 tags: scala, macros
 ---
 
-This post is another entry in [my series](http://meta.plasm.us/posts/2013/08/30/horrible-code/) on
+This post is another entry in [my series](https://meta.plasm.us/posts/2013/08/30/horrible-code/) on
 stuff you should never do with macros in Scala, but that you could do with macros in Scala, if you really wanted to,
 and if you'd picked up a bottle of Macallan on the way home from work and were willing to waste half an
 evening doing something ridiculously useless.
 
-It's specifically a response to [this Stack Overflow question](http://stackoverflow.com/q/19432905/334519),
+It's specifically a response to [this Stack Overflow question](https://stackoverflow.com/q/19432905/334519),
 which asks if it's possible to specify explicitly that you want to use the default value of a constructor parameter in Scala.
 
 So suppose we have a class like this:

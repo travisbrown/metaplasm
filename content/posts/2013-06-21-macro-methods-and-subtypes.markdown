@@ -87,7 +87,7 @@ res0: Boolean = true
 But ugh, that's a lot of complexity to add for this one little bit of functionality.
 
 Another solution (seen in
-[this Stack Overflow question](http://stackoverflow.com/q/17223213/334519),
+[this Stack Overflow question](https://stackoverflow.com/q/17223213/334519),
 for example) is to add a type parameter to the method:
 
 ``` scala
@@ -147,6 +147,6 @@ scala> foo.members == "Foo" :: "McBar" :: 25 :: HNil
 res0: Boolean = true
 ```
 
-See [this Stack Overflow answer](http://stackoverflow.com/a/17224392/334519)
+See [this Stack Overflow answer](https://stackoverflow.com/a/17224392/334519)
 for another example of this trick in action.
 

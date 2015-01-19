@@ -4,8 +4,8 @@ date: Sat Aug 31 12:31:16 EDT 2013
 tags: scala, macros
 ---
 
-I've written [several](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
-[times](http://stackoverflow.com/a/18485004/334519)
+I've written [several](https://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
+[times](https://stackoverflow.com/a/18485004/334519)
 about _vampire methods_, which are macro
 methods inside a macro-defined type, where the macro method's implementation is provided in
 an annotation. Normally when we define a type in a `def` macro, it looks like
@@ -16,14 +16,14 @@ bit of runtime reflection.
 This trick (which was [first discovered](https://twitter.com/xeno_by/status/355003437844398083)
 by [Eugene Burmako](https://twitter.com/xeno_by)) is useful because it makes
 it a little more practical to use `def` macros to approximate
-[type providers](http://meta.plasm.us/posts/2013/07/11/fake-type-providers-part-2/),
+[type providers](https://meta.plasm.us/posts/2013/07/11/fake-type-providers-part-2/),
 for example.
 It's also just really clever.
 
 For methods with no parameters, the execution of the trick is pretty straightforward.
 It's a little more complicated when we do have parameters,
-as [Eric Torreborre](http://etorreborre.blogspot.com/)
-observes in a question [here](http://stackoverflow.com/q/18523871/334519), since in that
+as [Eric Torreborre](https://etorreborre.blogspot.com/)
+observes in a question [here](https://stackoverflow.com/q/18523871/334519), since in that
 case the annotation will need to contain a function instead of just a simple
 constant of some kind.
 
@@ -103,7 +103,7 @@ We have a problem, though. Suppose we want to refer to some other methods
 in our macro-generated type in our annotation-borne implementation function.
 In that case we'll end up with lost `this` references in the tree built
 by `method_impl` (you can see Eric's
-[Stack Overflow question](http://stackoverflow.com/q/18523871/334519) for the details).
+[Stack Overflow question](https://stackoverflow.com/q/18523871/334519) for the details).
 
 Unfortunately I don't think there's any way to use the `substituteThis` method
 on the tree, since I'm not sure how we'd get the symbol for our class at that point.

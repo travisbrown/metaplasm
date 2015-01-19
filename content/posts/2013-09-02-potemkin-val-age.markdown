@@ -4,14 +4,14 @@ date: Mon Sep  2 11:46:10 EDT 2013
 tags: scala, macros
 ---
 
-My attempt to sneak the terms [_vampire_](http://meta.plasm.us/posts/2013/08/31/feeding-our-vampires/) and [_zombie_](http://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
+My attempt to sneak the terms [_vampire_](https://meta.plasm.us/posts/2013/08/31/feeding-our-vampires/) and [_zombie_](https://meta.plasm.us/posts/2013/07/12/vampire-methods-for-structural-types/)
 into the Scala vernacular [seems to be succeeding](https://github.com/scala/scala/pull/2902), so here's a new one:
 
 > _Potemkin definitions_: definitions in a macro-constructed structural type that
 > are intended only to make an expression passed as an argument to another macro method
 > typecheck before that macro rewrites it.
 
-I came up with the trick to support this [horrible abuse](http://meta.plasm.us/posts/2013/08/30/horrible-code/)
+I came up with the trick to support this [horrible abuse](https://meta.plasm.us/posts/2013/08/30/horrible-code/)
 of Scala syntax:
 
 ``` scala

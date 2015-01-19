@@ -10,7 +10,7 @@ It doesn't provide the same instances for case classes, however—probably
 just because lexicographic order isn't what you want for case classes as
 often as it is for tuples.
 
-Sometimes [you actually do want a lexicographic ordering](http://stackoverflow.com/q/19345030/334519)
+Sometimes [you actually do want a lexicographic ordering](https://stackoverflow.com/q/19345030/334519)
 for your case classes, though, and Scala unfortunately doesn't provide any nice
 boilerplate-free way to create such orderings. This post will provide a
 quick sketch of two approaches to filling this gap: one using macros, and
@@ -42,7 +42,7 @@ Yep, we're going to have to take care of this ourselves.
 
 <!-- MORE -->
 
-First for the macro solution (note that I'm using [quasiquotes](http://meta.plasm.us/posts/2013/09/06/quasiquotes-for-multiple-parameter-lists/),
+First for the macro solution (note that I'm using [quasiquotes](https://meta.plasm.us/posts/2013/09/06/quasiquotes-for-multiple-parameter-lists/),
 which are available in Scala 2.10 as [a plugin](http://docs.scala-lang.org/overviews/macros/paradise.html)):
 
 ``` scala

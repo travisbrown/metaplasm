@@ -6,7 +6,7 @@ tags: scala, shapeless, macros
 
 It's not unusual in Scala to want to take a collection with items of some
 algebraic data type and partition its elements by their constructors. In
-[this Stack Overflow question](http://stackoverflow.com/q/24210197/334519),
+[this Stack Overflow question](https://stackoverflow.com/q/24210197/334519),
 for example, we're given a type for fruits:
 
 ``` scala

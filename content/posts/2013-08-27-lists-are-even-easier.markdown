@@ -4,7 +4,7 @@ date: Tue Aug 27 08:05:47 EDT 2013
 tags: haskell, scala
 ---
 
-This is a quick follow-up to [my post last night](http://meta.plasm.us/posts/2013/08/26/iteratees-are-easy/)
+This is a quick follow-up to [my post last night](https://meta.plasm.us/posts/2013/08/26/iteratees-are-easy/)
 about stream processing with iteratees. It's worth pointing out that we can
 accomplish much the same thing even more concisely using Haskell's lists:
 
@@ -51,7 +51,7 @@ start, and could in fact be much too large to fit in memory.
 
 This approach breaks down, however, when we're reading from resources like the
 file system or the network. _Lazy I / O_ allows us to make it more or less work in these situations,
-but can [lead to problems](http://stackoverflow.com/a/5892699/334519) (leaked file handles, etc.).
+but can [lead to problems](https://stackoverflow.com/a/5892699/334519) (leaked file handles, etc.).
 As I hope my previous post showed,
 iteratees let us step around these problems without all that much extra syntactic overhead.
 
