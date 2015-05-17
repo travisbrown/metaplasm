@@ -11,5 +11,28 @@ Bits of the Hakyll machinery are adapted from sites by
 and the current design is inspired by Lucas Lew's
 [Whitespace](https://github.com/lucaslew/whitespace) theme for [Octopress](http://octopress.org/).
 
-You can see the result (currently only a demonstration) [here](http://meta.plasm.us/).
+Note that you'll need to clone the project recursively to pull in the
+submodules:
+
+``` bash
+git clone --recursive git@github.com:travisbrown/metaplasm.git
+cd metaplasm
+cabal sandbox init
+cabal install --only-dependencies
+cabal build
+dist/build/site/site build
+```
+
+If you want nicer Scala syntax highlighting, you'll need a few extra steps:
+
+``` bash
+cabal sandbox add-source lib/highlighting-kate
+cp syntax/scala.xml lib/highlighting-kate/xml/
+cd lib/highlighting-kate
+runhaskell ParseSyntaxFiles.hs xml/
+cd ../..
+cabal build
+```
+
+You can see the result [here](https://meta.plasm.us/).
 

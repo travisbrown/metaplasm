@@ -236,7 +236,7 @@ directorizeDate = customRoute (\i -> directorize $ toFilePath i)
         (date, rest) = splitAt 3 $ splitOn "-" path
 
 stripIndex :: String -> String
-stripIndex url = if "index.html" `isSuffixOf` url && elem (head url) "/."
+stripIndex url = if "index.html" `isSuffixOf` url && elem (head url) ("/." :: String)
   then take (length url - 10) url else url
 
 deIndexUrls :: Item String -> Compiler (Item String)
