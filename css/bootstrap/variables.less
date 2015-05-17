@@ -44,6 +44,7 @@
 // -------------------------
 @link-color:            @blue;
 @link-hover-color:      darken(@link-color, 15%);
+@link-hover-decoration: underline;
 
 
 // Typography
@@ -77,6 +78,7 @@
 // -------------------------
 @icon-font-path:          "../fonts/";
 @icon-font-name:          "glyphicons-halflings-regular";
+@icon-font-svg-id:        "glyphicons_halflingsregular";
 
 
 // Components
@@ -161,6 +163,8 @@
 @input-border:                   #ccc;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
+@input-border-radius-large:      @border-radius-large;
+@input-border-radius-small:      @border-radius-small;
 
 @input-color-placeholder:        @gray-light;
 
@@ -274,6 +278,7 @@
 @navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @blue;
 @navbar-default-bg:                @white;
@@ -479,6 +484,7 @@
 @modal-footer-border-color:   @modal-header-border-color;
 
 @modal-lg:                    900px;
+@modal-md:                    600px;
 @modal-sm:                    300px;
 
 
@@ -516,6 +522,7 @@
 @progress-bar-danger-bg:      @brand-danger;
 @progress-bar-info-bg:        @brand-info;
 
+@progress-border-radius:      @border-radius-base;
 
 // List group
 // -------------------------
@@ -531,11 +538,18 @@
 
 @list-group-link-color:         #555;
 @list-group-link-heading-color: #333;
+@list-group-link-hover-color:   @list-group-link-color;
+
+@list-group-disabled-color:      @gray-light;
+@list-group-disabled-bg:         @gray-lighter;
+@list-group-disabled-text-color: @list-group-disabled-color;
 
 // Panels
 // -------------------------
 @panel-bg:                    #fff;
 @panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
 @panel-inner-border:          #ddd;
@@ -655,6 +669,10 @@
 
 // Miscellaneous
 // -------------------------
+@dl-horizontal-offset:        @component-offset-horizontal;
+@blockquote-font-size:        (@font-size-base * 1.25);
+@cursor-disabled:             not-allowed;
+@form-group-margin-bottom:    15px;
 
 // Hr border color
 @hr-border:                   @gray-lighter;
