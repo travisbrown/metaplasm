@@ -229,7 +229,7 @@ monster.
 Sometimes we need more complex `Unapply` machinery than the relatively simple
 version above. One example is syntax for things that are bitraversable. For
 example, we might want to take a tuple (or `Either`) and do some kind of logging
-in a `Writer` monad for both (or either) side:
+in a `Writer` monad for both sides (or either):
 
 ```scala
 import scalaz._, Scalaz._
