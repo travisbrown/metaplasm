@@ -67,10 +67,7 @@ trait HasChecksum[L <: HList, S <: Nat]
 ```
 
 Note that I'm using Shapeless 2.2.5—see [the mailing list thread](https://groups.google.com/forum/#!msg/shapeless-dev/Q0VezBW2bhQ/RKF6uGljwroJ)
-mentioned above for a version that works with Shapeless 1.2.4. Also note
-that you will have to wait a _very_ long time for Scala 2.11 to come up with
-`HasChecksum` instances for lists with more than seven elements (at least through 2.11.7; we're [working on this](https://twitter.com/milessabin/status/629377999926902784)).
-The examples below should compile on Scala 2.10.5 in a few seconds, though.
+mentioned above for a version that works with Shapeless 1.2.4.
 
 Now we'll tell the compiler how to build up instances of this type class inductively. We start with our base case, the empty list:
 
@@ -139,7 +136,7 @@ implicit def hlistHasChecksum[
   st: HasChecksum[T, TS],
   tl: Length.Aux[T, TL],
   hp: Prod.Aux[H, Succ[TL], HP],
-  hs: Sum.Aux[HP, TS, HS]
+  hs: Sum.Aux[TS, HP, HS]
 ) = new HasChecksum[H :: T, S] {}
 ```
 
@@ -155,7 +152,7 @@ implicit def hlistHasChecksum[
   st: HasChecksum[T, TS],
   tl: Length.Aux[T, TL],
   hp: Prod.Aux[H, Succ[TL], HP],
-  hs: Sum.Aux[HP, TS, HS],
+  hs: Sum.Aux[TS, HP, HS],
   sm: Mod.Aux[HS, _11, S]
 ) = new HasChecksum[H :: T, S] {}
 ```
