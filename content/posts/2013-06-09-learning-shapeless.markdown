@@ -61,10 +61,16 @@ This is possible, but it requires an approach that's a little different from the
 We'll start by defining a type class that witnesses that a list `L` of type-level naturals has a specific checksum `S` (which is also a type-level natural):
 
 ``` scala
-import shapeless._, Nat._
+import shapeless._, nat._, ops.hlist.Length, ops.nat.{ Mod, Prod, Sum }
 
 trait HasChecksum[L <: HList, S <: Nat]
 ```
+
+Note that I'm using Shapeless 2.2.5—see [the mailing list thread](https://groups.google.com/forum/#!msg/shapeless-dev/Q0VezBW2bhQ/RKF6uGljwroJ)
+mentioned above for a version that works with Shapeless 1.2.4. Also note
+that you will have to wait a _very_ long time for Scala 2.11 to come up with
+`HasChecksum` instances for lists with more than seven elements (at least through 2.11.7; we're [working on this](https://twitter.com/milessabin/status/629377999926902784)).
+The examples below should compile on Scala 2.10.5 in a few seconds, though.
 
 Now we'll tell the compiler how to build up instances of this type class inductively. We start with our base case, the empty list:
 
@@ -89,8 +95,8 @@ implicit def hlistHasChecksum[H <: Nat, T <: HList, S <: Nat, TS <: Nat](
 ```
 
 We also need to know the length of `T` in order to compute the checksum of `H :: T`,
-so we'll ask the compiler to find an instance of `LengthAux[T, TL]`.
-`LengthAux` is a type class provided by Shapeless that plays a role similar
+so we'll ask the compiler to find an instance of `Length.Aux[T, TL]`.
+`Length.Aux` is a type class provided by Shapeless that plays a role similar
 to that of our `HasChecksum`—it just provides evidence that some `T: HList`
 has length `TL <: Nat`.
 (Note that this also means we need to add a new type parameter `TL <: Nat`.)
@@ -102,7 +108,7 @@ implicit def hlistHasChecksum[
 ](
   implicit
   st: HasChecksum[T, TS],
-  tl: LengthAux[T, TL]
+  tl: Length.Aux[T, TL]
 ) = new HasChecksum[H :: T, S] {}
 ```
 
@@ -116,8 +122,8 @@ implicit def hlistHasChecksum[
 ](
   implicit
   st: HasChecksum[T, TS],
-  tl: LengthAux[T, TL],
-  hp: ProdAux[H, Succ[TL], HP]
+  tl: Length.Aux[T, TL],
+  hp: Prod.Aux[H, Succ[TL], HP]
 ) = new HasChecksum[H :: T, S] {}
 ```
 
@@ -131,9 +137,9 @@ implicit def hlistHasChecksum[
 ](
   implicit
   st: HasChecksum[T, TS],
-  tl: LengthAux[T, TL],
-  hp: ProdAux[H, Succ[TL], HP],
-  hs: SumAux[HP, TS, HS]
+  tl: Length.Aux[T, TL],
+  hp: Prod.Aux[H, Succ[TL], HP],
+  hs: Sum.Aux[HP, TS, HS]
 ) = new HasChecksum[H :: T, S] {}
 ```
 
@@ -147,10 +153,10 @@ implicit def hlistHasChecksum[
 ](
   implicit
   st: HasChecksum[T, TS],
-  tl: LengthAux[T, TL],
-  hp: ProdAux[H, Succ[TL], HP],
-  hs: SumAux[HP, TS, HS],
-  sm: ModAux[HS, _11, S]
+  tl: Length.Aux[T, TL],
+  hp: Prod.Aux[H, Succ[TL], HP],
+  hs: Sum.Aux[HP, TS, HS],
+  sm: Mod.Aux[HS, _11, S]
 ) = new HasChecksum[H :: T, S] {}
 ```
 
@@ -159,7 +165,7 @@ which doesn't even need a body, since all we care about is the fact that the
 compiler can assemble the appropriate pieces of evidence:
 
 ``` scala
-def isValid[L <: HList](implicit l: LengthAux[L, _9], c: HasChecksum[L, _0]) = ()
+def isValid[L <: HList](implicit l: Length.Aux[L, _9], c: HasChecksum[L, _0]) = ()
 ```
  
 And we're done:
