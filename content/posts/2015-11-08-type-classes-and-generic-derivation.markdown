@@ -44,8 +44,8 @@ possibility that input strings might not be valid representations of the type we
 into—for example we can't construct a `Book` from `"23,Fred"`.
 
 The second additional constraint is that our solution should keep track at compile time of what
-types can be parsed. We should never get a runtime failure (either in the form of an exception or a
-value representing failure) because we tried to parse a string into a type that we don't know
+types we can parse into. We should never get a runtime failure (either in the form of an exception
+or a value representing failure) because we tried to parse a string into a type that we don't know
 anything about.
 
 ## First try
@@ -515,10 +515,11 @@ scala> Parser[BookBook]("Hamlet,Shakespeare")
 res7: Option[BookBook] = None
 ```
 
-Our format doesn't support any kind of nesting, so we don't actually know how to parse a string into
-a `BookBook`, but our generic derivation mechanism is happy to give us an instance anyway. It's
-still a pretty good solution, and it rules out many, many more cases of runtime failure than the
-`ReflectiveRowParser` approach, but as it's written above the implementation isn't perfect.
+Our format doesn't support any kind of nesting (at least we haven't said anything about nesting, and
+it wouldn't be trivial), so we don't actually know how to parse a string into a `BookBook`, but our
+generic derivation mechanism is happy to give us an instance anyway. It's still a pretty good
+solution, and it rules out many, many more cases of runtime failure than the `ReflectiveRowParser`
+approach, but as it's written above the implementation isn't perfect.
 
 It wouldn't be too hard to fix it (we'd just need to break our `Parser` type class into separate
 `CellParser` and `RowParser` pieces), but the problem points to one of the really nice things about
