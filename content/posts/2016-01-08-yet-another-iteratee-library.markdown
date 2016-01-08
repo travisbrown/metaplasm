@@ -126,7 +126,7 @@ in the iteratee's monadic context.
 ## An example
 
 We can make this more concrete with a simple example. We'll solve the first
-[Euler problem][euler-1], which asks for the sum of the natural numbers smaller than a thousand that
+[Project Euler problem][euler-1], which asks for the sum of the natural numbers smaller than a thousand that
 are multiples of three or five.
 
 ```scala
@@ -315,7 +315,7 @@ iteratee.io.
 Usually the input type is an ADT that's either an end-of-stream signal or a collection (possibly empty)
 of elements. In iteratee.io, the input type is isomorphic to a non-empty list—there's no end-of-stream
 input and no empty input—and the step type has three states instead of the usual two, with the
-"extra" state represent an iteratee that's finished with no leftover input.
+"extra" state representing an iteratee that's finished with no leftover input.
 
 It's still possible to violate the monad laws:
 
