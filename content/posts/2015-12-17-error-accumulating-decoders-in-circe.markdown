@@ -41,8 +41,8 @@ case class Foo(i: Int, s: String)
 
 object Foo {
   val monadicReads: Reads[Foo] = for {
-    i <- Reads.of[Int]
-    s <- Reads.of[String]
+    i <- (__ \ 'i).read[Int]
+    s <- (__ \ 's).read[String]
   } yield Foo(i, s)
 
   val applicativeReads: Reads[Foo] = (
@@ -189,8 +189,9 @@ val Validated.Invalid(applicativeErrors) = applicativeAccDecoder(json.hcursor)
 
 Now `monadicErrors` contains only the first error and `applicativeErrors` contains both.
 
-I'm not sure this will please all of the purists—monadic bind and applicative composition are still
-inconsistent, we just can't see that without converting the decoders to an entirely different type.
+I'm not sure this will please all of the purists—monadic binding and applicative composition are
+still inconsistent, we just can't see that without converting the decoders to an entirely different
+type.
 
 I care more about the fact that it means that the user gets to decide which behavior they want. If
 the user never calls `accumulating`, the behavior will be exactly the same as Argonaut's: decoding
