@@ -1,14 +1,14 @@
 ---
 title: Yet another iteratee library
-date: Sun Nov  8 11:29:58 EST 2015
+date: Fri Jan  8 09:23:57 CST 2016
 tags: scala, haskell, cats, iteratees, scalaz
 ---
 
 I'll start with the story of how I got saved, since it's kind of relevant. Back when I was an
-English Ph.D. student, I spent a lot of time working on projects that involved natural language
+English Ph.D. student, I worked on a number of projects that involved natural language
 processing, which meant doing a lot of counting trigrams or whatever in tens of thousands of text
 files in giant messy directory trees. I was working primarily in Ruby at the time, after years
-and years of Java, and at least back in 2008 it was a pain in the ass to do this kind of thing in
+of Java, and at least back in 2008 it was a pain in the ass to do this kind of thing in
 either Ruby or Java. You really want a library that provides the following features:
 
 1. Resource management: you don't want to have to worry about running out of file handles.
@@ -33,13 +33,14 @@ into my life.
 
 Eventually I started using more Scala than Haskell, and one of the things I always missed in Scala
 was a good iteratee library. The [implementation in Scalaz 6][scalaz-6-iteratee] was kind of a mess,
-at least compared to the two most popular Haskell implementations, and using it with `scalaz.effect`
+at least compared to the two most popular Haskell implementations, and using it with Scalaz's effect
+package
 for I/O was incredibly slow. Since then scalaz-iteratee has been [overhauled][scalaz-iteratee] and
 [play-iteratee][play-iteratee] and [scalaz-stream][fs2] (now "fs2") got created, but I
 never really found any of them as satisfying as the iteratee libraries in Haskell I was used to.
 
-Even after the rewrite in Scalaz 7, scalaz-iteratee is still extremely slow, with an inconsistent
-API and lots of bugs—e.g. here's about the most basic thing you can imagine doing with `iterate`:
+Even after the rewrite in Scalaz 7, scalaz-iteratee is still too inconsistent, slow, and buggy for
+my taste. As one example, this is just about the most basic thing you can imagine doing with `iterate`:
 
 ```scala
 scala> import scalaz._, Scalaz._, scalaz.iteratee._
@@ -60,7 +61,7 @@ importantly, it's not generic over the computational context that processing hap
 any monad you like as long as the monad you like is the standard library's future. I also just don't
 prefer the way it mixes purity and impurity—e.g. I've gotten burned a couple of times because I
 didn't know or remember that the enumerator you get from `enumerate` is side-effecting
-and not reusable. It's still pretty good, though—I've chosen it over Scalaz's iteratees or nothing fairly often (given that I don't use
+and not reusable. I still think it's pretty good, though—I've chosen it over Scalaz's iteratees or nothing fairly often (given that I don't use
 Play), especially before Scalaz Stream came around.
 
 ## Scalaz Stream
@@ -68,9 +69,9 @@ Play), especially before Scalaz Stream came around.
 Scalaz Stream isn't an iteratee implementation, but it does the same kind of stream-y, ARM-y stuff,
 and the model is similar. I like Scalaz Stream a lot—I've used it for a handful of side projects,
 wrote [a little port of Haskell's split library][syzygist] for it, etc. I still find it extremely
-complicated, though. I've repeatedly run into issues with e.g. [`gatherMap`][gather-map] and I still
-don't have a clear sense of whether I was seeing bugs or misusing the library. Using exceptions for
-flow control makes me nervous. The variance gymnastics make my eyes bleed. And so on.
+complicated, though (the variance gymnastics, the use of exceptions for control flow). I've repeatedly
+run into issues with e.g. [`gatherMap`][gather-map] and I still don't have a clear sense of whether
+I was seeing bugs or misusing the library.
 
 Building a library around the fact that `Nothing` and `Any`
 are (accidentally?) kind-polymorphic in Scala is great ([I love that kind of thing][roll-your-own]),
@@ -160,8 +161,8 @@ res1: cats.Id[Int] = 233168
 ```
 
 As a side note, stack safety is BYOB, so you generally don't want to use `Id` as your monad
-outside of simple examples like this. The library provides "modules" for several monads, including
-`Id` (which we get above from `io.iteratee.pure`), `Eval` (which _is_ stack-safe), and
+outside of simple examples like this. The library provides ["modules"][module] for several monads, including
+identity (which we get above from `io.iteratee.pure`), `Eval` (which _is_ stack-safe), and
 Scalaz's `Task` (in a separate task subproject). You just import the contents of the module for
 the monad you wish to work in, and you get a bunch of useful enumerators, enumeratees, and
 iteratees (most of which have names that look like methods from collection library classes and
@@ -187,8 +188,8 @@ another list) or iteratees (if they return a single value).
 
 ## So what?
 
-This probably isn't terribly interesting yet—we're just doing stuff that we could do just as easily
-with the standard library's `Stream`. The nicest part is probably the automatic resource management.
+This probably isn't terribly interesting yet—we're doing stuff that we could have done just as easily
+with the standard library's streams. The nicest part is probably the automatic resource management.
 Suppose for example that I want to know how many times I've written "flatMap" in the source for the 
 core and task subprojects of this library. The task subproject provides enumerators for listing
 directory contents and reading lines from files that make this easy:
@@ -260,11 +261,12 @@ that the iteratee.io operation ends up using on the chunk.
 
 ```
 Benchmark                       Mode  Cnt      Score    Error  Units
-InMemoryBenchmark.sumIntsI     thrpt   80  15091.100 ± 57.792  ops/s
-InMemoryBenchmark.sumIntsS     thrpt   80     78.130 ±  0.866  ops/s
-InMemoryBenchmark.sumIntsZ     thrpt   80    309.367 ±  1.130  ops/s
-InMemoryBenchmark.sumIntsP     thrpt   80     54.719 ±  1.436  ops/s
-InMemoryBenchmark.sumIntsC     thrpt   80  13024.974 ± 22.356  ops/s
+
+InMemoryBenchmark.sumIntsI     thrpt   80  15105.537 ± 25.871  ops/s
+InMemoryBenchmark.sumIntsS     thrpt   80     78.947 ±  0.510  ops/s
+InMemoryBenchmark.sumIntsZ     thrpt   80    296.223 ±  1.971  ops/s
+InMemoryBenchmark.sumIntsP     thrpt   80     57.355 ±  0.745  ops/s
+InMemoryBenchmark.sumIntsC     thrpt   80  13056.163 ± 22.790  ops/s
 ```
 
 The results report throughput, so higher numbers are better.
@@ -307,7 +309,7 @@ Prelude Data.Iteratee> run $ leftover >> (ended >> stream2list)
 
 So much for bind's associativity. One of my goals for iteratee.io was to make it harder to end up
 with these bad iteratees. As part of this effort (and for the sake of performance), some of the work
-that's normally done by the "input" representation is instead done by the "step" representation in
+that's normally done by the "input" representation is done instead by the "step" representation in
 iteratee.io.
 
 Usually the input type is an ADT that's either an end-of-stream signal or a collection (possibly empty)
@@ -333,7 +335,7 @@ But there are fewer ways for this to happen, and if you don't inject values into
 the stream by creating finished iteratees with leftovers they didn't actually
 receive, you're safe.
 
-So far this approach seems to work well for my use cases, but it's still an experiment and is subject
+So far this model seems to work well for my use cases, but it's still an experiment and is subject
 to change.
 
 ## Other stuff
@@ -346,9 +348,9 @@ you get nice, fast, streaming parsing and decoding (powered by [Jawn][jawn]'s as
 You can currently build this subproject yourself, and
 there's a [circe tutorial][circe-sf-lots] with examples of how you can use it, but it's not yet in the circe 0.3.0 snapshots.
 
-iteratee.io is a small library, with the iteratee-core jar currently weighing in at 324k, and its only runtime
-dependency is cats-core. Neither of these things are likely to change in the near future, although I'm planning to add
-several new subprojects which may have additional dependencies (for I/O operations in the standard library's `Future`,
+iteratee.io is a small library, with the iteratee-core jar currently weighing in at 324K, with cats-core
+as its only runtime dependency. Neither of these things are likely to change in the near future, although I'm planning
+to add several new subprojects which may have additional dependencies (for I/O operations in the standard library's `Future`,
 more generic zipping with Shapeless, etc.).
 
 Test coverage for [iteratee.io][iteratee-io] is currently at 100%, in part thanks to [Discipline]-powered law
@@ -374,6 +376,7 @@ issue on [GitHub][iteratee-io] or contact me [on Twitter][twitter].
 [gather-map]: https://groups.google.com/forum/#!search/scalaz-stream$20eugene/scalaz/ExV2JX6vFfY/5Gdy_-XmcmkJ
 [gitter]: https://gitter.im/travisbrown/iteratee
 [jawn]: https://github.com/non/jawn
+[module]: http://travisbrown.github.io/iteratee/api/#io.iteratee.Module
 [play-iteratee]: https://www.playframework.com/documentation/2.5.x/Iteratees
 [roll-your-own]: https://meta.plasm.us/posts/2015/07/11/roll-your-own-scala/
 [scala-js]: http://www.scala-js.org/
