@@ -1,12 +1,12 @@
 ---
 title: Configuring generic derivation
 date: Thu Jan 14 11:27:21 CST 2016
-tags: scala, shapeless, circe, macros
+tags: scala, shapeless, circe, json, macros
 ---
 
 This post is a kind of sequel to [my previous article on type classes and generic derivation][gd-part-1],
 although unfortunately there's a lot of intermediate content that should go between there and here
-that I haven't written yet. This post introduces a new feature in circe that I'm pretty excited
+that I haven't written yet. This post introduces a new feature in [circe][circe] that I'm pretty excited
 about, though, so I'm not going to worry about skipping over that stuff for now.
 
 <!-- MORE -->
@@ -119,7 +119,7 @@ res0: io.circe.Json =
 }
 ```
 
-The `TypeField` is a phantom type that tells circe to look for the disciminator in a field with the
+The `TypeField` is a phantom type that tells circe to look for the discriminator in a field with the
 key "type". It's provided for convenience, but if we want to use a different value for the key,
 that's also pretty easy:
 
@@ -215,6 +215,7 @@ derivation would fail for large case classes.
 The implementation in the pull request still needs some tests and clean-up, but these configuration
 options should be available in the circe 0.3.0 snapshot in the next couple of days.
 
+[circe]: https://github.com/travisbrown/circe
 [circe-69]: https://github.com/travisbrown/circe/issues/69
 [circe-164]: https://github.com/travisbrown/circe/pull/164
 [design]: https://github.com/travisbrown/circe/blob/master/DESIGN.md
