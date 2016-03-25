@@ -140,12 +140,12 @@ Parse.parse("1e2147483647").map(_.number.map(_.toBigInt))
 
 This attempts to create a `BigInt` with `Int.MaxValue` digits, which takes… a very, very long time.
 
-circe 0.3.0 aims to make this situation less horrible by introducing a new big number type, which
-I've named [`BiggerDecimal`][bigger-decimal]. This type is a lot like `java.math.BigDecimal` except
-that the scale is a `BigInteger` instead of an `int`, and the unscaled value is constrained to have
-no trailing zeros (for the sake of making equality easy to determine). It also provides a much more
-limited set of operations than `BigDecimal`, and (most importantly) the operations it does provide
-are guaranteed not to have godawful resource requirements.
+circe 0.3.0 tries to make this situation a little less horrible by introducing a new big number
+type, which I've named [`BiggerDecimal`][bigger-decimal]. This type is a lot like
+`java.math.BigDecimal` except that the scale is a `BigInteger` instead of an `int`, and the unscaled
+value is constrained to have no trailing zeros (for the sake of making equality easy to determine).
+It also provides a much more limited set of operations than `BigDecimal`, and (most importantly) the
+operations it does provide are guaranteed not to have godawful resource requirements.
 
 All of this means that we can write the following in circe:
 
