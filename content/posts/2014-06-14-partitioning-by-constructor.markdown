@@ -107,7 +107,7 @@ by name, but we don't particularly want to have to remember that fact.
 Fortunately Shapeless's records make a nicer syntax super easy:
 
 ``` scala
-import shapeless._, record._
+import shapeless._, labelled.{field, FieldType}
 
 trait Partitioner[C <: Coproduct] extends DepFn1[List[C]] { type Out <: HList }
 
