@@ -11,7 +11,7 @@ but it ended up a little long for a Stack Overflow answer, so I'm posting it her
 When I first started teaching myself type-level programming in the context of Shapeless last year,
 I spent a lot of time working through simple problems with heterogeneous lists of type-level natural numbers.
 One fairly straightforward (but still non-trivial)
-example of such a problem is the second user story of [this Coding Dojo kata](http://codingdojo.org/cgi-bin/wiki.pl?KataBankOCR),
+example of such a problem is the second user story of [this Coding Dojo kata](http://codingdojo.org/cgi-bin/index.pl?KataBankOCR),
 which is also outlined by [Paul Snively](https://twitter.com/psnively) in
 [this email](https://groups.google.com/forum/#!msg/shapeless-dev/Q0VezBW2bhQ/RKF6uGljwroJ) to the Shapeless mailing list.
 
