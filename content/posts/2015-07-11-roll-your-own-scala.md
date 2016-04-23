@@ -275,7 +275,7 @@ implicit def unapply[TC[_[_]], MA0, MB0](implicit
 
 Scala doesn't allow types to be referred to by other types in the same parameter
 list, so we can't just stick the `<~>` in with the other instances. The problem
-is that Scala also doesn't support multiple parameter lists. This is
+is that Scala also doesn't support multiple implicit parameter lists. This is
 a more arbitrary limitation, but I've never seen any serious discussion of
 changing it.
 
