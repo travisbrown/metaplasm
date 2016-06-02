@@ -16,9 +16,9 @@ defaultEngineConfiguration = EngineConfiguration
   , lessFiles = [ "css/main.less" ]
   , lessOptions = ["--compress"]
   , vendorScriptFiles = map (fromFilePath . (modulePath ++))
-    [ "jquerymin/jquery-1.10.1.min.js"
+    [ "jquerymin/jquery-1.11.2.min.js"
     , "boot-scripts/bootstrap.min.js"
-    , "modernizr/modernizr-2.6.2.min.js"
+    , "modernizr/modernizr-2.8.3.min.js"
     ]
   }
   where
