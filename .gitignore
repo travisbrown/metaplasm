@@ -6,3 +6,4 @@ tmp/
 .cabal-sandbox-backup
 cabal.sandbox.config
 cabal.sandbox.config-backup
+.stack-work/

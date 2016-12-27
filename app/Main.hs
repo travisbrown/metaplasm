@@ -1,4 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
+module Main where
+
 import Control.Applicative (Alternative (..), (<$>))
 import Control.Monad (filterM)
 import Data.FIT.Parse (parseBytes)
