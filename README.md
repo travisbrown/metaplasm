@@ -17,21 +17,19 @@ submodules:
 ``` bash
 git clone --recursive git@github.com:travisbrown/metaplasm.git
 cd metaplasm
-cabal sandbox init
-cabal install --only-dependencies
-cabal build
-dist/build/site/site build
+stack setup
+stack build
+stack exec site build
 ```
 
 If you want nicer Scala syntax highlighting, you'll need a few extra steps:
 
 ``` bash
-cabal sandbox add-source lib/highlighting-kate
 cp syntax/scala.xml lib/highlighting-kate/xml/
 cd lib/highlighting-kate
-runhaskell ParseSyntaxFiles.hs xml/
+stack runghc --package parsec --package hxt --package utf8-string --package regex-posix ParseSyntaxFiles.hs xml/
 cd ../..
-cabal build
+stack build
 ```
 
 You can see the result [here](https://meta.plasm.us/).

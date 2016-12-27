@@ -1,48 +1,71 @@
-name:          metaplasm
-version:       0.1.0
-description:   A Hakyll blog site 
-copyright:     (c) 2012 Travis Brown
-license-file:  LICENSE.txt
-author:        Travis Brown
-maintainer:    travisrobertbrown@gmail.com
-build-type:    Simple
-cabal-version: >= 1.2
+name:                metaplasm
+version:             0.2.0.0
+description:         A Hakyll blog site
+homepage:            https://github.com/travisbrown/metaplasm
+license:             Apache-2
+license-file:        LICENSE.txt
+author:              Travis Brown
+maintainer:          travisrobertbrown@gmail.com
+copyright:           2016 Travis Brown
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
 
 library
-  ghc-options:     -Wall -O2
-  hs-source-dirs:  src
-  exposed-modules:
-    Data.FIT.Parse,
-    Data.FIT.Parse.Format,
-    Data.FIT.Parse.Util,
-    --Data.Path,
-    Data.Running,
-    Data.Running.KML
-  build-depends:
-    aeson >= 0.8 && < 0.9,
-    array >= 0.5 && < 0.6,
-    base,
-    binary >= 0.7 && < 0.8,
-    blaze-html >= 0.8 && < 0.9,
-    bytestring >= 0.10,
-    containers >= 0.5,
-    either >= 4.3,
-    hakyll >= 4.6,
-    filepath,
-    mtl >= 2.2,
-    old-locale >= 1.0,
-    pandoc == 1.13.2.1,
-    shakespeare >= 2.0 && < 2.1,
-    split == 0.2.2,
-    statistics >= 0.13 && < 0.14,
-    text >= 1.2,
-    time >= 1.5,
-    vector-space >= 0.10,
-    xml-conduit >= 1.3 && < 1.4,
-    xml-hamlet >= 0.4 && < 0.5
+  hs-source-dirs:      src
+  exposed-modules:     Data.FIT.Parse
+                     , Data.FIT.Parse.Format
+                     , Data.FIT.Parse.Util
+                     , Data.Running
+                     , Data.Running.KML
+                     , Metaplasm.Config
+                     , Metaplasm.Running
+                     , Metaplasm.Tags
+  build-depends:       base >= 4.7 && < 5
+                     , aeson
+                     , array
+                     , binary
+                     , blaze-html
+                     , bytestring
+                     , containers
+                     , either
+                     , hakyll
+                     , mtl
+                     , shakespeare
+                     , split
+                     , statistics
+                     , text
+                     , time
+                     , vector-space
+                     , xml-conduit
+                     , xml-hamlet
+  default-language:    Haskell2010
 
 executable site
-  ghc-options:     -rtsopts -Wall -O2
-  hs-source-dirs:  src
-  main-is:         Main.hs
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , containers
+                     , filepath
+                     , hakyll
+                     , http-conduit
+                     , metaplasm
+                     , pandoc
+                     , split
+                     , xml-conduit
+  default-language:    Haskell2010
 
+test-suite metaplasm-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , metaplasm
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/travisbrown/metaplasm
