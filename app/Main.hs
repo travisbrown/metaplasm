@@ -15,7 +15,6 @@ import Metaplasm.Config
 import Metaplasm.Running
 import Metaplasm.Tags
 import System.FilePath (combine, splitExtension, takeFileName)
-import Text.Pandoc.Options (writerHtml5)
 import Text.XML
 
 hakyllConf :: Configuration
@@ -41,7 +40,7 @@ feedConf title = FeedConfiguration
 main :: IO ()
 main = hakyllWith hakyllConf $ do
   let engineConf = defaultEngineConfiguration
-  let writerOptions = defaultHakyllWriterOptions { writerHtml5 = True }
+  let writerOptions = defaultHakyllWriterOptions
 
   let pandocHtml5Compiler =
         pandocCompilerWith defaultHakyllReaderOptions writerOptions
