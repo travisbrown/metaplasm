@@ -5,7 +5,7 @@ module Data.FIT.Parse
 ) where
 import Control.Applicative ((*>), (<$>), (<*>))
 import Control.Monad.State
-import Control.Monad.Trans.Either
+import Control.Monad.Except
 import qualified Data.Binary.Get as G
 import Data.Bits
 import qualified Data.ByteString.Lazy as B
@@ -32,7 +32,7 @@ type Definitions = [((Word8, Word16), Definition)]
 lGetWord8 :: MonadTrans t => t G.Get Word8
 lGetWord8 = lift G.getWord8
 
-parseDefinition :: EitherT Text G.Get (Word16, Definition)
+parseDefinition :: ExceptT Text G.Get (Word16, Definition)
 parseDefinition =
   do
     _      <- lift (G.skip 2)
@@ -44,17 +44,17 @@ parseDefinition =
     action :: G.Get (Either Text (G.Get Int64))
     action = fieldGetter <$> G.getWord8 <*> (isSignedField <$> G.getWord8)
 
-    parseField :: Word16 -> EitherT Text G.Get (Word8, G.Get Int64)
+    parseField :: Word16 -> ExceptT Text G.Get (Word8, G.Get Int64)
     parseField global =
-      (,) <$> lGetWord8 <*> (hoistEither =<< lift action)
+      (,) <$> lGetWord8 <*> (liftEither =<< lift action)
 
 -- | Note that we're not actually using the either monad here.
-parseDataFields :: Definition -> EitherT Text G.Get [(Word8, Int64)]
+parseDataFields :: Definition -> ExceptT Text G.Get [(Word8, Int64)]
 parseDataFields = mapM readField 
   where
     readField (fieldId, action) = (,) fieldId <$> lift action
 
-parseRecord :: StateT Definitions (EitherT Text G.Get) (Maybe Data)
+parseRecord :: StateT Definitions (ExceptT Text G.Get) (Maybe Data)
 parseRecord = do
   header <- lift lGetWord8
   let recordId = header .&. 0xf
@@ -63,9 +63,9 @@ parseRecord = do
   else do
     ((_, global), definition) <- (maybe typeError return . find ((== recordId) . fst . fst)) =<< get
     Just . Data global <$> lift (parseDataFields definition)
-    where typeError = lift $ left "Unknown data message type!"
+    where typeError = lift $ liftEither $ Left "Unknown data message type!"
 
-parseRecords :: Int -> StateT Definitions (EitherT Text G.Get) [Data]
+parseRecords :: Int -> StateT Definitions (ExceptT Text G.Get) [Data]
 parseRecords size = do
   bytesRead <- lift . lift $ fromIntegral <$> G.bytesRead
   if bytesRead == size
@@ -82,25 +82,25 @@ pointRecords = catMaybes . map selectPointRecord
       <*> ((/ 1000) . fromIntegral <$> lookup 5 fields)
     selectPointRecord _ = Nothing 
 
-parseFIT :: Word16 -> EitherT Text G.Get [PointRecord]
+parseFIT :: Word16 -> ExceptT Text G.Get [PointRecord]
 parseFIT crc = do
   headerSize <- fromIntegral <$> lGetWord8
   protocolVersion <- (\w -> (shiftR (240 .&. w) 4, 0x0f .&. w)) <$> lGetWord8
   profileVersion <- lift G.getWord16le
   contentSize <- fromIntegral <$> lift G.getWord32le
   ext <- decodeUtf8 <$> lift (G.getByteString 4)
-  when (ext /= ".FIT") $ left "Invalid file header!"
+  when (ext /= ".FIT") $ liftEither $ Left "Invalid file header!"
   _ <- lift . G.skip $ headerSize - 12
   (records, defs) <- runStateT (parseRecords $ contentSize + headerSize) []
   check <- (crc ==) <$> lift G.getWord16le
-  unless check $ left "File corrupted (invalid checksum)!"
+  unless check $ liftEither $ Left "File corrupted (invalid checksum)!"
   return $ pointRecords records
 
 -- | Parse a lazy byte string representing a FIT file. Note that we force
 -- evaluation of most of the string immediately, to compute the checksum. This
 -- isn't necessarily ideal, but these files tend to be small.
 parseBytes :: B.ByteString -> Either Text [PointRecord]
-parseBytes contents = G.runGet (runEitherT $ parseFIT crc) contents
+parseBytes contents = G.runGet (runExceptT $ parseFIT crc) contents
   where
     crc = computeCRC16 $ B.take (B.length contents - 2) contents
 
@@ -109,6 +109,6 @@ parseFile :: FilePath -> IO [PointRecord]
 parseFile file = do
   contents <- B.readFile file 
   let crc = computeCRC16 $ B.take (B.length contents - 2) contents
-  let Right parsed = G.runGet (runEitherT $ parseFIT crc) contents
+  let Right parsed = G.runGet (runExceptT $ parseFIT crc) contents
   return parsed
 

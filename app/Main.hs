@@ -14,8 +14,10 @@ import Hakyll
 import Metaplasm.Config
 import Metaplasm.Running
 import Metaplasm.Tags
+import Skylighting (defaultSyntaxMap)
+import Skylighting.Parser (addSyntaxDefinition, parseSyntaxDefinition)
 import System.FilePath (combine, splitExtension, takeFileName)
-import Text.Pandoc.Options (writerHtml5)
+import Text.Pandoc.Options (writerSyntaxMap)
 import Text.XML
 
 hakyllConf :: Configuration
@@ -40,8 +42,12 @@ feedConf title = FeedConfiguration
 
 main :: IO ()
 main = hakyllWith hakyllConf $ do
+  Right scalaSyntaxDef <- preprocess $ parseSyntaxDefinition "syntax/scala.xml"
+
   let engineConf = defaultEngineConfiguration
-  let writerOptions = defaultHakyllWriterOptions { writerHtml5 = True }
+  let writerOptions = defaultHakyllWriterOptions {
+    writerSyntaxMap = addSyntaxDefinition scalaSyntaxDef defaultSyntaxMap
+  }
 
   let pandocHtml5Compiler =
         pandocCompilerWith defaultHakyllReaderOptions writerOptions

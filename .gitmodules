@@ -7,6 +7,3 @@
 [submodule "lib/Font-Awesome"]
 	path = lib/Font-Awesome
 	url = git@github.com:FortAwesome/Font-Awesome.git
-[submodule "lib/highlighting-kate"]
-	path = lib/highlighting-kate
-	url = git@github.com:jgm/highlighting-kate.git

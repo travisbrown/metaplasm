@@ -37,6 +37,7 @@ instance InnerSpace Coord where
 
 instance VectorSpace Coord where
   type Scalar Coord = Double
+  s *^ Coord (a, b) = Coord (s * a, s * b)
 
 
 --instance VectorSpace PointRecord where
