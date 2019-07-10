@@ -7,6 +7,7 @@ import Data.FIT.Parse (parseBytes)
 import Data.List (intersperse, isSuffixOf)
 import Data.List.Split (splitOn)
 import qualified Data.Map as M
+import qualified Data.Map.Strict as MS
 import Data.Monoid (mappend)
 import Data.Running (Coord (..), PointRecord (..))
 import Data.Running.KML
@@ -42,11 +43,12 @@ feedConf title = FeedConfiguration
 
 main :: IO ()
 main = hakyllWith hakyllConf $ do
-  Right scalaSyntaxDef <- preprocess $ parseSyntaxDefinition "syntax/scala.xml"
+  scalaSyntaxDef <- preprocess $ parseSyntaxDefinition "syntax/scala.xml"
 
+  let syntaxDef = either (error "Missing syntax/scala.xml") id scalaSyntaxDef
   let engineConf = defaultEngineConfiguration
   let writerOptions = defaultHakyllWriterOptions {
-    writerSyntaxMap = addSyntaxDefinition scalaSyntaxDef defaultSyntaxMap
+    writerSyntaxMap = addSyntaxDefinition syntaxDef defaultSyntaxMap
   }
 
   let pandocHtml5Compiler =
@@ -167,7 +169,8 @@ main = hakyllWith hakyllConf $ do
   match "content/running/*.FIT" $ do
     route $ fitRoute tracks
     compile $ do
-      Item _ (Right points) <- fmap parseBytes <$> getResourceLBS
+      Item _ maybePoints <- fmap parseBytes <$> getResourceLBS
+      let points = either (error "FIT parsing failure") id maybePoints
       let ctx = fitCtx points siteCtx
       body <- fitBody tracks points 1.0 4
       makeItem body

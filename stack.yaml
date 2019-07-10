@@ -1,4 +1,4 @@
-resolver: lts-12.26
+resolver: lts-13.27
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -22,7 +22,8 @@ packages:
 - '.'
 
 extra-deps:
-- hakyll-4.12.4.0
+- hakyll-4.12.5.2
+- lrucache-1.2.0.1
 
 # Override default flag values for local packages and extra-deps
 flags: {}
