@@ -31,7 +31,7 @@ import qualified Text.Blaze.Html5.Attributes as A
 import Text.Julius (julius, rawJS, renderJavascriptUrl)
 import Text.Printf (printf)
 
-data RunningException = MissingIdentifierException
+data RunningException = MissingIdentifierException String
   deriving (Show, Typeable)
 
 instance Exception RunningException
@@ -55,7 +55,7 @@ fitId tracks i =
     pointsToPath :: [PointRecord] -> [String]
     pointsToPath points = date ++ [printf "%02d" $ counter + 1]
       where
-        counter = maybe (throw MissingIdentifierException) id
+        counter = maybe (throw $ MissingIdentifierException $ show i) id
           . elemIndex i
           . map fst
           . sortBy (comparing snd)
