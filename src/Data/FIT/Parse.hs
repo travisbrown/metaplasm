@@ -8,7 +8,8 @@ import Control.Monad.State
 import Control.Monad.Except
 import qualified Data.Binary.Get as G
 import Data.Bits
-import qualified Data.ByteString.Lazy as B
+import qualified Data.ByteString as B
+import qualified Data.ByteString.Lazy as BL
 import Data.Int (Int64)
 import Data.FIT.Parse.Format (fieldGetter, isSignedField)
 import Data.FIT.Parse.Util
@@ -99,16 +100,17 @@ parseFIT crc = do
 -- | Parse a lazy byte string representing a FIT file. Note that we force
 -- evaluation of most of the string immediately, to compute the checksum. This
 -- isn't necessarily ideal, but these files tend to be small.
-parseBytes :: B.ByteString -> Either Text [PointRecord]
+parseBytes :: BL.ByteString -> Either Text [PointRecord]
 parseBytes contents = G.runGet (runExceptT $ parseFIT crc) contents
   where
-    crc = computeCRC16 $ B.take (B.length contents - 2) contents
+    crc = computeCRC16 $ BL.take (BL.length contents - 2) contents
 
 -- | A convenience function that parses a file and ignores errors. 
 parseFile :: FilePath -> IO [PointRecord] 
 parseFile file = do
-  contents <- B.readFile file 
-  let crc = computeCRC16 $ B.take (B.length contents - 2) contents
+  contentsStrict <- B.readFile file
+  let contents = BL.fromStrict contentsStrict
+  let crc = computeCRC16 $ BL.take (BL.length contents - 2) contents
   let Right parsed = G.runGet (runExceptT $ parseFIT crc) contents
   return parsed
 
