@@ -22,6 +22,7 @@ Despite all of the information in this post being publicly available and widely 
 * [ScalaUA](https://www.scalaua.com/march2019/speakers/john_de_goes/)
 * [Scala.io](https://scala.io/2018/talks.html)
 * [Scala Russia Meetup](https://scala-russia.timepad.ru/event/1021921/)
+* [ScalaConf 2019](https://scalaconf.ru/2019/abstracts/5751)
 
 I know that the Scala Exchange organizers are aware of the information in this post, because I shared much of it with them when I declined a keynote invitation in February. I also know of other cases of people in the Scala community declining invitations from conferences on this list and providing similar reasons. The organizers of these conferences aren't choosing to give De Goes a platform because they don't know about his history of abuse, accusing women of lying, etc.—they just don't care.
 
