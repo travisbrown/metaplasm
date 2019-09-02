@@ -4,6 +4,8 @@ date: Sun 01 Sep 2019 03:56:08 PM CDT
 tags: scala, fp, typelevel
 ---
 
+Dude, your ass is so much on fire, so even in Siberia we can see the light and feel the heat.
+
 This post is a collection of links about John De Goes that show a few clear patterns of behavior:
 
 * De Goes defending white supremacists and misogynists.
