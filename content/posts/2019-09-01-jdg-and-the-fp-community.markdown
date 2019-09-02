@@ -4,7 +4,7 @@ date: Sun 01 Sep 2019 03:56:08 PM CDT
 tags: scala, fp, typelevel
 ---
 
-This post is a collection of links about John De Goes that show a few clear patterns of behavior:
+This post is a collection of links about John De Goes that show some clear patterns of behavior:
 
 * De Goes defending white supremacists and misogynists.
 * De Goes attacking critics and accusing them (especially women) of lying.
@@ -26,14 +26,14 @@ I know that the Scala Exchange organizers are aware of the information in this p
 
 <hr/>
 
-Note that many of the links below are to web archives, because the people involved here have a
+Note that many of the links below are to web archives, because some of the people involved here have a
 tendency to delete things they write online (or to have the things they write online get deleted when they're banned for abuse).
 If you notice factual inaccuracies or broken links in this post, or if you have other information that you feel should be included, please open an [issue](https://github.com/travisbrown/metaplasm/issues) or [pull request](https://github.com/travisbrown/metaplasm/pulls).
 
 ## LambdaConf 2016
 
 In 2016 De Goes invited [Curtis Yarvin](https://en.wikipedia.org/wiki/Curtis_Yarvin) to speak at
-LambdaConf, a conference he organizes, despite [hundreds of people in the functional programming
+LambdaConf, despite [hundreds of people in the functional programming
 community](https://statement-on-lambdaconf.github.io/) formally criticizing this invitation on the
 basis that Yarvin is best known for his racist views and his role in the creation of the
 [neoreactionary movement](https://en.wikipedia.org/wiki/Dark_Enlightenment), a right-wing, white
@@ -43,7 +43,7 @@ De Goes has repeatedly defended this decision, and [argued](http://archive.li/qc
 
 > When you conflate NRx with white supremacy, it discredits you.
 
-When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to support the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and tweeting things like ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
+When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to sponsor the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and tweeting things like ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
 
 De Goes also repeatedly [defended](http://archive.li/qWYJ6) ClarkHat (who was after all funding his conference):
 
@@ -53,11 +53,11 @@ De Goes also repeatedly [defended](http://archive.li/qWYJ6) ClarkHat (who was af
 
 > Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying. They're all anarchists & libertarians.
 
-When a person he was interacting with in one of these conversations made the following request:
+When one of the people he was accusing of lying made the following request:
 
 > i have previously asked you not to retweet that dangerous person who has previously harassed me into my mentions. PLEASE DO NOT
 
-…[this](https://imgur.com/a/YCFudjw) was his response:
+This was [his response](https://imgur.com/a/YCFudjw):
 
 > OK, I won't tag them (though they're not dangerous). You provide me one quote proving Clark is alt-right. Just one.
 
@@ -96,3 +96,15 @@ Christie Koehler has written a [detailed analysis](https://subfictional.com/an-a
 De Goes is also a [user](http://gab.com/jdegoes) and [advocate for](https://imgur.com/a/JZJEPDA) [Gab](https://www.bloomberg.com/news/articles/2018-10-30/gab-an-online-haven-for-white-supremacists-plots-its-future), a social network that's best known for accommodating white supremacists and men like the [Pittsburgh synagogue shooter](https://www.nytimes.com/2018/10/28/us/gab-robert-bowers-pittsburgh-synagogue-shootings.html). 
 
 Lastly, De Goes's followers include a group (mostly men) who routinely harass people he criticizes on his Twitter feed, often with ableist abuse, as [for example](https://contributors.scala-lang.org/t/coc-compatible-community-builds/3097/84) during [a recent situation](https://www.reddit.com/r/scala/comments/bi9rey/scalaz_removed_from_community_build/) where ZIO was removed from the Lightbend community build, or [in response to some of his tweets about me](http://archive.is/3UllI) last week. While he's not personally responsible for comments by his followers, this happens a lot, and in the context of all of the history above it doesn't seem unintentional.
+
+## Why this matters
+
+The fact that the Scala community continues to embrace De Goes affects how people outside the community see us. For example:
+
+* "[As an outsider](https://twitter.com/aphyr/status/1100176553688944641), it feels like Scala's community leaders are intently focused on "keeping politics out of our technical discussion", and hoping that the involvement of racist, misogynist, and transphobic people will somehow remain at the periphery, rather than pushing people away."
+* "[dang maybe the problem](https://twitter.com/caraesten/status/1100222742350032903) isn't people who annoy others it's misogynists, transphobes, white supremacists and the like. De Goes is a fairly good example of somebody who not only tolerates them, but invites them to speak."
+* "[by the way](https://twitter.com/caraesten/status/1100161944844066818), if you fav'd the "we're doing our best" tweets from typelevel and not any of the very real criticism that lead to this, I fucking see you, and you're complicit"
+* "[John de Goes is an incredibly bad person](https://twitter.com/withoutboats/status/1031680679359131649), but he's also being both ignorant and arrogant in this particular case."
+* "[Also it's shocking to me](https://twitter.com/justkelly_ok/status/1088093287812976640) that people who follow the Scala community wouldn't know about this yet????"
+
+These are just a few examples from people who feel comfortable speaking up—there are undoubtedly many, many others who have left or avoided the Scala community because of its insistence on harboring abusers like De Goes.
