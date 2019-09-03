@@ -43,7 +43,7 @@ De Goes has repeatedly defended this decision, and [argued](http://archive.li/qc
 
 > When you conflate NRx with white supremacy, it discredits you.
 
-When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to sponsor the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and tweeting things like ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
+When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to help fund the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and tweeting things like ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
 
 De Goes also repeatedly [defended](http://archive.li/qWYJ6) ClarkHat (who was after all funding his conference):
 
@@ -69,7 +69,7 @@ At the following year's LambdaConf, De Goes invited Ed Lattimore, a self-describ
 
 ## Drupal Confessions
 
-Also in 2017, De Goes was [one of the operators](http://archive.is/KGA5Q) of a satirical and abusive Twitter account named "@druconfessions" that was focused on attacking Drupal community leadership for what De Goes described as their ["social justice"](http://archive.li/dmXFQ) agenda. I've never been a part of the Drupal community and don't personally have a lot of context about this situation, but it notably involves a lot of harassment directed by @druconfessions at one particular Drupal developer, calling her a ["Psychotic intersectionalist Marxist"](http://archive.is/bPvKe), an [extremist](http://archive.is/pUUUI), etc.
+Also in 2017, De Goes was [one of the operators](http://archive.is/KGA5Q) of a satirical and abusive Twitter account named "@druconfessions" that was focused on attacking Drupal community leadership for what De Goes described as their ["social justice"](http://archive.li/dmXFQ) agenda. I’ve never been a part of the Drupal community and don’t personally have much context about this situation, but it notably involves a lot of harassment directed by @druconfessions at one particular Drupal developer, calling her a ["Psychotic intersectionalist Marxist"](http://archive.is/bPvKe), an [extremist](http://archive.is/pUUUI), etc.
 
 The language of the account is [frequently hostile](https://imgur.com/a/g3cYqOr) or violent, sometimes in a way that seems inadvertently ridiculous ("There's a time for peace, and a time for war. The time for peace has ended."). It also included a lot of inspirational platitudes ("Never start a fight, but always finish it") that will probably sound familiar to anyone who's ever looked at De Goes's Twitter feed.
 
@@ -90,6 +90,14 @@ De Goes [frequently criticizes](http://archive.li/NnnfW) codes of conduct, and h
 > FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities.
 
 The FCoP was developed specifically in response to the 2016 LambdaConf controversy, and it's clearly designed to protect white supremacists like Yarvin. De Goes [tried (and failed)](https://github.com/typelevel/general/issues/74) to get the FCoP approved for use in Typelevel projects, a move that [many people](https://github.com/typelevel/general/issues/74#issuecomment-301328386) thought was not made in good faith.
+
+In advocating for the FCoP, [De Goes often relies on right-wing tropes](https://github.com/typelevel/general/issues/74#issuecomment-302972140) about the persecution of conservatives:
+
+> Rather, all the real world cases are programmers being excluded for being conservative…
+
+He echoes TERF rhetoric about people being attacked for "questioning whether 4 year olds should transition", and specifies that he intends for the FCoP to protect advocates of race science and people who complain that they're expected to respect other people's pronouns:
+
+> People who have expressed concerns about the unbounded growth of gender pronouns have been accused of denying basic human rights to non-binary gendered individuals. People who believe there might be small differences in the distribution of IQ across sex or "race" have been labeled misogynists or racists.
 
 Christie Koehler has written a [detailed analysis](https://subfictional.com/an-analysis-of-the-fcop/) of the FCoP, and several follow-up threads (see [here](https://twitter.com/christi3k/status/871869819989049344) and [here](https://twitter.com/christi3k/status/852726173821947904)). De Goes's response was to accuse Koehler and others of lying, [over](https://twitter.com/christi3k/status/852902022156140545) and [over](https://twitter.com/christi3k/status/852969422067073024) and [over](https://twitter.com/christi3k/status/853403766070034437).
 
