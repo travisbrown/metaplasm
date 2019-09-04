@@ -14,7 +14,7 @@ This post is a collection of links about John De Goes that show some clear patte
 
 Despite all of the information in this post being publicly available and widely known, De Goes is frequently invited to Scala conferences to speak. The following are a few of his conference appearances in 2019:
 
-* [Scala Exchange](https://skillsmatter.com/conferences/11987-scala-exchange-london-2019)
+* ~~[Scala Exchange](https://skillsmatter.com/conferences/11987-scala-exchange-london-2019)~~
 * [Scale by the Bay](https://scalebythebay2019.sched.com/speaker/john_a_de_goes.1vgeudvq)
 * [Scala World](https://scala.world/program)
 * [Scalar](https://blog.softwaremill.com/this-is-why-you-must-join-scalar-2019-69ad12248e95)
@@ -24,6 +24,8 @@ Despite all of the information in this post being publicly available and widely 
 * [Lambda World](https://cadiz.lambda.world/speakers/)
 
 I know that the Scala Exchange organizers are aware of the information in this post, because I shared much of it with them when I declined a keynote invitation in February. I also know of other cases of people in the Scala community declining invitations from conferences on this list and providing similar reasons. The organizers of these conferences aren't choosing to give De Goes a platform because they don't know about his history of abuse, accusing women of lying, etc.—they just don't care.
+
+Update: the Scala Exchange organizers have posted [a statement](https://skillsmatter.com/go/03092019) on the matter.
 
 <hr/>
 
