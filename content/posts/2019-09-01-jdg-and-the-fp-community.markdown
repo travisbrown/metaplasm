@@ -46,7 +46,7 @@ De Goes has repeatedly defended this decision, and [argued](http://archive.li/qc
 
 > When you conflate NRx with white supremacy, it discredits you.
 
-When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to help fund the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and tweeting things like ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
+When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to help fund the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and doing things like tweeting ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
 
 De Goes also repeatedly [defended](http://archive.li/qWYJ6) ClarkHat (who was after all funding his conference):
 
