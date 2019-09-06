@@ -1,12 +1,12 @@
 ---
 title: Fuck yeah type erasure
 date: Fri 06 Sep 2019 05:37:29 AM CDT
-tags: scala, fp, typelevel, cats, parametricity
+tags: scala, fp, typelevel, cats
 ---
 
 (Apologies for the title—after a lot of time on Twitter this week I've been feeling nostalgic for things like Tumblr c. 2010.)
 
-This post is an attempt to answer the following question from [Baccata64](https://www.reddit.com/user/Baccata64/) on [Reddit](https://www.reddit.com/r/scala/comments/cz4xai/permutive_community_engineering_august_2019_cats/ez3ojmr/):
+This post is an attempt to answer a question [Baccata64](https://www.reddit.com/user/Baccata64/) asked on [Reddit](https://www.reddit.com/r/scala/comments/cz4xai/permutive_community_engineering_august_2019_cats/ez3ojmr/) yesterday afternoon:
 
 > how does the Parallel change not break bincompat ? Is it that type parameters and type members are encoded the same way at the bytecode level ?
 
@@ -22,7 +22,7 @@ trait NonEmptyParallel[M[_], F[_]] {
 …to one, with the parallel context (the `F` parameter) changed to a type member:
 
 ```scala
-trait Parallel[M[_]] {
+trait NonEmptyParallel[M[_]] {
   type F[_]
   // ...
 }
