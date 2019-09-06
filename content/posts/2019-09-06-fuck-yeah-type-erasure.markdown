@@ -27,7 +27,7 @@ trait Parallel[M[_]] {
   // ...
 }
 ```
-This post will give some background about the context and morivation for this change, and then will try to answer Baccata64's question.
+This post will give some background about the context and motivation for this change, and then will try to answer Baccata64's question.
 
 <!-- MORE -->
 
