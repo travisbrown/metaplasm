@@ -58,7 +58,7 @@ def parTraverse[T[_]: Traverse, M[_], A, B](ta: T[A])(f: A => M[B])(implicit P: 
 
 It's possible to "hide" the `F` here not only because we typically don't need it (and when we do
 there's [the `Aux` pattern](https://stackoverflow.com/a/34548518/334519)), but also because the semantics 
-of `Parallel` mean that the `M` always uniquely determines the `F`. For `IO`, the `P` is `IO.Par`. For
+of `Parallel` mean that the `M` always uniquely determines the `F`. For `IO`, the `F` is `IO.Par`. For
 `Either[A, *]` it's ` Validated[A, *]]`, etc. We'll never have two distinct implicit instances `Parallel[C] { type P }` and 
 `Parallel[C] { type Q }`.
 
