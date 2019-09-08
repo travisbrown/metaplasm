@@ -119,3 +119,93 @@ The fact that the Scala community continues to embrace De Goes affects how peopl
 * "[Also it's shocking to me](https://twitter.com/justkelly_ok/status/1088093287812976640) that people who follow the Scala community wouldn't know about this yet????"
 
 These are just a few examples from people who feel comfortable speaking up—there are undoubtedly many, many others who have left or avoided the Scala community because of its insistence on harboring abusers like De Goes.
+
+## Updates
+
+After I published this post and the Scala Exchange organizers withdrew De Goes's keynote invitation, he responded with [the following tweet](https://twitter.com/jdegoes/status/1168975330939473921) (also [archived](http://archive.today/oLA1h)):
+
+> I have been no-platformed at Scala eXchange by people making baseless character smears. I respect the right of @skillsmatter to make the decision they feel is best. I respect the right of every potential speaker & attendee to respectfully write, tweet, & blog their response.
+
+He was retweeted by the official Twitter account of Gab, the social network, and by an individual who works for [Breitbart News](https://en.wikipedia.org/wiki/Breitbart_News), a right-wing American website. De Goes is aware that allowing his far-right advocates to amplify his message can result in his critics being targeted by hate mobs, because this has happened repeatedly in the past, and he has specifically acknowledged it [in at least one case](https://twitter.com/jdegoes/status/960489597414162432) ([archived](http://archive.li/gmqrG)):
+
+> It’s shameful that Breitbart readers harassed Sonia, and insane that Twitter didn’t (and to some degree, still doesn’t!) engineer their product to prevent harassment. 12/22
+
+He could easily prevent much of this amplification and harassment by blocking these right-wing accounts, which would remove the retweet, but as of this morning the tweet is still on the timelines of both [Gab](https://imgur.com/a/vL73JAI) and the [Breitbart employee](https://imgur.com/a/paS6wHz).
+
+To his credit he did write [the following](https://twitter.com/jdegoes/status/1169203672531775488?s=11) ([archived](http://archive.fo/oLA1h)):
+
+> As always, please share your views with respect and professionalism. ❤️
+>
+> If anyone sees poorly behaving outsiders stepping in, let me know.
+>
+> I will step up to defend anyone receiving abuse or harassment, including those no-platforming me.
+
+But when I suggested a concrete way he could provide this kind of defense (blocking two far-right Twitter accounts), he ignored the request.
+
+De Goes has also retweeted another Scala developer, [Adam Warski](https://twitter.com/adamwarski), who writes that this post is part of a ["disgusting, coordinated, personal attack"](https://twitter.com/adamwarski/status/1169664500087304192?s=11) ([archived](http://archive.li/sxR2y)) and that it doesn't support the reaction it's received:
+
+> I have yet to see a single piece of evidence that would justify last-resort actions such as the ones taken by @scalaexchange and @typelevel. Just imagine this being done to you. You (or I) can be next.
+
+I asked this individual to point out specific inaccuracies in the post, and [he replied](https://twitter.com/adamwarski/status/1169950151911362560) ([archived](http://archive.li/sxR2y)):
+
+> No, I don't know if these are accurate. But I can't see anything that would justify the kind of actions that have been taken; only suspicions and interpretations.
+
+I _am_ aware of a couple of responses De Goes has made to specific points in the post, including the following, from [an AMA](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/) (an "ask me anything" thread) on Reddit ([archived](http://archive.li/jXJmH)):
+
+> I have no affiliation with the blog, other than with Meredith L. Patterson…
+
+He goes on to write:
+
+> At the time, I did not know anything about the blog or its authors (except for Meredith). I was told the group were a bunch of libertarians and anarchists who believed in free speech. Eventually and reluctantly, I became aware of ClarkHat's unsavory online persona, and I today regret the blog's association with the conference.
+
+A Reddit user named [GPoaS](https://www.reddit.com/user/GPoaS) [responded](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ezf99pl/) by identifying themselves as another Status 451 writer (not Patterson or ClarkHat), offering to validate their identity, and expressing their sense of betrayal:
+
+> But damn if this doesn't feel like knife in the back, bro.
+
+In another subreddit the same user [writes the following](https://www.reddit.com/r/CultureWarRoundup/comments/cynvsz/offtopic_and_loweffort_cw_thread_for_the_week_of/eyz99hc/) ([archived](http://archive.li/x51bk)):
+
+> Incidentally, while Clark is primarily responsible for the fundraiser, I was the person originally responsible for the effort.
+
+I'm not sure whether the second part of this statement is true, but it doesn't contradict the characterization in my original post, where I wrote that the effort was driven by ClarkHat. The statement does seem to contradict De Goes's claim yesterday that he had no affiliation with anyone at Status 451 but Patterson.
+
+This Reddit user also accuses the LambdaConf 2016 attendee who spoke up about Latimore of being "a plant":
+
+>  Her backstory was a shitlib who saw all the evidence of HBD but couldn't handle it so she quit the industry instead of admitting what she saw. If this isn't bait I don't know what is
+
+"HBD" here stands for ["human biodiversity"](https://forward.com/opinion/national/346533/human-biodiversity-the-pseudoscientific-racism-of-the-alt-right/), a term used by the race science movement.
+
+<hr/>
+
+In the AMA De Goes denies the claim (made by Sonia Gupta and I and many others) that Latimore is a misogynist:
+
+> It's a mistake to call Latimer a misogynist (sexist would be more accurate, since he believes in sex-based differences between men and women), but knowing what I know now, I would not invite him today.
+
+He also [addresses](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ezbg1xi/) ([archived](http://archive.li/2aXeI)) a question about the Drupal Confessions account:
+
+> The Drupal Confessions "team" (an ad hoc chat room filled with disgruntled Drupal developers) had a shared Twitter account that many posted from. Eventually that become a problem for them because the account started attacking people. Actually, I can't remember if it was that account or a different one, eventually there were 3-4 different Twitter accounts all posting Drupal drama and increasingly weird things like pictures of Larry with horns and creepy dancing videos.
+
+All of the quotations in my original post are from @druconfessions, the account that De Goes and others have stated in public that he helped to operate, and I'm personally not aware of any of the other accounts he mentions. His account in this comment is at odds with what I've heard from people I trust who were directly involved, and he doesn't say whether he's responsible for the specific tweets quoted in the post.
+
+<hr/>
+
+Finally, De Goes has also posted a bizarre [article](http://degoes.net/articles/revisiting-lambdaconf) ([archived](http://archive.li/pos5e)) that begins with a claim I don't really find plausible:
+
+> It’s been nearly three years since LambdaConf 2016, possibly the most controversial tech conference in the history of computing.
+
+The article is intended to promote an upcoming video, and he gives the following background:
+
+> Early this year, I started publicly acknowledging for the first time that I had made some mistakes in handling the LambdaConf controversy and fallout. I promised folks that I would give the topic more airtime, and that I would publicly and very visibly share what I learned and take full ownership of my contribution to the fallout.
+
+I'm not aware of these "public acknowledgements" from earlier this year, but I will happily include them in this post for context if De Goes can provide links. The article continues:
+
+> The story I need to tell is human and emotional, not technical and philosophical.
+>
+> It must be told with my voice and my face. There can be no wall of analytical text or cryptic technical diagrams—since that would be repeating one of my past mistakes.
+>
+> This time, you’re going to get the human side of me.
+>
+> Watch this space for more details on when and how I will share this important story. I promise it will be as soon as I can reasonably make it happen—in the way I believe it needs to happen.
+>
+> Please do come and listen. No matter where you stand on the original controversy, you will not see this coming.
+
+I can't speak for the other people he's targeted, but I'm glad to hear he's considering an apology, and I'm looking forward to the video.
