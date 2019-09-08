@@ -170,7 +170,7 @@ hello world
 We've not recompiled `Bar`—it was compiled against our first version of `Foo`, but we're still able to use it with the new type parameter-less `Foo`, because for
 the purposes we care about, the bytecode is indeed the same.
 
-For what it's worth, you don't have to do this checking by hand. [Lightbend](https://www.lightbend.com/) provides an excellent (and generally reliable)
+For what it's worth, you don't have to do this checking by hand. [Lightbend](https://www.lightbend.com/) provides an excellent
 tool called [MiMa](https://github.com/lightbend/mima) that can verify that your code is binary-compatible with previous version. You can even make this part of your build validation process via the sbt plugin, which is what Cats and many other libraries do.
 
 ## Type erasure
