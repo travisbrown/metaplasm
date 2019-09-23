@@ -1,7 +1,7 @@
 ---
 title: Scala and the visitor pattern
 date: Mon 23 Sep 2019 18:26:25 CEST
-tags: scala, fp, circe
+tags: scala, fp, circe, json
 ---
 
 Scala provides a handful of language features that are designed to make it easy
@@ -171,7 +171,7 @@ our JSON representation without forcing details on our users.
 
 ## Folders
 
-One disadvantage of the `fold` approach is that it every call requires us to provide six functions, and given
+One disadvantage of the `fold` approach is that every call requires us to provide six functions, and given
 idiomatic pattern matching-like usage, that means instantiating six objects. This can have a real impact on performance,
 and Circe provides an alternative alternative for performance-sensitive users:
 
@@ -227,7 +227,7 @@ For me the most useful part of the paper is the distinction it introduces betwee
 
 > Another aspect of the Visitor pattern is the choice of traversal strategies for composite objects. We could put the traversal code in the datatype. To do this we ensure that the accept method is called recursively on any component objects and passes the results to the visitor in the call to visit. Alternatively, we could put the traversal code in the visitor itself. We will refer to these as “internal” and “external” visitors respectively, by analogy with internal and external iterators.
 
-Using this terminology, the `fold` and `foldWith` in Arognaut and Circe are examples of external visitors, since they require the user to recurse explicitly in the cases of arrays and objects. An internal visitor would be something like the following (note that the recursion happens inside the `accept` implementation, not in the visitor itself):
+Using this terminology, the `fold` and `foldWith` in Argonaut and Circe are examples of external visitors, since they require the user to recurse explicitly in the cases of arrays and objects. An internal visitor would be something like the following (note that the recursion happens inside the `accept` implementation, not in the visitor itself):
 
 ```scala
 sealed trait IntList {
@@ -275,10 +275,10 @@ def countValues(json: Json): Int = json.acceptInternalVisitor(
 )
 ```
 
-While the external visitor approach is more flexible, and handles more use cases, also providing internal visitors would give many common operations more straightforward implementation (like computing statistics about a document).
+While the external visitor approach is more flexible, and handles more use cases, also providing internal visitors would give many common operations (like computing statistics about a document) more straightforward implementations.
 
 One additional advantage of the internal visitor approach is that the `accept` implementation can take responsibility for stack safety (see [this gist](https://gist.github.com/travisbrown/4ec4047f483d8dbeb1672d0a36e352a5), for example), so that even no matter how deeply nested our JSON document is, we don't have to worry about recursion overflowing the stack. It's certainly possible to recurse safely with `Folder` right now, but you have to do all the trampolining manually.
 
-It's likely that Circe 1.0 will rename the current `Folder` to `Visitor`, as our external visitor, and will introduce a new internal visitor as `Folder`. I'm also working on an `io.circe.internal` package that will provide an external visitor API that _will_ expose implementation details (such as the number representation, the specific map implementation, etc.). We're currently finalizing names and other details for these types and methods in Circe 1.0, and would appreciate [ideas or feedback](https://github.com/circe/circe/issues/1097).
+It's likely that Circe 1.0 will rename the current `Folder` to `Visitor`, as our external visitor, and will introduce a new stack-safe internal visitor as `Folder`. I'm also working on an `io.circe.internal` package that will provide an external visitor API that _will_ expose implementation details (such as the number representation, the specific map implementation, etc.). We're currently finalizing names and other details for these types and methods in Circe 1.0, and would appreciate [ideas or feedback](https://github.com/circe/circe/issues/1097).
 
 
