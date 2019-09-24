@@ -42,7 +42,7 @@ def length(xs: IntList): Int = xs match {
 }
 ```
 One of the nice things about pattern matching on sum types in Scala is that the compiler checks
-that our match is "exhaustive"—if we forget a case, the compiler will warn us:
+that our match is exhaustive—if we forget a case, the compiler will warn us:
 
 ```scala
 scala> def length(xs: IntList): Int = xs match {
@@ -277,7 +277,7 @@ def countValues(json: Json): Int = json.acceptInternalVisitor(
 
 While the external visitor approach is more flexible, and handles more use cases, also providing internal visitors would give many common operations (like computing statistics about a document) more straightforward implementations.
 
-One additional advantage of the internal visitor approach is that the `accept` implementation can take responsibility for stack safety (see [this gist](https://gist.github.com/travisbrown/4ec4047f483d8dbeb1672d0a36e352a5), for example), so that even no matter how deeply nested our JSON document is, we don't have to worry about recursion overflowing the stack. It's certainly possible to recurse safely with `Folder` right now, but you have to do all the trampolining manually.
+One additional advantage of the internal visitor approach is that the `accept` implementation can take responsibility for stack safety (see [this gist](https://gist.github.com/travisbrown/4ec4047f483d8dbeb1672d0a36e352a5), for example), so that no matter how deeply nested our JSON document is, we don't have to worry about recursion overflowing the stack. It's certainly possible to recurse safely with `Folder` right now, but you have to do all the trampolining manually.
 
 It's likely that Circe 1.0 will rename the current `Folder` to `Visitor`, as our external visitor, and will introduce a new stack-safe internal visitor as `Folder`. I'm also working on an `io.circe.internal` package that will provide an external visitor API that _will_ expose implementation details (such as the number representation, the specific map implementation, etc.). We're currently finalizing names and other details for these types and methods in Circe 1.0, and would appreciate [ideas or feedback](https://github.com/circe/circe/issues/1097).
 
