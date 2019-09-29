@@ -209,3 +209,5 @@ I'm not aware of these "public acknowledgements" from earlier this year, but I w
 > Please do come and listen. No matter where you stand on the original controversy, you will not see this coming.
 
 I can't speak for the other people he's targeted, but I'm glad to hear he's considering an apology, even if this is the strangest apology teaser I've ever seen.
+(Update: De Goes deleted this post without explaining why a
+[few days](https://web.archive.org/web/*/http://degoes.net/articles/revisiting-lambdaconf) after publishing it.)
