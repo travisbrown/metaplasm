@@ -16,7 +16,7 @@ or you don't want to put your case classes in your public API, and in these
 situations pattern matching is typically much less useful. This blog post is about
 the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern), which
 is an alternative to pattern matching that provides many of its benefits, and about
-the use of visitors we're planning for the Circe 1.0 API.
+the use of visitors we're planning for Circe 1.0.
 
 <!-- MORE -->
 
@@ -254,7 +254,7 @@ Personally I've come to prefer `Folder` even when I'm not terribly worried about
 If you've read your [Gang of Four](https://en.wikipedia.org/wiki/Design_Patterns) (which turns 25 this year),
 you might recognize `Folder` as an instance of the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern). This isn't too surprising, since the visitor pattern is an attempt to solve the same kinds of problems that ADTs solve,
 usually in languages that don't have pattern matching or higher-order functions, and what we're doing is trying to come up with a nice way to work
-with ADTs without pattern matching (because we want implementation-hiding but also exhaustivity) or higher-order functions (for performance reasons).
+with ADTs without pattern matching (because we want implementation hiding but also exhaustivity checking) or higher-order functions (for performance reasons).
 
 The original Gang of Four framing of the visitor pattern is pretty strongly imperative-flavored, but there's [a 2005 paper](http://www.computer-science.birmingham.ac.uk/~hxt/research/mfps-visitors.pdf)
 by Peter Buchlovsky and Hayo Thielecke that gives a type-theoretic view of the pattern and looks in detail at its relationship with algebraic data types.
@@ -349,6 +349,6 @@ While the external visitor approach is more flexible, and handles more use cases
 
 One additional advantage of the internal visitor approach is that the `accept` implementation can take responsibility for stack safety (see [this gist](https://gist.github.com/travisbrown/4ec4047f483d8dbeb1672d0a36e352a5), for example), so that no matter how deeply nested our JSON document is, we don't have to worry about recursion overflowing the stack. It's certainly possible to recurse safely with `Folder` right now, but you have to do all the trampolining manually.
 
-It's likely that Circe 1.0 will rename the current `Folder` to `Visitor`, as our external visitor, and will introduce a new stack-safe internal visitor as `Folder`. I'm also working on an `io.circe.internal` package that will provide an external visitor API that _will_ expose implementation details (such as the number representation, the specific map implementation, etc.). We're currently finalizing names and other details for these types and methods in Circe 1.0, and would appreciate [ideas or feedback](https://github.com/circe/circe/issues/1097).
+It's likely that Circe 1.0 will rename the current `Folder` to `Visitor`, as our external visitor, and will introduce a new stack-safe internal visitor as `Folder`. I'm also working on an `io.circe.internal` package that will provide an external visitor API that _will_ expose implementation details (such as the number representation, the specific map implementation, etc.). We're currently finalizing names and other details for these types and methods in Circe 1.0, and would appreciate any [ideas or feedback](https://github.com/circe/circe/issues/1097).
 
 
