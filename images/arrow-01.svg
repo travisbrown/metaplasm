@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 420 450 280" width="100%">
+  <!--<g stroke='BLACK' stroke-width='5' fill='none'><rect x='0' y='420' width='450' height='210'/></g>-->
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="17" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="11" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="24" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Times New Roman" font-size="12" panose-1="2 2 5 3 5 4 5 9 3 4" units-per-em="1000" underline-position="-108.88672" underline-thickness="48.828125" slope="-1361.0827" x-height="430.1758" cap-height="662.1094" ascent="891.1133" descent="-216.3086" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="TimesNewRomanPS-ItalicMT"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="12" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="17" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.8.1 
+    <dc:date>2018-09-09 21:20:43 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>cats.arrow</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_133">
+        <path d="M 306 434 L 414 434 C 423.94113 434 432 442.0589 432 452 L 432 452 C 432 461.9411 423.94113 470 414 470 L 306 470 C 296.05887 470 288 461.9411 288 452 L 288 452 C 288 442.0589 296.05887 434 306 434 Z" fill="#fdf5b8"/>
+        <path d="M 306 434 L 414 434 C 423.94113 434 432 442.0589 432 452 L 432 452 C 432 461.9411 423.94113 470 414 470 L 306 470 C 296.05887 470 288 461.9411 288 452 L 288 452 C 288 442.0589 296.05887 434 306 434 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(293 445)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="39.320313" y="11">Profunctor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_132">
+        <path d="M 306 506 L 414 506 C 423.94113 506 432 514.0589 432 524 L 432 524 C 432 533.9411 423.94113 542 414 542 L 306 542 C 296.05887 542 288 533.9411 288 524 L 288 524 C 288 514.0589 296.05887 506 306 506 Z" fill="#fdf5b8"/>
+        <path d="M 306 506 L 414 506 C 423.94113 506 432 514.0589 432 524 L 432 524 C 432 533.9411 423.94113 542 414 542 L 306 542 C 296.05887 542 288 533.9411 288 524 L 288 524 C 288 514.0589 296.05887 506 306 506 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(293 517)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="49.322266" y="11">Strong</tspan>
+        </text>
+      </g>
+      <g id="Line_130">
+        <line x1="360" y1="506" x2="360" y2="479.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_112">
+        <path d="M 216 578 L 324 578 C 333.94113 578 342 586.0589 342 596 L 342 596 C 342 605.9411 333.94113 614 324 614 L 216 614 C 206.05887 614 198 605.9411 198 596 L 198 596 C 198 586.0589 206.05887 578 216 578 Z" fill="#fdf6b8"/>
+        <path d="M 216 578 L 324 578 C 333.94113 578 342 586.0589 342 596 L 342 596 C 342 605.9411 333.94113 614 324 614 L 216 614 C 206.05887 614 198 605.9411 198 596 L 198 596 C 198 586.0589 206.05887 578 216 578 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(203 589)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="51.33203" y="11">Arrow</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <path d="M 126 506 L 234 506 C 243.94113 506 252 514.0589 252 524 L 252 524 C 252 533.9411 243.94113 542 234 542 L 126 542 C 116.05887 542 108 533.9411 108 524 L 108 524 C 108 514.0589 116.05887 506 126 506 Z" fill="#fdf6b8"/>
+        <path d="M 126 506 L 234 506 C 243.94113 506 252 514.0589 252 524 L 252 524 C 252 533.9411 243.94113 542 234 542 L 126 542 C 116.05887 542 108 533.9411 108 524 L 108 524 C 108 514.0589 116.05887 506 126 506 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(113 517)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="42.654297" y="11">Category</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <path d="M 36 578 L 144 578 C 153.94113 578 162 586.0589 162 596 L 162 596 C 162 605.9411 153.94113 614 144 614 L 36 614 C 26.058875 614 18 605.9411 18 596 L 18 596 C 18 586.0589 26.058875 578 36 578 Z" fill="#fdf6b8"/>
+        <path d="M 36 578 L 144 578 C 153.94113 578 162 586.0589 162 596 L 162 596 C 162 605.9411 153.94113 614 144 614 L 36 614 C 26.058875 614 18 605.9411 18 596 L 18 596 C 18 586.0589 26.058875 578 36 578 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(23 589)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="48.32324" y="11">Choice</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <path d="M 126 434 L 234 434 C 243.94113 434 252 442.0589 252 452 L 252 452 C 252 461.9411 243.94113 470 234 470 L 126 470 C 116.05887 470 108 461.9411 108 452 L 108 452 C 108 442.0589 116.05887 434 126 434 Z" fill="#fdf6b8"/>
+        <path d="M 126 434 L 234 434 C 243.94113 434 252 442.0589 252 452 L 252 452 C 252 461.9411 243.94113 470 234 470 L 126 470 C 116.05887 470 108 461.9411 108 452 L 108 452 C 108 442.0589 116.05887 434 126 434 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(113 445)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="41.32129" y="11">Compose</tspan>
+        </text>
+      </g>
+      <g id="Line_108">
+        <line x1="292.5" y1="578" x2="329.7694" y2="548.1845" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_107">
+        <line x1="247.5" y1="578" x2="210.2306" y2="548.1845" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_106">
+        <line x1="180" y1="506" x2="180" y2="479.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_105">
+        <line x1="112.5" y1="578" x2="149.7694" y2="548.1845" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_75">
+        <path d="M 216 648 L 324 648 C 333.94113 648 342 656.0589 342 666 L 342 666 C 342 675.9411 333.94113 684 324 684 L 216 684 C 206.05887 684 198 675.9411 198 666 L 198 666 C 198 656.0589 206.05887 648 216 648 Z" fill="#fdf6b8"/>
+        <path d="M 216 648 L 324 648 C 333.94113 648 342 656.0589 342 666 L 342 666 C 342 675.9411 333.94113 684 324 684 L 216 684 C 206.05887 684 198 675.9411 198 666 L 198 666 C 198 656.0589 206.05887 648 216 648 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(203 659)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="15.988281" y="11">CommutativeArrow</tspan>
+        </text>
+      </g>
+      <g id="Line_74">
+        <line x1="270" y1="648" x2="270" y2="623.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

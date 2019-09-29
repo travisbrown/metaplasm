@@ -66,6 +66,10 @@ main = hakyllWith hakyllConf $ do
     route idRoute
     compile copyFileCompiler
 
+  match "images/*.svg" $ do
+    route idRoute
+    compile copyFileCompiler
+
   match "lib/Font-Awesome/webfonts/*" $ do
     route $ customRoute (combine "webfonts" . takeFileName . toFilePath)
     compile copyFileCompiler
