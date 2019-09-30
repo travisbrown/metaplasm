@@ -16,7 +16,7 @@ times), while also making the library better aligned with future changes in the 
 ## Type classes in Scala
 
 In Scala 2, type classes are typically encoded as generic classes or traits, with type class constraints
-encoded as implicit parameters. For example, a monoid type class implementation might look like this:
+encoded as implicit parameters. For example, a [monoid](https://en.wikipedia.org/wiki/Monoid) type class implementation might look like this:
 
 ```scala
 trait Monoid[A] {
@@ -67,9 +67,9 @@ res0: Int = 123
 scala> getOrEmpty(None: Option[Int])
 res1: Int = 0
 ```
-In [Spray JSON](https://github.com/spray/spray-json) these implicit-holding objects are typically
-named something ending in `Protocol`, in Scalaz and [Cats](https://github.com/typelevel/cats) there are a bunch of objects named things like
-`int` and `list` and `all` in a `std` (for "standard") or `instances` package object, etc. While the naming
+In [Scalaz](https://github.com/scalaz/scalaz/) and [Cats](https://github.com/typelevel/cats) there are a bunch of objects named things like
+`int` and `list` and `all` in a `std` (for "standard") or `instances` package object, in [Spray JSON](https://github.com/spray/spray-json) these implicit-holding objects are typically
+named something ending in `Protocol`, etc. While the naming
 conventions vary, the principle is the same: the library author defines instances in some more or less arbitrarily made-up object,
 and the library user has to import those instances in their code.
 
@@ -151,7 +151,7 @@ Now our `Monoid` instance for `ItemStats` will be available to the compiler anyw
 without any imports.
 
 The details of how implicit search works are beyond the scope of this post, but I'd encourage
-anyone who's interested to read the [official tutorial on implicit search in Scala](https://docs.scala-lang.org/tutorials/FAQ/finding-implicits.html#where-do-implicits-come-from).
+anyone who's interested to read the [official tutorial](https://docs.scala-lang.org/tutorials/FAQ/finding-implicits.html#where-do-implicits-come-from) on implicit search in Scala.
 
 ## Orphan instances
 
