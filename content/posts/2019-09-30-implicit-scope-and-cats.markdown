@@ -322,7 +322,7 @@ In the first weekend when I was putting together the Cats pull request, I made a
 `cats.instances` from the tests, and I wasn't able to see any differences in compile times.
 I've since fixed that mistake, and the following graph shows the difference between the [current version](https://github.com/typelevel/cats/pull/3043/commits/fb8e908999ea0a195258ad7abefa1c2fe2ba5e2e) of the branch
 and [Cats 2.x](https://github.com/typelevel/cats/commit/c40a781c2dcff256794157e67cebfe1f9c278170) for `testsJVM/test:compile` after `testsJVM/test:clean`
-(after an initial full build). The measurements are in seconds, and lower values are better.
+(after an initial full build). The measurements are in seconds, and smaller values are better.
 
 <div id="compile-times" style="width: 100%; height: 256px;"></div>
 
