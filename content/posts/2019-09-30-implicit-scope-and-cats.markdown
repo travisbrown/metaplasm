@@ -1,6 +1,6 @@
 ---
 title: Implicit scope and Cats
-date: Tue 24 Sep 2019 07:44:08 AM CDT
+date: Mon 30 Sep 2019 03:27:18 AM CDT
 tags: scala, fp, cats
 ---
 
