@@ -211,3 +211,41 @@ I'm not aware of these "public acknowledgements" from earlier this year, but I w
 I can't speak for the other people he's targeted, but I'm glad to hear he's considering an apology, even if this is the strangest apology teaser I've ever seen.
 (Update: De Goes deleted this post without explaining why a
 [few days](https://web.archive.org/web/*/http://degoes.net/articles/revisiting-lambdaconf) after publishing it.)
+
+## More updates
+
+De Goes recently [tweeted](https://twitter.com/jdegoes/status/1193932175365660672) the following ([archived](http://archive.today/Ec80F)):
+
+> In the end, there are only:
+>
+> - Conference organizers who stand up to online bullying
+>
+> - Conference organizers who cave to online bullying
+>
+> The choice to speak or even attend a tech conference should be made with increasingly careful consideration.
+
+[And](https://twitter.com/jdegoes/status/1194638178482700291) ([archived](http://archive.today/SWSX0)):
+
+> 2016: We just want to stop this one neoreactionary from talking tech at a tech conference.
+>
+> ...
+>
+> 2019: Let's permaban all ordinary attendees who once wore a MAGA hat.
+>
+> --
+>
+> If you didn't see this coming, you weren't paying attention.
+
+The MAGA hat part is a reference to Charles Max Wood, a software developer [who recently had a his
+registration to a conference revoked](https://twitter.com/linuxfoundation/status/1192216982403158017).
+De Goes follows [Bob Martin](https://twitter.com/unclebobmartin/status/1192437033177931777) and others
+in suggesting that the KubeCon organizers revoked Wood's registration because he
+[once posted a picture of himself wearing a MAGA
+cap](https://twitter.com/KimCrayton1/status/1191697390799130624).
+This isn't what happened, of course—the Linux Foundation
+[explicitly stated](https://twitter.com/linuxfoundation/status/1192220181373652992) that their decision was based on comments Wood
+had made on social media and in videos he had published,
+and these tweets are just one more example of De Goes echoing right-wing
+conspiracy theories about the persecution of conservatives in the tech industry.
+Please read [this post](https://medium.com/@cherp/propaganda-other-lies-we-tell-4325240379f7) by Cher Scarlett
+for more detail about the actions of Wood and John Sonmez that led to the decision that De Goes is criticizing.
