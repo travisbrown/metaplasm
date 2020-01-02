@@ -236,7 +236,7 @@ De Goes recently [tweeted](https://twitter.com/jdegoes/status/119393217536566067
 >
 > If you didn't see this coming, you weren't paying attention.
 
-The MAGA hat part is a reference to Charles Max Wood, a software developer [who recently had a his
+The MAGA hat part is a reference to Charles Max Wood, a software developer [who recently had his
 registration to a conference revoked](https://twitter.com/linuxfoundation/status/1192216982403158017).
 De Goes follows [Bob Martin](https://twitter.com/unclebobmartin/status/1192437033177931777) and others
 in suggesting that the KubeCon organizers revoked Wood's registration because he
