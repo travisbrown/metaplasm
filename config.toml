@@ -1,0 +1,26 @@
+# The URL the site will be built for
+base_url = "https://meta.plasm.us"
+
+title = "home"
+compile_sass = true
+highlight_code = true
+build_search_index = true
+generate_feed = true
+
+theme = "slim"
+
+taxonomies = [
+  {name = "tags", rss = true}
+]
+
+[extra]
+slim_summary = true
+slim_content = false
+slim_footer = "Copyright © 2020 <a href='https://twitter.com/travisbrown'>Travis Brown</a>"
+
+slim_social = [
+    {url = "https://twitter.com/travisbrown", name = "Twitter"},
+    {url = "https://github.com/travisbrown", name = "GitHub"},
+    {url = "https://stackoverflow.com/users/334519/travis-brown", name = "Stack Overflow"}
+]
+

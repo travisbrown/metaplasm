@@ -1,9 +1,2 @@
-_cache/
-_site/
-dist/
 tmp/
-.cabal-sandbox
-.cabal-sandbox-backup
-cabal.sandbox.config
-cabal.sandbox.config-backup
-.stack-work/
+public/

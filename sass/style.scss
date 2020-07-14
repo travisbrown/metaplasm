@@ -1,0 +1,50 @@
+div.header > h1.site-title > a {
+  content: "home";
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h1.post-title {
+  padding-bottom: 0.25em;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h3 > a {
+  font-weight: bold;
+}
+
+.post-title a {
+  line-height: normal;
+}
+
+em {
+  text-emphasis-style: none;
+}
+
+p {
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+a.zola-anchor {
+  margin-left: 0.25em;
+  font-size: 1rem;
+  line-height: 0.5;
+}
+
+.spacer {
+  visibility: hidden;
+}
+
+.post-title:after {
+  border-top: none;
+}
+
+.footer {
+  text-align: left;
+}

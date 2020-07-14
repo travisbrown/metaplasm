@@ -1,3 +1,18 @@
-<h1>$title$</h1>
-$body$
+{% extends "slim/templates/index.html" %}
 
+{% block title %}About{% endblock title %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36422511-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-36422511-1');
+    </script>
+{% endblock extra_head %}
+
+{% block content %}
+<p>I write code, mostly in Scala. I’m also on <a href="https://twitter.com/travisbrown">Twitter</a>, <a href="https://stackoverflow.com/users/334519/travis-brown">Stack Overflow</a>, <a href="https://github.com/travisbrown">GitHub</a>, and <a href="https://www.instagram.com/travisrobertbrown/">some</a> <a href="https://www.strava.com/athletes/travisbrown">other</a> <a href="https://www.flickr.com/photos/travisbrown/">places</a>.</p>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "slim/templates/page.html" %}
+
+{% block title %}{{ page.title }}{% endblock title%}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36422511-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-36422511-1');
+    </script>
+{% endblock extra_head %}
