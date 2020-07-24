@@ -21,7 +21,7 @@ since De Goes has recently deleted the [FCoP GitHub repository][fcop-github] and
 documents, in a move that seems related to the fact that he's currently
 [threatening to sue me for defamation][cease-and-desist].
 
-One of his claims in [De Goes's cease and desist letter][cease-and-desist] is that the following statement (published [here][jdg]) is false:
+One of the claims in [De Goes's cease and desist letter][cease-and-desist] is that the following statement (published [here][jdg]) is false:
 
 > The FCoP was developed specifically in response to the 2016 LambdaConf controversy, 
 > and it's clearly designed to protect white supremacists like Yarvin.
