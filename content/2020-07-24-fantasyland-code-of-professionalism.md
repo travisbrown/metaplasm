@@ -56,7 +56,7 @@ Note that [Breivik][breivik] was a right-wing terrorist who killed 77 people in 
 
 My assertion that the FCoP was "designed to protect white supremacists like Yarvin" was based in part on statements by
 De Goes in GitHub issue threads on the FCoP repository. According to Google's search result cache, the repository was
-deleted at some point after 23 May 2020, and it was not available during the week of 6 June 2020, when I received the
+deleted at some point after 23 May 2020, and it was not available during the week of 6 July 2020, when I received the
 cease and desist letter.
 
 I've currently recovered eighteen of these discussion threads from Google's cache and other archives, including the following:
