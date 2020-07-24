@@ -4,7 +4,7 @@ original_date = 2019-09-01T15:56:08
 path = "posts/2019/09/01/jdg-and-the-fp-community"
 
 [taxonomies]
-tags = ["scala", "fp", "typelevel"]
+tags = ["scala", "fp", "typelevel", "racism"]
 +++
 
 This post is a collection of links about John De Goes that show some clear patterns of behavior:
