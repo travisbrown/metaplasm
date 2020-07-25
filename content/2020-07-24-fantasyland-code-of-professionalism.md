@@ -41,7 +41,7 @@ and [one of his former business partners][burnham].
 ## Yarvin as a white supremacist
 
 I won't repeat all of that material here, but will include a couple of quotations from [Yarvin's blog][yarvin-1],
-which De Goes claimed to have reviewed before he [asserted][the-letter] that Yarvin "has never written any hate speech
+which [De Goes claimed to have reviewed][typelevel-email] before [he asserted][the-letter] that Yarvin "has never written any hate speech
 or resorted to insulting or vulgar language":
 
 > Not all humans are born the same, of course, and the innate character and intelligence of some is more suited to mastery than slavery. For others, it is more suited to slavery. … Thus, Spaniards and Englishmen in the Americas in the 17th and earlier centuries, whose sense of political correctness was negligible, found that Africans tended to make good slaves and Indians did not.
@@ -188,5 +188,6 @@ other branches, please contact me.
 [the-letter]: https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html
 [typelevel]: https://typelevel.org/
 [typelevel-comment]: https://github.com/typelevel/general/issues/74#issuecomment-302972140
+[typelevel-email]: https://gist.github.com/travisbrown/a542b7eaa8fe937f99877522d5e46edd
 [yarvin-1]: https://web.archive.org/web/20200629084814/https://www.unqualified-reservations.org/2009/07/why-carlyle-matters/
 [yarvin-2]: https://web.archive.org/web/20200629082346/https://www.unqualified-reservations.org/2011/07/right-wing-terrorism-as-folk-activism/
