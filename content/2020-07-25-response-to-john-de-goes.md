@@ -55,6 +55,8 @@ https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) in 2016, i
 * In series of blog posts (see [here](https://web.archive.org/web/20160329194817/https://degoes.net/articles/lambdaconf-controversy), [here](http://web.archive.org/web/20160324015332/https://degoes.net/articles/lambdaconf-inclusion), and [here](http://web.archive.org/web/20200621073207/https://degoes.net/articles/lambdaconf-conclusion)) about the decision to keep Yarvin on the program: "In addition, we could not find any evidence the speaker would engage in verbal abuse. … Some people have claimed that a policy which allows a neo-reactionary to speak at the conference will produce a conference dominated by neo-reactionaries. However, I believe this is incoherent…"
 * Amar Shah [wrote the following](https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) about private communication from De Goes in 2016: "What I found unsettling was how **generous** this appraisal felt – as if to convince us that Yarvin isn't a bad guy, just somehow misunderstood. The entire letter reads this way."
 
+De Goes made similar comments about Yarvin in other discussion threads in the FCoP repository on GitHub, but he deleted the entire project shortly before sending the cease and desist letter (see [this post](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for details), and so far I've only been able to recover 18 of over 100 threads (including the two quoted above).
+
 ### De Goes defending Ed Latimore
 
 * De Goes in a long thread on [Twitter](https://twitter.com/jdegoes/status/960488879689052160): "In 2017, 
