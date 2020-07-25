@@ -154,6 +154,10 @@ He also repeatedly [made it clear](http://archive.is/PTT9j#selection-5705.0-5705
 
 > Oh, if it were up to me, the letter would never come down. Not until there was a commitment to real reform. DC took the easy way out.
 
+De Goes was also quoted commenting on the controversy in similar terms in [an article in Inc.](https://www.inc.com/sonya-mann/drupal-larry-garfield-gor.html):
+
+> De Goes added, "There will be more, and it will probably get a lot worse before it gets better."
+
 Some people in the Drupal community believed that De Goes could be operating the Drupal Confessions Twitter account alone, including [Helena McCabe](https://twitter.com/misshelenasue/status/858433525695078401):
 
 > I don't think your multiple personalities count as 'many people', John. … I do believe that there could be others, but I think it's a smaller group than he's presenting.
