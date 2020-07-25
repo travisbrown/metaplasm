@@ -53,6 +53,7 @@ https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) in 2016, i
 * In response to a woman who had criticized [ClarkHat](http://archive.li/qWYJ6): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
 * Also on [ClarkHat](https://imgur.com/a/YCFudjw): "OK, I won't tag them (though they're not dangerous). You provide me one quote proving Clark is alt-right. Just one."
 * In series of blog posts (see [here](https://web.archive.org/web/20160329194817/https://degoes.net/articles/lambdaconf-controversy), [here](http://web.archive.org/web/20160324015332/https://degoes.net/articles/lambdaconf-inclusion), and [here](http://web.archive.org/web/20200621073207/https://degoes.net/articles/lambdaconf-conclusion)) about the decision to keep Yarvin on the program: "In addition, we could not find any evidence the speaker would engage in verbal abuse. … Some people have claimed that a policy which allows a neo-reactionary to speak at the conference will produce a conference dominated by neo-reactionaries. However, I believe this is incoherent…"
+* Amar Shah [wrote the following](https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) about private communication from De Goes in 2016: "What I found unsettling was how **generous** this appraisal felt – as if to convince us that Yarvin isn't a bad guy, just somehow misunderstood. The entire letter reads this way."
 
 ### De Goes defending Ed Latimore
 
