@@ -183,7 +183,7 @@ other branches, please contact me.
 [kkk]: https://en.wikipedia.org/wiki/Ku_Klux_Klan
 [koehler]: https://subfictional.com/an-analysis-of-the-fcop/
 [lambdaconf]: https://lambdaconf.us/
-[response]: https://gist.github.com/travisbrown/c7761b664d6d90272768725f4dc0c871
+[response]: https://meta.plasm.us/posts/2020/07/25/response-to-john-de-goes/
 [sabin]: https://github.com/typelevel/general/issues/74#issuecomment-303031058
 [the-letter]: https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html
 [typelevel]: https://typelevel.org/

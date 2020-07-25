@@ -30,6 +30,11 @@ I know that the Scala Exchange organizers are aware of the information in this p
 
 Update: the Scala Exchange organizers have posted [a statement](https://skillsmatter.com/go/03092019) on the matter.
 
+Update (25 July 2020): John De Goes has hired a lawyer to send me a
+[cease and desist letter](https://gist.github.com/travisbrown/5fb741a2619c86aed0d7f1838aa5e33d) demanding
+that I delete this post. See my responses [here](https://meta.plasm.us/posts/2020/07/25/response-to-john-de-goes/) and
+[here](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for more detail.
+
 <hr/>
 
 Note that many of the links below are to web archives, because some of the people involved here have a
