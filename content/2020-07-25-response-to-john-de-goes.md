@@ -119,6 +119,8 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 
 ### De Goes accusing women of lying
 
+The following are cases where we have archived pages or screenshots showing De Goes accusing women of lying. There are many reports of other cases where he's done this but has deleted the comments before they could be archived (e.g. "I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets.").
+
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/kohBA#selection-5667.0-5677.93) (8 March 2017): "Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying."
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/qWYJ6) in a different thread (8 March 2017): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
 * De Goes responding to Sonia Gupta's criticism of Ed Latimore on [Twitter](http://archive.li/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
@@ -128,7 +130,7 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 * De Goes [on Twitter](https://twitter.com/christi3k/status/853403766070034437/photo/1), screenshotting discussion of a blog post by Christie Koehler: "After you read it, please take the time to correct the misperceptions or lies of your colleagues that put this smear campaign in motion."
 * Christie Koehler in [a blog post](https://subfictional.com/an-analysis-of-the-fcop/), referring to now-deleted comments by John De Goes: "One of the primary authors of the FCOP is going around asserting I am a liar".
 * De Goes's brother Matthew T. De Goes, in [response](https://twitter.com/christi3k/status/852969422067073024) to Christie Koehler: "Maybe if you asked us about FCOP you wouldn't have to lie about it? Just a suggestion."
-* From the "Drupal Confessions" Twitter account, which De Goes helped to run, about Christie Koehler: "In this illiberal authoritarian rant, @christi3k, who has done severe harm to Drupal, implies Crell is an abuser and master manipulator. She later admitted she based her accusations purely on 'gut feeling', which she argues is enough because 'this is not a court'."
+* From the ["Drupal Confessions" Twitter account](https://meta.plasm.us/archive/twitter-888500340017909760/), which De Goes helped to run, about Christie Koehler: "In this illiberal authoritarian rant, @christi3k, who has done severe harm to Drupal, implies Crell is an abuser and master manipulator. She later admitted she based her accusations purely on 'gut feeling', which she argues is enough because 'this is not a court'."
 
 ### De Goes accusing others of lying
 
