@@ -119,7 +119,12 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 
 ### De Goes accusing women of lying
 
-The following are cases where we have archived pages or screenshots showing De Goes accusing women of lying. There are many reports of other cases where he's done this but has deleted the comments before they could be archived (e.g. "I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets.").
+In the cases below we have archived pages or screenshots showing De Goes accusing women of lying.
+There are also many reports of other cases where he's done this but has deleted the comments before they could be archived
+(e.g. from private communication:
+"I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets.",
+and Aimee Maree on [Twitter](https://twitter.com/aimee_maree/status/1285815254375522304):
+"[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…").
 
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/kohBA#selection-5667.0-5677.93) (8 March 2017): "Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying."
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/qWYJ6) in a different thread (8 March 2017): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
@@ -176,6 +181,7 @@ Many community members agreed:
 * [Ruby Sinreich on Twitter](https://twitter.com/Ruby/status/890636077051990016): "DC promoted conspiracy theories, cultivated anonymous attacks, welcomed alt-right & GG types, then gave them the keys to yr account."
 * [Manning Peterson](https://twitter.com/mrspete/status/890653568100970498): "DC also provided the alt-right people with videos, personal info (names of family members, ??) and continues to protect these abusers' IDs"
 * [Laura S](https://twitter.com/lauras/status/855108904270909440): "So now we get threats? How does this help anything? https://twitter.com/druconfessions/status/855030372538691585 … I would add that behavior that constitutes harassment can all too often be dismissed by (frankly mostly) men as overstated or nonexistent 6/"
+* [Aimee Maree](https://twitter.com/aimee_maree/status/1285815254375522304): "[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…"
 
 The account targeted in particular Christie Koehler, who De Goes also frequently criticized from his personal account. For example, Drupal Confessions wrote [the following](http://archive.is/bPvKe#selection-3551.0-3562.1) ([archived](https://meta.plasm.us/archive/twitter-888500340017909760/)):
 
