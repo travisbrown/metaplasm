@@ -167,6 +167,22 @@ De Goes was also quoted commenting on the controversy in similar terms in [an ar
 
 > De Goes added, "There will be more, and it will probably get a lot worse before it gets better."
 
+De Goes was also observed [accidentally
+tweeting](https://twitter.com/druregressions/status/888426413451247616) from the wrong Twitter account
+(i.e. using @druconfessions when he meant to use @jdegoes):
+
+> Remember that time he accidentally tweeted from the wrong account? Quickest delete twitter has ever seen
+
+[And](https://twitter.com/jackaponte/status/858412966290399232):
+
+> Um...wait a second, did jdegoes just tweet from the @druconfessions account? Tweet got deleted REAL quick! #DrupalConfessions cc @heyrocker
+
+There are many other examples of people in the community identifying De Goes as a leader of the effort:
+
+* [Because of conversations with media](https://twitter.com/jackaponte/status/859513284638064640): "Interesting how jdegoes has been shaping the media narrative around Crell & #DrupalConfessions from jump, as per @sonyaellenmann 's tweets."
+* [Because of retweets](https://twitter.com/jackaponte/status/860214135014866944): "de Goes sure does love retweeting RTs of his sockpuppet accounts (@druconfessions, now @drupalinclusion?) from his real account! #egostroke"
+* [With respect to similar accounts](https://twitter.com/jackaponte/status/860178438119858176): "Took a look at how the imposter @drupalinclusion account is making an ass of themselves today. I'd bet good money it's de Goes yet again."
+
 Some people in the Drupal community believed that De Goes could be operating the Drupal Confessions Twitter account alone, including [Helena McCabe](https://twitter.com/misshelenasue/status/858433525695078401):
 
 > I don't think your multiple personalities count as 'many people', John. … I do believe that there could be others, but I think it's a smaller group than he's presenting.
@@ -182,6 +198,10 @@ Many community members agreed:
 * [Manning Peterson](https://twitter.com/mrspete/status/890653568100970498): "DC also provided the alt-right people with videos, personal info (names of family members, ??) and continues to protect these abusers' IDs"
 * [Laura S](https://twitter.com/lauras/status/855108904270909440): "So now we get threats? How does this help anything? https://twitter.com/druconfessions/status/855030372538691585 … I would add that behavior that constitutes harassment can all too often be dismissed by (frankly mostly) men as overstated or nonexistent 6/"
 * [Aimee Maree](https://twitter.com/aimee_maree/status/1285815254375522304): "[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…"
+* [John Albin Wilkins](https://twitter.com/JohnAlbin/status/857114649514389504): "Others reasonably think you're a white supremacist trolling #drupal community. @DruConfessions, it is time for you to declare which it is!"
+* [Jack Aponte](https://twitter.com/jackaponte/status/859785354345197568): "[the] two of you conveniently forgot the 'with an agenda like de Goes' part. You know, the white supremacist & sexist protecting agenda."
+* [@yched](https://twitter.com/yched/status/859698749836283904): "But had I known a non-community agent with an agenda like degoes' was co-organizing, I sure wouldn't have considered it the same"
+* [Renée Stephen](https://twitter.com/ReneeStephen/status/858743190941192192): "Well, you may alas find you've taken this stand on quicksand; De Goes is willing to 'crater' our community. Is not about the good of Drupal."
 
 The account targeted in particular Christie Koehler, who De Goes also frequently criticized from his personal account. For example, Drupal Confessions wrote [the following](http://archive.is/bPvKe#selection-3551.0-3562.1) ([archived](https://meta.plasm.us/archive/twitter-888500340017909760/)):
 
@@ -300,8 +320,7 @@ Statements specifically supporting or endorsing the post:
 * [Stephen Judkins](https://twitter.com/stephenjudkins/status/1169702962517561344): "Most of the stuff in this post is fully corroborated. https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/"
 * [Benjamin Reitzammer](https://twitter.com/benjamin/status/1169471663517380609): "I don’t have a personal crusade with De Goes. But judging from his actions (some of them documented at https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) he may be a technical expert but at the same time an abuser, MRA, racist and other things that are incompatible with inclusive events." 
 * [Ryan Peters](https://twitter.com/LiquidSloshalot/status/1169316115866144769): "I've noticed a lot of these things myself, but @travisbrown says it a lot better than I ever could, and all in one place. We need more devs in every community who are willing to stand up for social justice, and I fully support @skillsmatter's decisions in light of this posting."
-* [Mirjam Diala](https://twitter.com/mirjam_diala/status/1169235114775257088): "There should be no room for anything or anyone alt-right on stages, in our tech community and community in general. Thanks for standing up and making a stand on that, @skillsmatter … Read this tweet and document for more info.
-https://twitter.com/travisbrown/status/1168419834775912448"
+* [Mirjam Diala](https://twitter.com/mirjam_diala/status/1169235114775257088): "There should be no room for anything or anyone alt-right on stages, in our tech community and community in general. Thanks for standing up and making a stand on that, @skillsmatter … Read this tweet and document for more info. https://twitter.com/travisbrown/status/1168419834775912448"
 * [Jared Hirsch](https://twitter.com/6a68/status/1168580021289504768): "This is unbelievable. Apparently Lambdaconf and the Scala community generally are cool with conf speakers who are virulent misogynists and white supremacists? We need to bring the “nazi punks fuck off” attitude into tech, push these assholes out and keep them out"
 * [Cody Konior](https://twitter.com/codykonior/status/1268203896570122242): "I read that and then this to get context on who that was https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/ IMHO uninviting them was the right thing to do. There’s room in tech for... personality. Opinions. And disagreements. But never for misogyny and white supremacy"
 * [Nedda Amini](https://twitter.com/AminiNedda/status/1170731012113887233): "Essentially John De Goes keeps inviting objectively terrible people to his conferences, and other things. The liked post in this tweet explains a lot."
@@ -336,6 +355,7 @@ General criticism of John De Goes and LambdaConf on Twitter:
 * [David Nolen](https://twitter.com/swannodette/status/712678596142362625?lang=en): "Wow LambdaConf is now on my list of conferences to NEVER attend http://degoes.net/articles/lambdaconf-inclusion #moldbug"
 * [@KirinDave](https://twitter.com/KirinDave/status/833865528728915969): "Please stop making LambdaConf a friendly environment for harassment. https://twitter.com/mtdegoes/status/833830785551577090"
 * [Zach Tellman](https://twitter.com/ztellman/status/960603006348611585): "I cancelled my talk at LambdaConf two years ago because of Yarvin's invitation. The only static I got was one guy asking if I was "virtue signaling." Stories like this are infuriating, but also prove how utterly wrong-minded the LambdaConf CoC is. https://twitter.com/soniagupta504/status/960501048388366336"
+* [Thomas Lockney](https://twitter.com/tlockney/status/713417210564227072) in response to [a tweet](http://archive.is/KYjAz) quoting Desmond Tutu: "@lambda_conf Sorry, but choosing that quote in the given situation is just disgusting. I'm appalled by this."
 
 ## Evidence that De Goes read the post in September 2019
 
