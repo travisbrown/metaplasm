@@ -7,6 +7,11 @@ path = "posts/2019/09/01/jdg-and-the-fp-community"
 tags = ["scala", "fp", "typelevel", "racism"]
 +++
 
+Update (25 July 2020): John De Goes has hired a lawyer to send me a
+[cease and desist letter](https://gist.github.com/travisbrown/d9e2e727d7a43b9be4ce6e05c85e1626) demanding
+that I delete this post. See my responses [here](https://meta.plasm.us/posts/2020/07/25/response-to-john-de-goes/) and
+[here](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for more details.
+
 This post is a collection of links about John De Goes that show some clear patterns of behavior:
 
 * De Goes defending white supremacists and misogynists.
@@ -29,11 +34,6 @@ Despite all of the information in this post being publicly available and widely 
 I know that the Scala Exchange organizers are aware of the information in this post, because I shared much of it with them when I declined a keynote invitation in February. I also know of other cases of people in the Scala community declining invitations from conferences on this list and providing similar reasons. The organizers of these conferences aren't choosing to give De Goes a platform because they don't know about his history of abuse, accusing women of lying, etc.—they just don't care.
 
 Update: the Scala Exchange organizers have posted [a statement](https://skillsmatter.com/go/03092019) on the matter.
-
-Update (25 July 2020): John De Goes has hired a lawyer to send me a
-[cease and desist letter](https://gist.github.com/travisbrown/5fb741a2619c86aed0d7f1838aa5e33d) demanding
-that I delete this post. See my responses [here](https://meta.plasm.us/posts/2020/07/25/response-to-john-de-goes/) and
-[here](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for more detail.
 
 <hr/>
 
