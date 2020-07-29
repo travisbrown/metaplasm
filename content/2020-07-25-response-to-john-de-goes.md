@@ -119,23 +119,26 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 
 ### De Goes accusing women of lying
 
-In the cases below we have archived pages or screenshots showing De Goes accusing women of lying.
-There are also many reports of other cases where he's done this but has deleted the comments before they could be archived
-(e.g. from private communication:
-"I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets.",
-and Aimee Maree on [Twitter](https://twitter.com/aimee_maree/status/1285815254375522304):
-"[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…").
+In the cases below we have archived pages or screenshots showing De Goes accusing women of lying. He has deleted all of these comments except for one of the tweets from February 2018 attacking Sonia Gupta.
 
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/kohBA#selection-5667.0-5677.93) (8 March 2017): "Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying."
 * De Goes to Adrienne Leigh on [Twitter](http://archive.li/qWYJ6) in a different thread (8 March 2017): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
+* De Goes referring to Adrienne Leigh on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes/01.png) (13 March 2017): "Yeah, I decided to start calling out liars. If they don't like it, they can always stop lying. We all have choices."
 * De Goes responding to Sonia Gupta's criticism of Ed Latimore on [Twitter](http://archive.li/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
 * De Goes to Sonia Gupta on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes-01/twitter-jdegoes-01.png): "Quote or you're lying. I think we both know which one it is."
 * De Goes in [a thread](https://twitter.com/jdegoes/status/960490148591910914) about Sonia Gupta's complaint: "Don't become bitter just because you disagree, & spread lies and misinformation, since that only discredits you when the truth comes to light—& it always comes to light. 21/22"
 * Sonia Gupta, in a [public article](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c) about LambdaConf 2017: "Mr. De Goes has called me a liar."
 * De Goes [on Twitter](https://twitter.com/christi3k/status/853403766070034437/photo/1), screenshotting discussion of a blog post by Christie Koehler: "After you read it, please take the time to correct the misperceptions or lies of your colleagues that put this smear campaign in motion."
+* De Goes [on Twitter](https://meta.plasm.us/archive/twitter-jdegoes/02.png), referring to an article by Christie Koehler as "bogus": "You're the one who endorsed a bogus critique based on a dead version of FCOP. Name a single issue with the current FCOP, or admit you're lying."
 * Christie Koehler in [a blog post](https://subfictional.com/an-analysis-of-the-fcop/), referring to now-deleted comments by John De Goes: "One of the primary authors of the FCOP is going around asserting I am a liar".
 * De Goes's brother Matthew T. De Goes, in [response](https://twitter.com/christi3k/status/852969422067073024) to Christie Koehler: "Maybe if you asked us about FCOP you wouldn't have to lie about it? Just a suggestion."
+* De Goes's brother Matthew T. De Goes in [response](https://twitter.com/christi3k/status/853671517493706752/photo/1) to Christie Koehler: "Just a reminder that this is a totally false statement."
 * From the ["Drupal Confessions" Twitter account](https://meta.plasm.us/archive/twitter-888500340017909760/), which De Goes helped to run, about Christie Koehler: "In this illiberal authoritarian rant, @christi3k, who has done severe harm to Drupal, implies Crell is an abuser and master manipulator. She later admitted she based her accusations purely on 'gut feeling', which she argues is enough because 'this is not a court'."
+
+There are also many reports of other cases where he's made comments like these but deleted them before they were archived. For example:
+
+* Aimee Maree on [Twitter](https://twitter.com/aimee_maree/status/1285815254375522304): "[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…"
+* From private communication: "I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets."
 
 ### De Goes accusing others of lying
 
