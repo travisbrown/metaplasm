@@ -146,6 +146,8 @@ I was able to find one example of De Goes accusing a man of lying, while not usi
 
 * To Damien McKenna on [Twitter](http://archive.is/qstE9): "So fess up, you & your friends launch a coordinated smear attack with blatant disregard for facts? … Your statement is false…"
 
+(He has also [called me a liar](http://archive.is/AHarb) many times, of course.)
+
 ## Response to complaint 3
 
 "Our client has never engaged in any targeted harassment. Harassing other persons would be illegal. Our client conducts himself professionally and treats other people with respect."
