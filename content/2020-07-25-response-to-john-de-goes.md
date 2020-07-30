@@ -63,6 +63,7 @@ De Goes made similar comments about Yarvin in other discussion threads in the FC
 @edlatimore delivered a heartfelt, vulnerable, and inspiring keynote on facing fear (a major impediment to learning). He was unpaid, & freely volunteered his time. 2/22"
 * De Goes quoted in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/): "I don't agree with Ed on everything, but he's a source of endless insight and inspiration, and I'm upset at the way people are lying about him and trying to smear his reputation."
 * Allum Bokhari in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/), about De Goes: "John De Goes, the principal organizer of LambaConf, has publicly defended Latimore."
+* De Goes on [Twitter](https://twitter.com/jdegoes/status/960489907847180289): "[LambdaConf] will not ban people over politics regardless of Twitter insanity."
 * De Goes on [Twitter](http://archive.li/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
 * De Goes on [Reddit](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ez9ti6y/): "It's a mistake to call Latimer a misogynist (sexist would be more accurate, since he believes in sex-based differences between men and women)."
 
@@ -101,6 +102,7 @@ Many people have described Curtis Yarvin, ClarkHat, and the Neoreactionary movem
 * [Gabriel Gonzalez](http://www.haskellforall.com/2016/04/lambdaconf-should-reconsider-its-policy.html) on De Goes, LambdaConf, and Yarvin: "Neoreactionaries like Curtis are not underdogs; they (unfortunately) have a loud and influential voice in our society… However, his presence is driving away underrepresented people…"
 * [Andi McClure](https://twitter.com/mcclure111/status/719236645363519490) on De Goes, LambdaConf, and white supremacy: "@jdegoes: You must understand. You are working with *white supremacists*. You invited a leader in an organized movement. @lambda_conf"
 * [Harry Garrood](https://twitter.com/hdgarrood/status/865031531064152064) on De Goes, LambdaConf, and white supremacy: "I wish people would just say, look, you used MLK quotes to moralise to people who complained about you welcoming a white supremacist…"
+* [Rich Felker](https://twitter.com/RichFelker/status/832382526090072064) in response to De Goes: "Neither. Curtis Yarvin is quite obviously a white supremacist. Read his own words."
 * [Erica Baker](https://www.inc.com/tess-townsend/indiegogo-campaign-funding-tech-conference-white-nationalist.html) on De Goes, LambdaConf, and white supremacy, quoted in Inc.: "There are many people with a vested interest in ensuring there is space in our culture (not just tech, but beyond) to continuing debating white supremacy and to continue coddling white supremacists, I fully expect LambdaConf to continue getting money, not because they need it, but because white supremacists want to reward them for their decision to include a white supremacist in their space."
 
 ### Misogynistic statements by Ed Latimore
@@ -245,8 +247,22 @@ There are many other cases where people in the community have discussed being ta
 * From [Andi McClure](https://twitter.com/mcclure111/status/719235417988534273): "However, I criticized  @lambda_conf in public, and now I am targeted for harassment by white supremacists. This *is* real harm. … @jdegoes Groups aligned w/this wiki hve run successful smear campaigns to get women fired recently,so this is a credible threat. @lambda_conf @jdegoes … If white supremacist harassment groups are investigating me, the harm done on @lambda_conf's behalf could even be harm to my person. … .@jdegoes: You must understand. You are working with *white supremacists*. You invited a leader in an organized movement. … .@jdegoes: You have created a situation where @lambda_conf is a safe space for those comfortable with white supremacy&unsafe for all others."
 * From [Sonia Gupta](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): "I had already received considerable harassment on Twitter due to my speaking up about the event, but shortly before I was due to publish my response, Breitbart picked up the story, and the harassment became worse. I was afraid for my safety and I chose not to share my response with the world."
 * From [The Daily Camera](https://www.dailycamera.com/2017/06/02/attendee-alleges-harassment-after-criticizing-speaker-of-boulders-lambdaconf-conference/), a newspaper in Boulder, Colorado: "A lawyer-turned-software-developer new to the field says she has been the subject of online harassment after she confronted organizers of Boulder’s LambdaConf programming conference for hosting a keynote speaker that she says is a misogynist."
-* From [Kelly Ellis](https://twitter.com/justkelly_ok/status/719309846147772416): ".@jdegoes @tangled_zans
+
+In April 2016 a group of De Goes supporters published a list of "SJWs" ("social justice warriors"), based on the list of signatories to a [statement criticizing LambdaConf](https://statement-on-lambdaconf.github.io/), with the goal of inciting harassment. This list was [widely criticized](https://www.dailydot.com/irl/lambdaconf-speaker-petition-sjwlist-curtis-yarvin/):
+
+> While the list is supposedly a resource for companies who want to hire or fire compatible employees, it's being interpreted as an online blacklist for social justice advocates to be harassed or doxed.
+
+De Goes seems to have declined to comment on the list at the time (he is not quoted in journalist Beth Elderkin's article on the topic, for example, although she had [reached out to him on Twitter](https://twitter.com/BethElderkin/status/720095676235812864). In September 2019 [he acknowledged](https://twitter.com/jdegoes/status/1169959075448332290) not having stood up to the harassment that had been done by his supporters three years earlier:
+
+> The SJW list was terrible, and while I had no part of that, I deeply regret not standing up to them.
+
+Many people have pointed out other cases where De Goes seemed to invite and welcome support from hate groups and movements like Gamergate (which was [known for harassment](http://gamergateblog.de/gamergate/was-ist-gamergate)):
+
+* [Kelly Ellis](https://twitter.com/justkelly_ok/status/719309846147772416) referring to Status 451, a LambdaConf sponsor: ".@jdegoes @tangled_zans
  You know... The blog that lambdaconf.us is driving traffic to? It calls for harassment. So. … Wrong. Thinly veiled call to harass someone's employer for employee tweets. … John, their blog does have posts calling for harassment of women in tech."
+* [Bodil Stokke](https://twitter.com/bodil/status/1169259081409925120) referring to Trump supporters: "Can also confirm I've already had maga trolls sniffing round my Twitter feed, starting when JdG tweeted the above."
+* [Harry Garrood](https://twitter.com/hdgarrood/status/716557640847998976), quoting a reply from the LambdaConf account to ClarkHat and a Gamergate supporter: "Really hope LC isn't about to start taking advice from GGers about how to write a CoC."
+* [@freiksenet](https://twitter.com/freiksenet/status/719253142442008576): "Slippery slope they said, inclusion they said. Well slippery slope backfired in their face, with practically GG behind LambdaConf now."
 
 ## Response to complaint 4
 
@@ -364,6 +380,7 @@ General criticism of John De Goes and LambdaConf on Twitter:
 * [David Nolen](https://twitter.com/swannodette/status/712678596142362625?lang=en): "Wow LambdaConf is now on my list of conferences to NEVER attend http://degoes.net/articles/lambdaconf-inclusion #moldbug"
 * [@KirinDave](https://twitter.com/KirinDave/status/833865528728915969): "Please stop making LambdaConf a friendly environment for harassment. https://twitter.com/mtdegoes/status/833830785551577090"
 * [Zach Tellman](https://twitter.com/ztellman/status/960603006348611585): "I cancelled my talk at LambdaConf two years ago because of Yarvin's invitation. The only static I got was one guy asking if I was "virtue signaling." Stories like this are infuriating, but also prove how utterly wrong-minded the LambdaConf CoC is. https://twitter.com/soniagupta504/status/960501048388366336"
+* [Joshua Hollander](https://twitter.com/jholla14/status/1169618327238348803): "Listening to those people is different than giving them a platform. We can not tolerate the intolerant, be it racist, misogynist or bigot. Giving them a platform, tech or not, is tolerating them. It's so naive to cry 'free speech' when an intolerant voice is silenced. … Go ahead read all of Yarvin's crap.  Be best friends with him for all we care. Inviting him to your conference is a tacit endorsement of his horrible views."
 * [Thomas Lockney](https://twitter.com/tlockney/status/713417210564227072) in response to [a tweet](http://archive.is/KYjAz) quoting Desmond Tutu: "@lambda_conf Sorry, but choosing that quote in the given situation is just disgusting. I'm appalled by this."
 
 ## Evidence that De Goes read the post in September 2019
