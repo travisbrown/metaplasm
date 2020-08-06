@@ -145,6 +145,10 @@ There are also many reports of other cases where he's made comments like these b
 * Aimee Maree on [Twitter](https://twitter.com/aimee_maree/status/1285815254375522304): "[De Goes] impacted my life in ways too hard for me to discuss, last two jobs in Drupal community had his so called followers and Crell supporters in Australia go on a war path against me…"
 * From private communication: "I tweeted something mild about why I wasn't going. John called me a liar on at least two platforms, but of course he has deleted those tweets."
 
+De Goes has not stopped engaging in this behavior, even after sending the cease and desist letter where he denies it. For example:
+
+* In [response to @Felienne](https://twitter.com/jdegoes/status/1290961440191451136) (5 August 2020): "I see you're still upset Yarvin spoke at LC years ago, but there are more constructive ways to improve the world than insulting or lying about me."
+
 ### De Goes accusing others of lying
 
 I was able to find one example of De Goes accusing a man of lying, while not using that word, and with reference to a blog post by a woman (Christie Koehler):
