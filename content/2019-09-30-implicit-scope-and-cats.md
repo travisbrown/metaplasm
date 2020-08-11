@@ -7,6 +7,12 @@ path = "posts/2019/09/30/implicit-scope-and-cats"
 tags = ["scala", "fp", "cats"]
 +++
 
+Update: the experiment described in this post is now available in the Cats 2.2.0 pre-releases,
+starting with [2.2.0-M1](https://github.com/typelevel/cats/releases/tag/v2.2.0-M1), which was
+published in March 2020.
+
+<hr/>
+
 This post is an attempt to provide some additional context and justification for
 [an experiment](https://github.com/typelevel/cats/pull/3043) that I've been working on as a proposal for a
 future version of [Cats](https://github.com/typelevel/cats) (probably 3.0). The argument is that by
