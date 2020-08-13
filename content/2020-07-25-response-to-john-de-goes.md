@@ -2,12 +2,13 @@
 title = "Response to John De Goes"
 original_date = 2020-07-25T04:20:34
 path = "posts/2020/07/25/response-to-john-de-goes"
+description = "This document is a response to a cease and desist letter that accuses me of defamation."
 
 [taxonomies]
 tags = ["scala", "lambdaconf", "racism"]
 +++
 
-This document (originally published [on GitHub](https://gist.github.com/travisbrown/c7761b664d6d90272768725f4dc0c871)) contains additional supporting material for the claims in [this post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) (published 1 September 2019), in response to [a cease and desist letter](https://gist.github.com/travisbrown/5fb741a2619c86aed0d7f1838aa5e33d) from John A. De Goes that I received on 6 July 2020.
+This document (originally published [on GitHub](https://gist.github.com/travisbrown/c7761b664d6d90272768725f4dc0c871)) contains additional supporting material for the claims in [this post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) (published 1 September 2019), in response to [a cease and desist letter](https://gist.github.com/travisbrown/d9e2e727d7a43b9be4ce6e05c85e1626) from John A. De Goes that I received on 6 July 2020.
 
 Please see also [this post](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for more information about De Goes deleting the [FCoP repository on GitHub](https://github.com/fantasylandinst/fcop/) shortly before sending the cease and desist letter.
 
