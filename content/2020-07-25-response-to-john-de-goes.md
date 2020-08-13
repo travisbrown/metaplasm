@@ -121,7 +121,7 @@ More specifically, many people have criticized De Goes in exactly the same terms
 
 "Our client does not single out women and accuses [sic] them of lying"
 
-Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) does not claim that De Goes "singles out women". It does observe that there seems to be more evidence of De Goes accusing women (in particular Sonia Gupta, Christie Koehler, and Adrienne Leigh) of lying than others.
+Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) does not claim that De Goes "singles out women". It does point out that there seems to be more evidence of De Goes accusing women (in particular Sonia Gupta, Christie Koehler, and Adrienne Leigh) of lying than others.
 
 ### De Goes accusing women of lying
 
@@ -151,14 +151,6 @@ There are also many reports of other cases where he's made comments like these b
 De Goes has not stopped engaging in this behavior, even after sending the cease and desist letter where he denies it. For example:
 
 * In [response to @Felienne](https://twitter.com/jdegoes/status/1290961440191451136) (5 August 2020): "I see you're still upset Yarvin spoke at LC years ago, but there are more constructive ways to improve the world than insulting or lying about me."
-
-### De Goes accusing others of lying
-
-I was able to find one example of De Goes accusing a man of lying, while not using that word, and with reference to a blog post by a woman (Christie Koehler):
-
-* To Damien McKenna on [Twitter](http://archive.is/qstE9): "So fess up, you & your friends launch a coordinated smear attack with blatant disregard for facts? … Your statement is false…"
-
-(He has also [called me a liar](http://archive.is/AHarb) many times, of course.)
 
 ## Response to complaint 3
 
