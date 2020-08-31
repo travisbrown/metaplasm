@@ -86,6 +86,15 @@ De Goes made similar comments about Yarvin in other discussion threads in the FC
 * [ClarkHat in April 2016](https://twitter.com/sclv/status/723741055905050624/photo/1) on women "I don't have anything against felons. It's just that - like non-property owners, and also women - they make bad decisions when voting."
 * [ClarkHat on Islam](https://twitter.com/Popehat/status/868536999602380801/photo/1): "Islam is filth. It's a disgusting totalitarian ideology that punishes the weak. And it needs to be destroyed. … yeah, I'm about THIS FAR (holds fingers 1 nanometer apart) from endorsing a targeted plague. Kill all 1B of them."
 
+### Misogynistic statements by Ed Latimore
+
+* Latimore on [Twitter](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): “The female seems crazy, mostly because it's not male. Every man has a range for sanity, but if you want logic and reason you want a boyfriend"
+* Latimore on [Twitter](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): "Have always went out of my way to avoid crazy women. But then again I barely like hanging around sane girls to start"
+* Latimore on [Twitter](http://archive.is/PfNg2): "Choose how to have women involved in your life or they will chose for you. It most likely won’t be in your best interest."
+* Latimore on [Twitter](http://archive.is/PfNg2): "Women are like fire. How they're used in your life decides whether you have a warm cozy home or one that's burned to the ground."
+* From a [blog post](http://archive.is/OXFoW): "Basically, guys seem curious how I can have swallowed the red pill AND be in a committed lasting relationship. … Humans get together to mate. For guys, most of the information used to make a mating decision is displayed in a girl’s physical appearance. It’s why we really don’t care about a girl’s personality. It has no bearing on her reproductive abilities. Girls and [sic] looking for security because not only are they physically weaker, but that pregnancy thing makes a girl unable to fend off attacks."
+* Latimore has made [several videos](https://www.youtube.com/watch?v=qJXr5wIVHpc) supporting the "Red Pill" movement, a misogynistic collection of ideas that e.g. [Business Insider](https://www.businessinsider.de/international/the-red-pill-reddit-2013-8/?r=US&IR=T) calls "The Weird New Cult For Men Who Don't Understand Women".
+
 ### Other perspectives on Yarvin, ClarkHat, and the Neoreactionary movement
 
 Many people have described Curtis Yarvin, ClarkHat, and the Neoreactionary movement as racist, bigoted, and white supremacist:
@@ -108,21 +117,14 @@ Many people have described Curtis Yarvin, ClarkHat, and the Neoreactionary movem
 More specifically, many people have criticized De Goes in exactly the same terms as the post:
 
 * [Erica Baker](https://www.inc.com/tess-townsend/indiegogo-campaign-funding-tech-conference-white-nationalist.html) on De Goes, LambdaConf, and white supremacy, quoted in Inc.: "There are many people with a vested interest in ensuring there is space in our culture (not just tech, but beyond) to continuing debating white supremacy and to continue coddling white supremacists, I fully expect LambdaConf to continue getting money, not because they need it, but because white supremacists want to reward them for their decision to include a white supremacist in their space."
+* [Sonia Gupta](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): "The mentality evidenced by Mr. De Goes and his supporters is the kind of mentality that makes the tech community toxic, especially to newcomers. LambdaConf’s COC gives lip-service to inclusivity, but when it came time to actually implement it, Mr. De Goes instead chose to move in the opposite direction in a rather extreme fashion. We’re not talking about casual racism or casual sexism here. We’re talking about a white supremacist and a rabid misogynist."
 * Miql Alexander in [Model View Culture](https://modelviewculture.com/news/lambda-conf-fuckery-white-supremacy-under-the-guise-of-inclusion): "LambdaConf has now provided a platform for white supremacy in the name of 'inclusion.'"
 * [Andi McClure](https://twitter.com/mcclure111/status/719236645363519490) on De Goes, LambdaConf, and white supremacy: "@jdegoes: You must understand. You are working with *white supremacists*. You invited a leader in an organized movement. @lambda_conf"
 * [Harry Garrood](https://twitter.com/hdgarrood/status/865031531064152064) on De Goes, LambdaConf, and white supremacy: "I wish people would just say, look, you used MLK quotes to moralise to people who complained about you welcoming a white supremacist…"
 * [Rich Felker](https://twitter.com/RichFelker/status/832382526090072064) in response to De Goes: "Neither. Curtis Yarvin is quite obviously a white supremacist. Read his own words."
 * [jberryman](https://www.reddit.com/r/haskell/comments/7vgpjp/bigotry_and_its_amplifiers_a_response_to/dtsq5hp/): "It's not hard to organize a great conference that doesn't include even a single white supremacist, professional misogynist, eugenics enthusiast, etc., as unbelievable as de Goes might find that."
+* [Daily Kos](https://www.dailykos.com/stories/2016/3/25/1506217/-Tech-Conference-Invites-White-Supremacist-to-Speak-Regrets-its-Decision): "LambdaConf, a computer programming conference to be held this May in Colorado, is reeling from the announcement that an outspoken racist and white supremacist has been invited to speak there."
 * [Jack Aponte](https://twitter.com/jackaponte/status/858715676633997313) on De Goes, LambdaConf, and white supremacy: "Don't let de Goes talk to you about how bad chattel slavery is. That's not his battle. He battles on behalf of white supremacists & sexists."
-
-### Misogynistic statements by Ed Latimore
-
-* From [Twitter](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): “The female seems crazy, mostly because it's not male. Every man has a range for sanity, but if you want logic and reason you want a boyfriend"
-* "Women are like fire. How they're used in your life decides whether you have a warm cozy home or one that's burned to the ground."
-* "Humans get together to mate. For guys, most of the information used to make a mating decision is displayed in a girl's physical appearance. It's why we really don't care about a girl's personality. It has no bearing on her reproductive abilities. Girls and looking for security because not only are they physically weaker, but that pregnancy thing makes a girl unable to fend off attacks."
-* "Have always went out of my way to avoid crazy women. But then again I barely like hanging around sane girls to start"
-* From a [blog post](http://archive.is/OXFoW): "Basically, guys seem curious how I can have swallowed the red pill AND be in a committed lasting relationship. … For guys, most of the information used to make a mating decision is displayed in a girl’s physical appearance. It’s why we really don’t care about a girl’s personality. It has no bearing on her reproductive abilities."
-* Latimore has made [several videos](https://www.youtube.com/watch?v=qJXr5wIVHpc) supporting the "Red Pill" movement, a misogynistic collection of ideas that e.g. [Business Insider](https://www.businessinsider.de/international/the-red-pill-reddit-2013-8/?r=US&IR=T) calls "The Weird New Cult For Men Who Don't Understand Women".
 
 ## Response to complaint 2
 
