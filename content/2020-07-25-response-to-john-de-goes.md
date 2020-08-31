@@ -49,9 +49,9 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) in 2016, in reference to Yarvin: "He has never written any hate speech or resorted to insulting or vulgar language (except as a literary device)…"
 * In [communication with Typelevel](https://gist.github.com/travisbrown/a542b7eaa8fe937f99877522d5e46edd): "In the specific case of Curtis, a staff member reviewed nearly all of his writings and videos and could find no evidence he advocates violence toward any group. …we have no reason to think Curtis poses a safety threat for anyone…"
 * On [GitHub](https://github.com/fantasylandinst/fcop/issues/77) ([archived](https://meta.plasm.us/archive/fcop-77/)): "Moreover, there is no even remotely plausible of 'Nazi' in which, say, Curtis Yarvin is a Nazi. So if you ban Nazis, you'll still end up with lots of people like Curtis Yarvin, who believe that, while individual differences trump everything else, the mean of IQ test scores differs by 'race'."
-* On [GitHub](http://archive.is/3cdqO#selection-981.0-981.147) ([archived](https://meta.plasm.us/archive/fcop-51/)): "Second, if you were to create a COC that banned 'white supremacists', it would have to allow [Yarvin] to participate, since he is not a white supremacist"
-* On [Twitter](http://archive.li/qc2NL) ([archived](https://meta.plasm.us/archive/twitter-834501572637945856/)): "When you conflate NRx [the Neoreactionary movement] with white supremacy, it discredits you."
-* In response to a woman who had criticized [ClarkHat](http://archive.li/qWYJ6): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
+* On [GitHub](http://archive.today/3cdqO#selection-981.0-981.147) ([archived](https://meta.plasm.us/archive/fcop-51/)): "Second, if you were to create a COC that banned 'white supremacists', it would have to allow [Yarvin] to participate, since he is not a white supremacist"
+* On [Twitter](http://archive.today/qc2NL) ([archived](https://meta.plasm.us/archive/twitter-834501572637945856/)): "When you conflate NRx [the Neoreactionary movement] with white supremacy, it discredits you."
+* In response to a woman who had criticized [ClarkHat](http://archive.today/qWYJ6): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
 * Also on [ClarkHat](https://imgur.com/a/YCFudjw): "OK, I won't tag them (though they're not dangerous). You provide me one quote proving Clark is alt-right. Just one."
 * In series of blog posts (see [here](https://web.archive.org/web/20160329194817/https://degoes.net/articles/lambdaconf-controversy), [here](http://web.archive.org/web/20160324015332/https://degoes.net/articles/lambdaconf-inclusion), and [here](http://web.archive.org/web/20200621073207/https://degoes.net/articles/lambdaconf-conclusion)) about the decision to keep Yarvin on the program: "In addition, we could not find any evidence the speaker would engage in verbal abuse. … Some people have claimed that a policy which allows a neo-reactionary to speak at the conference will produce a conference dominated by neo-reactionaries. However, I believe this is incoherent…"
 * Amar Shah [wrote the following](https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) about private communication from De Goes in 2016: "What I found unsettling was how **generous** this appraisal felt – as if to convince us that Yarvin isn't a bad guy, just somehow misunderstood. The entire letter reads this way."
@@ -65,8 +65,8 @@ De Goes made similar comments about Yarvin in other discussion threads in the FC
 * De Goes quoted in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/): "I don't agree with Ed on everything, but he's a source of endless insight and inspiration, and I'm upset at the way people are lying about him and trying to smear his reputation."
 * Allum Bokhari in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/), about De Goes: "John De Goes, the principal organizer of LambaConf, has publicly defended Latimore."
 * De Goes on [Twitter](https://twitter.com/jdegoes/status/960489907847180289): "[LambdaConf] will not ban people over politics regardless of Twitter insanity."
-* De Goes on [Twitter](http://archive.li/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
-* De Goes on [Reddit](https://archive.is/Treeh): "To my knowledge, Ed is not a misogynist of any kind, let alone an outspoken one, and if correct, characterizing him that way is not only unfair to him, but trivializes real misogyny. Ed did have some older tweets that are sexist…"
+* De Goes on [Twitter](http://archive.today/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
+* De Goes on [Reddit](https://archive.today/Treeh): "To my knowledge, Ed is not a misogynist of any kind, let alone an outspoken one, and if correct, characterizing him that way is not only unfair to him, but trivializes real misogyny. Ed did have some older tweets that are sexist…"
 * De Goes on [Reddit](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ez9ti6y/): "It's a mistake to call Latimer a misogynist (sexist would be more accurate, since he believes in sex-based differences between men and women)."
 
 ### Racist or misogynistic statements by Yarvin and ClarkHat
@@ -130,13 +130,13 @@ Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-commu
 
 In the cases below we have archived pages or screenshots showing De Goes accusing women of lying. He has deleted all of these comments except for one of the tweets from February 2018 attacking Sonia Gupta.
 
-* De Goes to Adrienne Leigh on [Twitter](http://archive.li/kohBA#selection-5667.0-5677.93) (8 March 2017): "Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying."
-* De Goes to Adrienne Leigh on [Twitter](http://archive.li/qWYJ6) in a different thread (8 March 2017): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
+* De Goes to Adrienne Leigh on [Twitter](http://archive.today/kohBA#selection-5667.0-5677.93) (8 March 2017): "Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying."
+* De Goes to Adrienne Leigh on [Twitter](http://archive.today/qWYJ6) in a different thread (8 March 2017): "I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right."
 * De Goes referring to Adrienne Leigh on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes/01.png) (13 March 2017): "Yeah, I decided to start calling out liars. If they don't like it, they can always stop lying. We all have choices."
-* De Goes responding to Sonia Gupta's criticism of Ed Latimore on [Twitter](http://archive.li/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
+* De Goes responding to Sonia Gupta's criticism of Ed Latimore on [Twitter](http://archive.today/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
 * De Goes to Sonia Gupta on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes-01/twitter-jdegoes-01.png): "Quote or you're lying. I think we both know which one it is."
 * De Goes in [a thread](https://twitter.com/jdegoes/status/960490148591910914) about Sonia Gupta's complaint: "Don't become bitter just because you disagree, & spread lies and misinformation, since that only discredits you when the truth comes to light—& it always comes to light. 21/22"
-* De Goes on [Reddit](https://archive.vn/Q0x8N#selection-1875.50-1875.176), referring to Sonia Gupta: "Sonia's account is filled with intentional inaccuracies (Ed was not hired, Yarvin was not invited, etc.) and character smears."
+* De Goes on [Reddit](https://archive.today/Q0x8N#selection-1875.50-1875.176), referring to Sonia Gupta: "Sonia's account is filled with intentional inaccuracies (Ed was not hired, Yarvin was not invited, etc.) and character smears."
 * Sonia Gupta, in a [public article](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c) about LambdaConf 2017: "Mr. De Goes has called me a liar."
 * De Goes [on Twitter](https://meta.plasm.us/archive/other/Screen-Shot-2017-05-23-19-26-03.png) in response to Christie Koehler: "Now you're just lying. Come on, if you're gonna come at me, at least throw a little truth in there to make it believable."
 * De Goes [on Twitter](https://meta.plasm.us/archive/other/Screen-Shot-2017-05-23-19-26-38.png) in response to Christie Koehler: "For your part, I ask you to stick to the facts and leave out the libel."
@@ -166,15 +166,15 @@ The following three sections below outline several cases in which John De Goes p
 
 ### Drupal Confessions
 
-In April 2017 John De Goes [publicly stated](http://archive.is/MLU7e) that he had helped to organize an activist effort named "Drupal Confessions" (which included the Twitter account @druconfessions):
+In April 2017 John De Goes [publicly stated](http://archive.today/MLU7e) that he had helped to organize an activist effort named "Drupal Confessions" (which included the Twitter account @druconfessions):
 
 > Many have access to the Twitter. We (cordially) parted ways over disagreements about next steps. DC wants healing. I want truth.
 
-He also repeatedly [made it clear](http://archive.is/PTT9j#selection-5705.0-5705.140) ([archived](https://meta.plasm.us/archive/twitter-858410221764562946/)) that he was one of the more combative members of the effort:
+He also repeatedly [made it clear](http://archive.today/PTT9j#selection-5705.0-5705.140) ([archived](https://meta.plasm.us/archive/twitter-858410221764562946/)) that he was one of the more combative members of the effort:
 
 > If I can't help with reform (and I hope I can), I can at least help ensure the crater scares other communities away from the same decisions.
 
-[And](http://archive.is/MLU7e#selection-6675.0-6675.134):
+[And](http://archive.today/MLU7e#selection-6675.0-6675.134):
 
 > Oh, if it were up to me, the letter would never come down. Not until there was a commitment to real reform. DC took the easy way out.
 
@@ -203,17 +203,17 @@ Some people in the Drupal community believed that De Goes could be operating the
 
 > I don't think your multiple personalities count as 'many people', John. … I do believe that there could be others, but I think it's a smaller group than he's presenting.
 
-A user in the Drupal Reddit similarly wrote [the following](https://archive.vn/j6l7G#selection-1927.0-1931.300),
+A user in the Drupal Reddit similarly wrote [the following](https://archive.today/j6l7G#selection-1927.0-1931.300),
 and additionally specifically accused De Goes of attempting to dox Drupal community members:
 
 > It was well established last year that John degoes is a liar and had multiple astroturfing accounts here as well as was the person behind the drupal confessions website that gathered a bunch of signatures from people and then changed the intent of the site, making them accomplices in smear campaigns against their will.
 > He's trash and toxic. But it'll be hard to find evidence of this because he deleted all of his tweets after he was found out in 2017. He harassed plenty of community members and attempted to doxx others.
 
-The @druconfessions account was renamed to @DrupalLeaks at some point after 18 July 2017 (see for example [this tweet](https://archive.vn/18PzD), which was
-originally archived under the @druconfessions account, and is [currently available](https://twitter.com/DrupalLeaks/status/887354581113503744) with the same unique identification number [under @DrupalLeaks](https://archive.is/uPuse)).
+The @druconfessions account was renamed to @DrupalLeaks at some point after 18 July 2017 (see for example [this tweet](https://archive.today/18PzD), which was
+originally archived under the @druconfessions account, and is [currently available](https://twitter.com/DrupalLeaks/status/887354581113503744) with the same unique identification number [under @DrupalLeaks](https://archive.today/uPuse)).
 
-When the @DrupalLeaks account [published a video teaser](https://archive.vn/XVvhR) with a threatening caption ("Those calling for blood will soon get it."),
-some community members [attributed the video to De Goes](https://archive.vn/gqrS5):
+When the @DrupalLeaks account [published a video teaser](https://archive.today/XVvhR) with a threatening caption ("Those calling for blood will soon get it."),
+some community members [attributed the video to De Goes](https://archive.today/gqrS5):
 
 > My guess? Mike Haggerty and that bald guy that harasses everyone on twitter. Jon Degoes.
 
@@ -235,16 +235,16 @@ Many community members agreed:
 * [Jack Aponte](https://twitter.com/jackaponte/status/858787621987729408): "Which you are doing nothing you help. You're working against efforts to include UNDERREPRESENTED MARGINALIZED people in Drupal."
 * [Shanley Kane](https://twitter.com/shanley/status/853079561382146048): "Welp looks like @druconfessions got a huge endorsement by Nazi/fascist hate site B\*\*\*itbarf https://www.breitbart.com/tech/2017/04/14/techies-in-uproar-over-drupal-developers-expulsion-over-bdsm-kinks/ … When B\*\*\*itbarf is literally applauding your 'diversity' efforts you know you really got it wrong. B\*\*\*itbarf literally built itself by harassing women + spreading fascist, racist, misogynist ideology. They think you're doing a great job"
 * [@yched](https://twitter.com/yched/status/859698749836283904): "But had I known a non-community agent with an agenda like degoes' was co-organizing, I sure wouldn't have considered it the same"
-* [Anonymous Reddit user](https://archive.vn/Xj289): "You can't jump in from the outside of Drupal and bully around people in our community like John De Goes who has absolutely no horse in this race but to piss everyone off, whilst ignoring controversies of his own past far worse than this."
-* [Anonymous Reddit user](https://archive.vn/BISYW#selection-1903.0-1903.194): "Ironically, Jon Degoes has scrubbed his entire twitter history to hide all the harassment, bullying and white power views he holds from the public that he got called out for earlier in the year."
+* [Anonymous Reddit user](https://archive.today/Xj289): "You can't jump in from the outside of Drupal and bully around people in our community like John De Goes who has absolutely no horse in this race but to piss everyone off, whilst ignoring controversies of his own past far worse than this."
+* [Anonymous Reddit user](https://archive.today/BISYW#selection-1903.0-1903.194): "Ironically, Jon Degoes has scrubbed his entire twitter history to hide all the harassment, bullying and white power views he holds from the public that he got called out for earlier in the year."
 * [@uniongal](https://twitter.com/uniongal/status/889924634161840129): "So, Piece Of Shit @druconfessions Doxxed me with a REALLY old picture and my full name while HIDING BEHIND ANONYMITY"
 * [Renée Stephen](https://twitter.com/ReneeStephen/status/858743190941192192): "Well, you may alas find you've taken this stand on quicksand; De Goes is willing to 'crater' our community. Is not about the good of Drupal."
 
-The account targeted in particular Christie Koehler, who De Goes also frequently criticized from his personal account. For example, Drupal Confessions wrote [the following](http://archive.is/bPvKe#selection-3551.0-3562.1) ([archived](https://meta.plasm.us/archive/twitter-888500340017909760/)):
+The account targeted in particular Christie Koehler, who De Goes also frequently criticized from his personal account. For example, Drupal Confessions wrote [the following](http://archive.today/bPvKe#selection-3551.0-3562.1) ([archived](https://meta.plasm.us/archive/twitter-888500340017909760/)):
 
 > Psychotic intersectionalist Marxist @christi3k rants on how trawling through 10 years of someone's life to build a political dossier is 👌
 
-[And](http://archive.is/pUUUI) ([archived](https://meta.plasm.us/archive/twitter-886252897733922816/)):
+[And](http://archive.today/pUUUI) ([archived](https://meta.plasm.us/archive/twitter-886252897733922816/)):
 
 > Extremist @christi3k hates Gor, wants to expel all wrongthink. … In this illiberal authoritarian rant, @christi3k, who has done severe harm to Drupal, implies Crell is an abuser and master manipulator.
 
@@ -269,7 +269,7 @@ A more detailed explanation of the situation [was later published](https://gist.
 There are many other cases where people in the community have discussed being targeted with harassment by De Goes or as a direct result of his actions:
 
 * When asked about the description of De Goes as "an abuser", [Julie Moronuki](https://argumatronic.com) [wrote](https://twitter.com/argumatronic/status/1169435592796430336) "i think it's an accurate enough description of my experience of him, and i believe it of the experiences some women Travis mentions by name have had, as well as the experience of a woman i am acquainted with in the Drupal community."
-* De Goes [on Twitter](http://archive.li/qWYJ6#selection-10727.13-10727.140) in response to Adrienne Leigh, who had been targeted by ClarkHat and had asked De Goes not to attract his attention to her: "Umm, let's just ask. Hey @clarkhat, are you alt-right?" In response [Leigh wrote](http://archive.li/qWYJ6#selection-10727.12-10727.140), "i have previously asked you not to retweet that dangerous person who has previously harassed me into my mentions. PLEASE DO NOT".
+* De Goes [on Twitter](http://archive.today/qWYJ6#selection-10727.13-10727.140) in response to Adrienne Leigh, who had been targeted by ClarkHat and had asked De Goes not to attract his attention to her: "Umm, let's just ask. Hey @clarkhat, are you alt-right?" In response [Leigh wrote](http://archive.today/qWYJ6#selection-10727.12-10727.140), "i have previously asked you not to retweet that dangerous person who has previously harassed me into my mentions. PLEASE DO NOT".
 * From [Andi McClure](https://twitter.com/mcclure111/status/719235417988534273): "However, I criticized  @lambda_conf in public, and now I am targeted for harassment by white supremacists. This *is* real harm. … @jdegoes Groups aligned w/this wiki hve run successful smear campaigns to get women fired recently,so this is a credible threat. @lambda_conf @jdegoes … If white supremacist harassment groups are investigating me, the harm done on @lambda_conf's behalf could even be harm to my person. … .@jdegoes: You must understand. You are working with *white supremacists*. You invited a leader in an organized movement. … .@jdegoes: You have created a situation where @lambda_conf is a safe space for those comfortable with white supremacy&unsafe for all others."
 * From [Sonia Gupta](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): "I had already received considerable harassment on Twitter due to my speaking up about the event, but shortly before I was due to publish my response, Breitbart picked up the story, and the harassment became worse. I was afraid for my safety and I chose not to share my response with the world."
 * From [The Daily Camera](https://www.dailycamera.com/2017/06/02/attendee-alleges-harassment-after-criticizing-speaker-of-boulders-lambdaconf-conference/), a newspaper in Boulder, Colorado: "A lawyer-turned-software-developer new to the field says she has been the subject of online harassment after she confronted organizers of Boulder's LambdaConf programming conference for hosting a keynote speaker that she says is a misogynist."
@@ -296,7 +296,7 @@ Many people have pointed out other cases where De Goes seemed to invite and welc
 
 This section provides evidence that early discussions of the Fantasyland Code of Professionalism (abbreviated "FCOP" or "FCoP") focused on Curtis Yarvin, who is widely considered to be a white supremacist ([see above](#response-to-complaint-1)), and that De Goes has explicitly and repeatedly compared the FCoP to the defense of white supremacists (specifically Nazis and Ku Klux Klan members) by organizations like the [American Civil Liberties Union](https://www.aclu.org).
 
-The FCoP was developed in 2017 after the controversy surrounding LambdaConf 2016 and Curtis Yarvin, and was summarized by De Goes's organization [like this](http://archive.li/mw8za) ([archived](https://meta.plasm.us/archive/twitter-844966278867701762/)): "FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities." That it was designed with the Yarvin case in mind is unquestionable and [widely acknowledged](https://twitter.com/christi3k/status/852934249841696768)
+The FCoP was developed in 2017 after the controversy surrounding LambdaConf 2016 and Curtis Yarvin, and was summarized by De Goes's organization [like this](http://archive.today/mw8za) ([archived](https://meta.plasm.us/archive/twitter-844966278867701762/)): "FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities." That it was designed with the Yarvin case in mind is unquestionable and [widely acknowledged](https://twitter.com/christi3k/status/852934249841696768)
 (including by [Breitbart](https://www.breitbart.com/tech/2017/01/11/sjws-tech-conference-political-diversity/), a right-wing American website that has published several articles supporting De Goes and LambdaConf).
 
 See the analyses of [Christie Koehler](https://subfictional.com/an-analysis-of-the-fcop/) and [Matthew Garrett](https://mjg59.dreamwidth.org/46791.html) for more detail about issues that many people have with the document. For example, Garrett described the FCoP in February 2017 as "an abuser's fantasy", and wrote the following:
@@ -316,7 +316,7 @@ The FCoP was developed and promoted by the Fantasyland Alliance of Technical Eve
 
 The GitHub repository for the FCoP project has been deleted (since May 2020, according to Google search results), but in early discussion threads, De Goes repeatedly made reference to Curtis Yarvin:
 
-* [February 2017](http://archive.is/3cdqO#selection-981.0-981.147) ([archived](https://meta.plasm.us/archive/fcop-51/)): "Second, if you were to create a COC that banned 'white supremacists', it would have to allow CY to participate, since he is not a white supremacist"
+* [February 2017](http://archive.today/3cdqO#selection-981.0-981.147) ([archived](https://meta.plasm.us/archive/fcop-51/)): "Second, if you were to create a COC that banned 'white supremacists', it would have to allow CY to participate, since he is not a white supremacist"
 * [March 2017](https://github.com/fantasylandinst/fcop/issues/77) ([archived](https://meta.plasm.us/archive/fcop-77/)): "Moreover, there is no even remotely plausible of 'Nazi' in which, say, Curtis Yarvin is a Nazi. So if you ban Nazis, you'll still end up with lots of people like Curtis Yarvin, who believe that, while individual differences trump everything else, the mean of IQ test scores differs by 'race'."
 
 In March 2017 De Goes also [explicitly compared](https://github.com/fantasylandinst/fcop/issues/77) ([archived](https://meta.plasm.us/archive/fcop-77/)) the FCoP to the American Civil Liberty Union's defense of the free speech rights of Nazis:
@@ -412,7 +412,7 @@ General criticism of John De Goes and LambdaConf:
 * [@KirinDave](https://twitter.com/KirinDave/status/833865528728915969): "Please stop making LambdaConf a friendly environment for harassment. https://twitter.com/mtdegoes/status/833830785551577090"
 * [Zach Tellman](https://twitter.com/ztellman/status/960603006348611585): "I cancelled my talk at LambdaConf two years ago because of Yarvin's invitation. The only static I got was one guy asking if I was "virtue signaling." Stories like this are infuriating, but also prove how utterly wrong-minded the LambdaConf CoC is. https://twitter.com/soniagupta504/status/960501048388366336"
 * [Joshua Hollander](https://twitter.com/jholla14/status/1169618327238348803): "Listening to those people is different than giving them a platform. We can not tolerate the intolerant, be it racist, misogynist or bigot. Giving them a platform, tech or not, is tolerating them. It's so naive to cry 'free speech' when an intolerant voice is silenced. … Go ahead read all of Yarvin's crap.  Be best friends with him for all we care. Inviting him to your conference is a tacit endorsement of his horrible views."
-* [Thomas Lockney](https://twitter.com/tlockney/status/713417210564227072) in response to [a tweet](http://archive.is/KYjAz) quoting Desmond Tutu: "@lambda_conf Sorry, but choosing that quote in the given situation is just disgusting. I'm appalled by this."
+* [Thomas Lockney](https://twitter.com/tlockney/status/713417210564227072) in response to [a tweet](http://archive.today/KYjAz) quoting Desmond Tutu: "@lambda_conf Sorry, but choosing that quote in the given situation is just disgusting. I'm appalled by this."
 * [Hannah Howard](https://twitter.com/techgirlwonder/status/713418132442853376): "@lambda_conf little PR help here -- don't quote a famous black thinker while your conference is under fire for inviting a slavery apologist"
 * [cdsmith](https://www.reddit.com/r/haskell/comments/7vgpjp/bigotry_and_its_amplifiers_a_response_to/dtt7mxj/): "In 2017, with another extremist speaker, who has no connection to functional programming at all, it's hard not to conclude that LambdaConf just looked for someone else to provoke controversy and continue their wink-wink approach to racism and sexism that attracts a certain crowd."
 

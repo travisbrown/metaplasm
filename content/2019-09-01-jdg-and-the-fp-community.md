@@ -50,17 +50,17 @@ basis that Yarvin is best known for his racist views and his role in the creatio
 [neoreactionary movement](https://en.wikipedia.org/wiki/Dark_Enlightenment), a right-wing, white
 supremacist ideology that's closely related to the alt-right.
 
-De Goes has repeatedly defended this decision, and [argued](http://archive.li/qc2NL) that the neoreactionary movement is not white supremacist:
+De Goes has repeatedly defended this decision, and [argued](http://archive.today/qc2NL) that the neoreactionary movement is not white supremacist:
 
 > When you conflate NRx with white supremacy, it discredits you.
 
 When most of the 2016 LambdaConf sponsors withdrew support, a right-wing blog called Status 451 [raised money](https://web.archive.org/web/20160609170510/https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) to help fund the conference. This effort was driven by "ClarkHat", an individual who finally got kicked off of Twitter in 2018 after years of [coordinating harassment](https://imgur.com/a/UCRTXcG) and doing things like tweeting ["Blacks have lower average IQs. Your move."](https://imgur.com/4HEtit7) at prominent black scientists.
 
-De Goes also repeatedly [defended](http://archive.li/qWYJ6) ClarkHat (who was after all funding his conference):
+De Goes also repeatedly [defended](http://archive.today/qWYJ6) ClarkHat (who was after all funding his conference):
 
 > I believe people lie all the time; you know it when you have evidence. I still have no evidence Clark is alt-right.
 
-[And](http://archive.li/kohBA#selection-5667.0-5677.93):
+[And](http://archive.today/kohBA#selection-5667.0-5677.93):
 
 > Which @Status451Blog blogger is "openly alt-right"? Quote or you're lying. They're all anarchists & libertarians.
 
@@ -72,23 +72,23 @@ This was [his response](https://imgur.com/a/YCFudjw):
 
 > OK, I won't tag them (though they're not dangerous). You provide me one quote proving Clark is alt-right. Just one.
 
-(For the record, ClarkHat has [self-identified](https://archive.li/qWYJ6/5b30d87203a5b64545d66340c3ec399d42515d4b.jpg) as alt-right many times.)
+(For the record, ClarkHat has [self-identified](https://archive.today/qWYJ6/5b30d87203a5b64545d66340c3ec399d42515d4b.jpg) as alt-right many times.)
 
 ## LambdaConf 2017
 
-At the following year's LambdaConf, De Goes invited Ed Latimore, a self-described ["red-piller"](https://www.reddit.com/r/TheRedPill/) and [mens' rights activist](https://www.vulture.com/2019/02/the-matrix-red-pill-internet-delusional-drug.html) with a long history of saying [misogynistic things](http://archive.is/sLGH5) on [Twitter](http://archive.is/PfNg2) (e.g. "I'm against hitting women because they're much smaller than me. But let a 6'5 chick try to beat my ass and I'll turn into Ike Turner.") and [elsewhere](http://archive.is/DSeD2). When an attendee criticized this invitation, De Goes publicly [accused her of lying](http://archive.li/1OHgY), and his responses contributed to her being targeted for months by right-wing hate mobs. This attendee has written [a detailed account](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c) of the sitation—please read it, even if you don't read any of the other links in this post.
+At the following year's LambdaConf, De Goes invited Ed Latimore, a self-described ["red-piller"](https://www.reddit.com/r/TheRedPill/) and [mens' rights activist](https://www.vulture.com/2019/02/the-matrix-red-pill-internet-delusional-drug.html) with a long history of saying [misogynistic things](http://archive.today/sLGH5) on [Twitter](http://archive.today/PfNg2) (e.g. "I'm against hitting women because they're much smaller than me. But let a 6'5 chick try to beat my ass and I'll turn into Ike Turner.") and [elsewhere](http://archive.today/DSeD2). When an attendee criticized this invitation, De Goes publicly [accused her of lying](http://archive.today/1OHgY), and his responses contributed to her being targeted for months by right-wing hate mobs. This attendee has written [a detailed account](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c) of the sitation—please read it, even if you don't read any of the other links in this post.
 
 ## Drupal Confessions
 
-Also in 2017, De Goes was [one of the operators](http://archive.is/KGA5Q) of a satirical and abusive Twitter account named "@druconfessions" that was focused on attacking Drupal community leadership for what De Goes described as their ["social justice"](http://archive.li/dmXFQ) agenda. I’ve never been a part of the Drupal community and don’t personally have much context about this situation, but it notably involves a lot of harassment directed by @druconfessions at one particular Drupal developer, calling her a ["Psychotic intersectionalist Marxist"](http://archive.is/bPvKe), an [extremist](http://archive.is/pUUUI), etc.
+Also in 2017, De Goes was [one of the operators](http://archive.today/KGA5Q) of a satirical and abusive Twitter account named "@druconfessions" that was focused on attacking Drupal community leadership for what De Goes described as their ["social justice"](http://archive.today/dmXFQ) agenda. I’ve never been a part of the Drupal community and don’t personally have much context about this situation, but it notably involves a lot of harassment directed by @druconfessions at one particular Drupal developer, calling her a ["Psychotic intersectionalist Marxist"](http://archive.today/bPvKe), an [extremist](http://archive.today/pUUUI), etc.
 
 The language of the account is [frequently hostile](https://imgur.com/a/g3cYqOr) or violent, sometimes in a way that seems inadvertently ridiculous ("There's a time for peace, and a time for war. The time for peace has ended."). It also included a lot of inspirational platitudes ("Never start a fight, but always finish it") that will probably sound familiar to anyone who's ever looked at De Goes's Twitter feed.
 
-When his @druconfessions collaborators decided it was time to take a less abusive approach, De Goes [disagreed](http://archive.is/MLU7e#selection-5031.0-5031.128):
+When his @druconfessions collaborators decided it was time to take a less abusive approach, De Goes [disagreed](http://archive.today/MLU7e#selection-5031.0-5031.128):
 
 > Many have access to the Twitter. We (cordially) parted ways over disagreements about next steps. DC wants healing. I want truth.
 
-[And](http://archive.is/PTT9j):
+[And](http://archive.today/PTT9j):
 
 > If I can't help with reform (and I hope I can), I can at least help ensure the crater scares other communities away from the same decisions.
 
@@ -96,7 +96,7 @@ Please read [this post](https://subfictional.com/thoughts-on-recent-drupal-gover
 
 ## Other issues
 
-De Goes [frequently criticizes](http://archive.li/NnnfW) codes of conduct, and has spent a lot of time promoting his own "Fantasyland Code of Professionalism", which he summarizes [like this](http://archive.li/mw8za):
+De Goes [frequently criticizes](http://archive.today/NnnfW) codes of conduct, and has spent a lot of time promoting his own "Fantasyland Code of Professionalism", which he summarizes [like this](http://archive.today/mw8za):
 
 > FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities.
 
@@ -114,7 +114,7 @@ Christie Koehler has written a [detailed analysis](https://subfictional.com/an-a
 
 De Goes is also a [user](http://gab.com/jdegoes) and [advocate for](https://imgur.com/a/JZJEPDA) [Gab](https://www.bloomberg.com/news/articles/2018-10-30/gab-an-online-haven-for-white-supremacists-plots-its-future), a social network that's best known for accommodating white supremacists and men like the [Pittsburgh synagogue shooter](https://www.nytimes.com/2018/10/28/us/gab-robert-bowers-pittsburgh-synagogue-shootings.html). 
 
-Lastly, De Goes's followers include a group (mostly men) who routinely harass people he criticizes on his Twitter feed, often with ableist abuse, as for example during [a recent situation](https://www.reddit.com/r/scala/comments/bi9rey/scalaz_removed_from_community_build/) where ZIO was removed from the Lightbend community build, or [in response to some of his tweets about me](http://archive.is/3UllI) last week. While he's not personally responsible for comments by his followers, this happens a lot, and in the context of all of the history above it doesn't seem unintentional.
+Lastly, De Goes's followers include a group (mostly men) who routinely harass people he criticizes on his Twitter feed, often with ableist abuse, as for example during [a recent situation](https://www.reddit.com/r/scala/comments/bi9rey/scalaz_removed_from_community_build/) where ZIO was removed from the Lightbend community build, or [in response to some of his tweets about me](http://archive.today/3UllI) last week. While he's not personally responsible for comments by his followers, this happens a lot, and in the context of all of the history above it doesn't seem unintentional.
 
 ## Why this matters
 
@@ -134,13 +134,13 @@ After I published this post and the Scala Exchange organizers withdrew De Goes's
 
 > I have been no-platformed at Scala eXchange by people making baseless character smears. I respect the right of @skillsmatter to make the decision they feel is best. I respect the right of every potential speaker & attendee to respectfully write, tweet, & blog their response.
 
-He was retweeted by the official Twitter account of Gab, the social network, and by an individual who works for [Breitbart News](https://en.wikipedia.org/wiki/Breitbart_News), a right-wing American website. De Goes is aware that allowing his far-right advocates to amplify his message can result in his critics being targeted by hate mobs, because this has happened repeatedly in the past, and he has specifically acknowledged it [in at least one case](https://twitter.com/jdegoes/status/960489597414162432) ([archived](http://archive.li/gmqrG)):
+He was retweeted by the official Twitter account of Gab, the social network, and by an individual who works for [Breitbart News](https://en.wikipedia.org/wiki/Breitbart_News), a right-wing American website. De Goes is aware that allowing his far-right advocates to amplify his message can result in his critics being targeted by hate mobs, because this has happened repeatedly in the past, and he has specifically acknowledged it [in at least one case](https://twitter.com/jdegoes/status/960489597414162432) ([archived](http://archive.today/gmqrG)):
 
 > It’s shameful that Breitbart readers harassed Sonia, and insane that Twitter didn’t (and to some degree, still doesn’t!) engineer their product to prevent harassment. 12/22
 
 He could easily prevent much of this amplification and harassment by blocking these right-wing accounts, which would remove the retweet, but as of this morning the tweet is still on the timelines of both [Gab](https://imgur.com/a/vL73JAI) and the [Breitbart employee](https://imgur.com/a/paS6wHz).
 
-To his credit he did write [the following](https://twitter.com/jdegoes/status/1169203672531775488?s=11) ([archived](http://archive.fo/oLA1h)):
+To his credit he did write [the following](https://twitter.com/jdegoes/status/1169203672531775488?s=11) ([archived](http://archive.today/oLA1h)):
 
 > As always, please share your views with respect and professionalism. ❤️
 >
@@ -150,15 +150,15 @@ To his credit he did write [the following](https://twitter.com/jdegoes/status/11
 
 But when I suggested a concrete way he could provide this kind of defense (blocking two far-right Twitter accounts), he ignored the request.
 
-De Goes has also retweeted another Scala developer, [Adam Warski](https://twitter.com/adamwarski), who writes that this post is part of a ["disgusting, coordinated, personal attack"](https://twitter.com/adamwarski/status/1169664500087304192?s=11) ([archived](http://archive.li/sxR2y)) and that it doesn't support the reaction it's received:
+De Goes has also retweeted another Scala developer, [Adam Warski](https://twitter.com/adamwarski), who writes that this post is part of a ["disgusting, coordinated, personal attack"](https://twitter.com/adamwarski/status/1169664500087304192?s=11) ([archived](http://archive.today/sxR2y)) and that it doesn't support the reaction it's received:
 
 > I have yet to see a single piece of evidence that would justify last-resort actions such as the ones taken by @scalaexchange and @typelevel. Just imagine this being done to you. You (or I) can be next.
 
-I asked this individual to point out specific inaccuracies in the post, and [he replied](https://twitter.com/adamwarski/status/1169950151911362560) ([archived](http://archive.li/sxR2y)):
+I asked this individual to point out specific inaccuracies in the post, and [he replied](https://twitter.com/adamwarski/status/1169950151911362560) ([archived](http://archive.today/sxR2y)):
 
 > No, I don't know if these are accurate. But I can't see anything that would justify the kind of actions that have been taken; only suspicions and interpretations.
 
-I _am_ aware of a couple of responses De Goes has made to specific points in the post, including the following, from [an AMA](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/) (an "ask me anything" thread) on Reddit ([archived](http://archive.li/jXJmH)):
+I _am_ aware of a couple of responses De Goes has made to specific points in the post, including the following, from [an AMA](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/) (an "ask me anything" thread) on Reddit ([archived](http://archive.today/jXJmH)):
 
 > I have no affiliation with the blog, other than with Meredith L. Patterson…
 
@@ -170,7 +170,7 @@ A Reddit user named [GPoaS](https://www.reddit.com/user/GPoaS) [responded](https
 
 > But damn if this doesn't feel like knife in the back, bro.
 
-In another subreddit the same user [writes the following](https://www.reddit.com/r/CultureWarRoundup/comments/cynvsz/offtopic_and_loweffort_cw_thread_for_the_week_of/eyz99hc/) ([archived](http://archive.li/x51bk)):
+In another subreddit the same user [writes the following](https://www.reddit.com/r/CultureWarRoundup/comments/cynvsz/offtopic_and_loweffort_cw_thread_for_the_week_of/eyz99hc/) ([archived](http://archive.today/x51bk)):
 
 > Incidentally, while Clark is primarily responsible for the fundraiser, I was the person originally responsible for the effort.
 
@@ -188,7 +188,7 @@ In the AMA De Goes denies the claim (made by Sonia Gupta and I and many others) 
 
 > It's a mistake to call Latimer a misogynist (sexist would be more accurate, since he believes in sex-based differences between men and women), but knowing what I know now, I would not invite him today.
 
-He also [addresses](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ezbg1xi/) ([archived](http://archive.li/2aXeI)) a question about the Drupal Confessions account:
+He also [addresses](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ezbg1xi/) ([archived](http://archive.today/2aXeI)) a question about the Drupal Confessions account:
 
 > The Drupal Confessions "team" (an ad hoc chat room filled with disgruntled Drupal developers) had a shared Twitter account that many posted from. Eventually that become a problem for them because the account started attacking people. Actually, I can't remember if it was that account or a different one, eventually there were 3-4 different Twitter accounts all posting Drupal drama and increasingly weird things like pictures of Larry with horns and creepy dancing videos.
 
@@ -196,7 +196,7 @@ All of the quotations in my original post are from @druconfessions, the account 
 
 <hr/>
 
-Finally, De Goes has also posted a bizarre [article](http://degoes.net/articles/revisiting-lambdaconf) ([archived](http://archive.li/pos5e)) that begins with a claim I don't really find plausible:
+Finally, De Goes has also posted a bizarre [article](http://degoes.net/articles/revisiting-lambdaconf) ([archived](http://archive.today/pos5e)) that begins with a claim I don't really find plausible:
 
 > It’s been nearly three years since LambdaConf 2016, possibly the most controversial tech conference in the history of computing.
 
