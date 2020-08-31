@@ -60,12 +60,15 @@ De Goes made similar comments about Yarvin in other discussion threads in the FC
 
 ### De Goes defending Ed Latimore
 
-* De Goes in a long thread on [Twitter](https://twitter.com/jdegoes/status/960488879689052160): "In 2017, 
-@edlatimore delivered a heartfelt, vulnerable, and inspiring keynote on facing fear (a major impediment to learning). He was unpaid, & freely volunteered his time. 2/22"
+* De Goes in a (now-deleted) May 2017 thread on [Twitter](https://web.archive.org/web/20170601174820if_/https://twitter.com/jdegoes/status/868956368765693952): "Ed's keynote was his first public speech, and it was phenomenal. Vulnerable, insightful, humorous, and inspiring. … I'm delighted he spoke at LC, and that I was able to talk to him and see how kind he is, and how passionate he is about helping others."
+* De Goes in a February 2018 thread on [Twitter](https://twitter.com/jdegoes/status/960488879689052160): "In 2017, @edlatimore delivered a heartfelt, vulnerable, and inspiring keynote on facing fear (a major impediment to learning). He was unpaid, & freely volunteered his time. 2/22"
 * De Goes quoted in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/): "I don't agree with Ed on everything, but he's a source of endless insight and inspiration, and I'm upset at the way people are lying about him and trying to smear his reputation."
 * Allum Bokhari in [Breitbart](https://www.breitbart.com/tech/2017/05/30/tech-leftists-target-lambaconf-over-alleged-red-pilling-speaker/), about De Goes: "John De Goes, the principal organizer of LambaConf, has publicly defended Latimore."
 * De Goes on [Twitter](https://twitter.com/jdegoes/status/960489907847180289): "[LambdaConf] will not ban people over politics regardless of Twitter insanity."
 * De Goes on [Twitter](http://archive.today/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
+* De Goes on [Twitter](https://web.archive.org/web/20170601174820/https://twitter.com/jdegoes/status/868956368765693952), in response to "so Ed is the infamous 'red piller' some people were crying about": "Except they were lying about that part. Well, probably about every part. Haters gonna hate."
+* De Goes on [Twitter](http://archive.today/eXclc): "Good to hear the perspective of a woman who has interacted with him at length. 👍"
+* De Goes on [Twitter](https://web.archive.org/web/20170530230549/https://twitter.com/jdegoes/status/869691346138693632) (retweet): "RT @mirriam71: You think @EdLatimore is a misogynist? Rubbish. Here we are chatting on my podcast last year. https://twitter.com/mirriam71/status/720473359272816640"
 * De Goes on [Reddit](https://archive.today/Treeh): "To my knowledge, Ed is not a misogynist of any kind, let alone an outspoken one, and if correct, characterizing him that way is not only unfair to him, but trivializes real misogyny. Ed did have some older tweets that are sexist…"
 * De Goes on [Reddit](https://www.reddit.com/r/hascalator/comments/d0ej3r/i_am_functional_programming_fanboy_1_and_oss/ez9ti6y/): "It's a mistake to call Latimer a misogynist (sexist would be more accurate, since he believes in sex-based differences between men and women)."
 
@@ -118,6 +121,7 @@ More specifically, many people have criticized De Goes in exactly the same terms
 * "Women are like fire. How they're used in your life decides whether you have a warm cozy home or one that's burned to the ground."
 * "Humans get together to mate. For guys, most of the information used to make a mating decision is displayed in a girl's physical appearance. It's why we really don't care about a girl's personality. It has no bearing on her reproductive abilities. Girls and looking for security because not only are they physically weaker, but that pregnancy thing makes a girl unable to fend off attacks."
 * "Have always went out of my way to avoid crazy women. But then again I barely like hanging around sane girls to start"
+* From a [blog post](http://archive.is/OXFoW): "Basically, guys seem curious how I can have swallowed the red pill AND be in a committed lasting relationship. … For guys, most of the information used to make a mating decision is displayed in a girl’s physical appearance. It’s why we really don’t care about a girl’s personality. It has no bearing on her reproductive abilities."
 * Latimore has made [several videos](https://www.youtube.com/watch?v=qJXr5wIVHpc) supporting the "Red Pill" movement, a misogynistic collection of ideas that e.g. [Business Insider](https://www.businessinsider.de/international/the-red-pill-reddit-2013-8/?r=US&IR=T) calls "The Weird New Cult For Men Who Don't Understand Women".
 
 ## Response to complaint 2
@@ -135,7 +139,8 @@ In the cases below we have archived pages or screenshots showing De Goes accusin
 * De Goes referring to Adrienne Leigh on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes/01.png) (13 March 2017): "Yeah, I decided to start calling out liars. If they don't like it, they can always stop lying. We all have choices."
 * De Goes responding to Sonia Gupta's criticism of Ed Latimore on [Twitter](http://archive.today/1OHgY#selection-5301.4-5373.133): "People will regret lying about him."
 * De Goes to Sonia Gupta on [Twitter](https://meta.plasm.us/archive/twitter-jdegoes-01/twitter-jdegoes-01.png): "Quote or you're lying. I think we both know which one it is."
-* De Goes in [a thread](https://twitter.com/jdegoes/status/960490148591910914) about Sonia Gupta's complaint: "Don't become bitter just because you disagree, & spread lies and misinformation, since that only discredits you when the truth comes to light—& it always comes to light. 21/22"
+* De Goes in [a thread](https://web.archive.org/web/20170601174820/https://twitter.com/jdegoes/status/868956368765693952) about Sonia Gupta's complaint: "Except they were lying about that part. Well, probably about every part. Haters gonna hate."
+* De Goes in [another thread](https://twitter.com/jdegoes/status/960490148591910914) about Sonia Gupta's complaint: "If you can’t find any value in anything a person says or does just because you disagree (however strongly) with one of their views, then guess what? You need to grow up. 15/22 … Don't become bitter just because you disagree, & spread lies and misinformation, since that only discredits you when the truth comes to light—& it always comes to light. 21/22"
 * De Goes on [Reddit](https://archive.today/Q0x8N#selection-1875.50-1875.176), referring to Sonia Gupta: "Sonia's account is filled with intentional inaccuracies (Ed was not hired, Yarvin was not invited, etc.) and character smears."
 * Sonia Gupta, in a [public article](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c) about LambdaConf 2017: "Mr. De Goes has called me a liar."
 * De Goes [on Twitter](https://meta.plasm.us/archive/other/Screen-Shot-2017-05-23-19-26-03.png) in response to Christie Koehler: "Now you're just lying. Come on, if you're gonna come at me, at least throw a little truth in there to make it believable."
@@ -178,6 +183,14 @@ He also repeatedly [made it clear](http://archive.today/PTT9j#selection-5705.0-5
 
 > Oh, if it were up to me, the letter would never come down. Not until there was a commitment to real reform. DC took the easy way out.
 
+[And](http://archive.today/S1Tbo):
+
+> Oh, I'm not leaving Drupal until they kick me out, i.e. at least 90 days. But what will you do, with no @druconfessions to mock?? Sad times!
+
+De Goes also frequently commented on the controversy [from his personal Twitter account](http://archive.today/mPRDw):
+
+> Wanted: Master to take me as a slave to #DrupalCon Vienna. Will serve well and wear collar (& other attire as required by COC). … Now I just need permission from my REAL-LIFE master to ditch the fam for a few days. 😉
+
 De Goes was also quoted commenting on the controversy in similar terms in [an article in Inc.](https://www.inc.com/sonya-mann/drupal-larry-garfield-gor.html):
 
 > De Goes added, "There will be more, and it will probably get a lot worse before it gets better."
@@ -197,7 +210,6 @@ There are many other examples of people in the community identifying De Goes as 
 * [Because of conversations with media](https://twitter.com/jackaponte/status/859513284638064640): "Interesting how jdegoes has been shaping the media narrative around Crell & #DrupalConfessions from jump, as per @sonyaellenmann 's tweets."
 * [Because of retweets](https://twitter.com/jackaponte/status/860214135014866944): "de Goes sure does love retweeting RTs of his sockpuppet accounts (@druconfessions, now @drupalinclusion?) from his real account! #egostroke"
 * [With respect to similar accounts](https://twitter.com/jackaponte/status/860178438119858176): "Took a look at how the imposter @drupalinclusion account is making an ass of themselves today. I'd bet good money it's de Goes yet again."
-
 
 Some people in the Drupal community believed that De Goes could be operating the Drupal Confessions Twitter account alone, including [Helena McCabe](https://twitter.com/misshelenasue/status/858433525695078401):
 
@@ -296,7 +308,7 @@ Many people have pointed out other cases where De Goes seemed to invite and welc
 
 This section provides evidence that early discussions of the Fantasyland Code of Professionalism (abbreviated "FCOP" or "FCoP") focused on Curtis Yarvin, who is widely considered to be a white supremacist ([see above](#response-to-complaint-1)), and that De Goes has explicitly and repeatedly compared the FCoP to the defense of white supremacists (specifically Nazis and Ku Klux Klan members) by organizations like the [American Civil Liberties Union](https://www.aclu.org).
 
-The FCoP was developed in 2017 after the controversy surrounding LambdaConf 2016 and Curtis Yarvin, and was summarized by De Goes's organization [like this](http://archive.today/mw8za) ([archived](https://meta.plasm.us/archive/twitter-844966278867701762/)): "FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities." That it was designed with the Yarvin case in mind is unquestionable and [widely acknowledged](https://twitter.com/christi3k/status/852934249841696768)
+The FCoP was developed in 2017 after the controversy surrounding LambdaConf 2016 and Curtis Yarvin, and was summarized by De Goes's organization [like this](http://archive.today/mw8za) ([archived](https://meta.plasm.us/archive/twitter-844966278867701762/)): "FCOP protects professionals from being purged from tech communities for expressing beliefs in other communities."; or, as De Goes wrote from [his personal Twitter account](http://archive.today/NnnfW): "If you don't want this kind of bullshit infecting your OSS professional communities, then adopt FCOP, the COC for Grown Ups™." That the FCoP was designed with the Yarvin case in mind is unquestionable and [widely acknowledged](https://twitter.com/christi3k/status/852934249841696768)
 (including by [Breitbart](https://www.breitbart.com/tech/2017/01/11/sjws-tech-conference-political-diversity/), a right-wing American website that has published several articles supporting De Goes and LambdaConf).
 
 See the analyses of [Christie Koehler](https://subfictional.com/an-analysis-of-the-fcop/) and [Matthew Garrett](https://mjg59.dreamwidth.org/46791.html) for more detail about issues that many people have with the document. For example, Garrett described the FCoP in February 2017 as "an abuser's fantasy", and wrote the following:
