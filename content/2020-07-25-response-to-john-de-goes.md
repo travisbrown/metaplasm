@@ -88,12 +88,13 @@ De Goes made similar comments about Yarvin in other discussion threads in the FC
 
 ### Misogynistic statements by Ed Latimore
 
-* Latimore on [Twitter](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): “The female seems crazy, mostly because it's not male. Every man has a range for sanity, but if you want logic and reason you want a boyfriend"
+* Latimore has made [several videos](https://www.youtube.com/watch?v=qJXr5wIVHpc) supporting the "Red Pill" movement, a misogynistic collection of ideas that e.g. [Business Insider](https://www.businessinsider.de/international/the-red-pill-reddit-2013-8/?r=US&IR=T) calls "The Weird New Cult For Men Who Don't Understand Women".
+* Latimore on [Twitter](https://web.archive.org/web/20170707060522if_/https://twitter.com/EdLatimore/status/867344731008839681): "In this modern attack on masculinity, taking The Red Pill will set you free. It's why they react to it like we're teaching slaves to read."
+* Latimore on [Twitter](https://imgur.com/a/Ajdf7TZ): “The female seems crazy, mostly because it's not male. Every man has a range for sanity, but if you want logic and reason you want a boyfriend"
 * Latimore on [Twitter](https://medium.com/@soniagupta504/bigotry-and-its-amplifiers-a-response-to-lambdaconf-e30577b396c): "Have always went out of my way to avoid crazy women. But then again I barely like hanging around sane girls to start"
 * Latimore on [Twitter](http://archive.is/PfNg2): "Choose how to have women involved in your life or they will chose for you. It most likely won’t be in your best interest."
 * Latimore on [Twitter](http://archive.is/PfNg2): "Women are like fire. How they're used in your life decides whether you have a warm cozy home or one that's burned to the ground."
 * From a [blog post](http://archive.is/OXFoW): "Basically, guys seem curious how I can have swallowed the red pill AND be in a committed lasting relationship. … Humans get together to mate. For guys, most of the information used to make a mating decision is displayed in a girl’s physical appearance. It’s why we really don’t care about a girl’s personality. It has no bearing on her reproductive abilities. Girls and [sic] looking for security because not only are they physically weaker, but that pregnancy thing makes a girl unable to fend off attacks."
-* Latimore has made [several videos](https://www.youtube.com/watch?v=qJXr5wIVHpc) supporting the "Red Pill" movement, a misogynistic collection of ideas that e.g. [Business Insider](https://www.businessinsider.de/international/the-red-pill-reddit-2013-8/?r=US&IR=T) calls "The Weird New Cult For Men Who Don't Understand Women".
 
 ### Other perspectives on Yarvin, ClarkHat, and the Neoreactionary movement
 
