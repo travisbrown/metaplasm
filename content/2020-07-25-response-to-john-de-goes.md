@@ -58,6 +58,18 @@ https://amar47shah.github.io/posts/2016-03-28-lambdaconf-yarvin.html) in 2016, i
 
 De Goes made similar comments about Yarvin in other discussion threads in the FCoP repository on GitHub, but he deleted the entire project shortly before sending the cease and desist letter (see [this post](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for details), and so far I've only been able to recover 18 of over 100 threads (including the two quoted above).
 
+De Goes also occasionally echoes Yarvin's rhetoric, as for example in [this now-deleted thread](https://web.archive.org/web/20190923221242if_/https://twitter.com/jdegoes/status/1170711737361940481) from September 2019:
+
+> Men, women and enbies are equal in every way that means anything.
+> 
+> Equal doesn't mean identical, but I'd defer to scientists for statistical trends (such as women being on average shorter than men), & encourage people not to project stereotypes or judge deviations from the mean. …
+>
+> What did occur was a recollection of a study showing women make (slightly) better financial decisions than men, possibly due to less testosterone (=male posturing).
+>
+> These wholly irrelevant aggregate distinctions are matters for science, not you or me.
+
+This argument is very similar to Yarvin's argument against "IQism" in [his defense of De Goes and LambdaConf](https://web.archive.org/web/20160330214228/https://medium.com/@curtis.yarvin/why-you-should-come-to-lambdaconf-anyway-35ff8cd4fb9d) (also now deleted).
+
 ### De Goes defending Ed Latimore
 
 * De Goes in a (now-deleted) May 2017 thread on [Twitter](https://web.archive.org/web/20170601174820if_/https://twitter.com/jdegoes/status/868956368765693952): "Ed's keynote was his first public speech, and it was phenomenal. Vulnerable, insightful, humorous, and inspiring. … I'm delighted he spoke at LC, and that I was able to talk to him and see how kind he is, and how passionate he is about helping others."
