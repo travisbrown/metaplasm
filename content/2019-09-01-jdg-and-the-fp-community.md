@@ -4,7 +4,7 @@ original_date = 2019-09-01T15:56:08
 path = "posts/2019/09/01/jdg-and-the-fp-community"
 
 [taxonomies]
-tags = ["scala", "fp", "typelevel", "racism"]
+tags = ["scala", "fp", "typelevel", "lambdaconf", "racism"]
 +++
 
 Update (25 July 2020): John De Goes has hired a lawyer to send me a

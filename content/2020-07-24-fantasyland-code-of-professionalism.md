@@ -5,7 +5,7 @@ path = "posts/2020/07/24/fantasyland-code-of-professionalism"
 description = "This post includes information about FCoP content that was deleted by John De Goes."
 
 [taxonomies]
-tags = ["scala", "lambdaconf", "racism"]
+tags = ["scala", "lambdaconf", "racism", "typelevel"]
 +++
 
 The [Fantasyland Code of Professionalism][fcop] (FCoP) is a code of conduct developed by the
