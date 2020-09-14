@@ -9,6 +9,9 @@ tags = ["scala", "lambdaconf", "racism"]
 +++
 
 This document (originally published [on GitHub](https://gist.github.com/travisbrown/c7761b664d6d90272768725f4dc0c871)) contains additional supporting material for the claims in [this post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) (published 1 September 2019), in response to [a cease and desist letter](https://gist.github.com/travisbrown/d9e2e727d7a43b9be4ce6e05c85e1626) from John A. De Goes that I received on 6 July 2020.
+In the letter De Goes's lawyer claims that the post
+"specifically targets our client with the goal to publicly vilify our client"
+and threatens to sue me for defamation in a German court.
 
 Please see also [this post](https://meta.plasm.us/posts/2020/07/24/fantasyland-code-of-professionalism/) for more information about De Goes deleting the [FCoP repository on GitHub](https://github.com/fantasylandinst/fcop/) shortly before sending the cease and desist letter.
 
