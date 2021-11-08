@@ -3,7 +3,6 @@ base_url = "https://meta.plasm.us"
 
 title = "home"
 compile_sass = true
-highlight_code = true
 build_search_index = true
 generate_feed = true
 
@@ -12,6 +11,9 @@ theme = "slim"
 taxonomies = [
   {name = "tags", rss = true}
 ]
+
+[markdown]
+highlight_code = true
 
 [extra]
 slim_summary = true
