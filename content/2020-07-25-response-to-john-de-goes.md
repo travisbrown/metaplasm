@@ -9,6 +9,10 @@ tags = ["scala", "lambdaconf", "racism"]
 +++
 
 This document (originally published [on GitHub](https://gist.github.com/travisbrown/c7761b664d6d90272768725f4dc0c871)) contains additional supporting material for the claims in [this post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) (published 1 September 2019), in response to [a cease and desist letter](https://gist.github.com/travisbrown/d9e2e727d7a43b9be4ce6e05c85e1626) from John A. De Goes that I received on 6 July 2020.
+
+De Goes is the CEO of a Scala consultancy named [Ziverge](https://ziverge.com/), the founder of a project named ["ZIO"](https://zio.dev/) (not to be confused with the [racist slur](https://imgur.com/a/gTP7FaV)),
+and the organizer of [LambdaConf](https://lambdaconf.us/), [Functional Scala](https://www.functionalscala.com/), and other events.
+
 In the letter De Goes's lawyer claims that the post
 "specifically targets our client with the goal to publicly vilify our client"
 and threatens to sue me for defamation in a German court.
