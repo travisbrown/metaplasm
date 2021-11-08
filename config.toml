@@ -18,7 +18,7 @@ highlight_code = true
 [extra]
 slim_summary = true
 slim_content = false
-slim_footer = "Copyright © 2020 <a href='https://twitter.com/travisbrown'>Travis Brown</a>"
+slim_footer = "Copyright © 2021 <a href='https://twitter.com/travisbrown'>Travis Brown</a>"
 
 slim_social = [
     {url = "https://twitter.com/travisbrown", name = "Twitter"},
