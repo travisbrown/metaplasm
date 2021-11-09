@@ -48,7 +48,12 @@ The following sections focus on three individuals, providing evidence that John 
 * [ClarkHat](https://status451.com/author/clarkhat/), the pseudonym of an individual who wrote for Status 451, a blog that sponsored and [raised funds](https://www.indiegogo.com/projects/save-lambdaconf-and-an-open-society--3#/) for LambdaConf 2016.
 * [Ed Latimore](https://en.wikipedia.org/wiki/Ed_Latimore), a retired boxer associated with [the Red Pill movement](https://en.wikipedia.org/wiki/Men%27s_rights_movement) who was invited by De Goes to speak at LambdaConf 2017.
 
-Note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) does not make any claims about whether or not De Goes "believes in" white supremacy; it only argues that he has helped to create an environment that is friendly to white supremacists by defending individuals like Yarvin and ClarkHat.
+It's worth noting that De Goes didn't just defend people like Curtis Yarvin on the Internet:
+according to [first-hand accounts from LambdaConf 2016 attendees](http://archive.today/2021.04.25-144943/https://twitter.com/hikikomorphism/status/1386331525164142599), he had invited "fashy militia types" to the event to defend them physically:
+
+> I know for a fact, from personal experience, that (at a minimum) jdg doesn't mind working with fascist entryist types as long as it aids some short-term goal of his. This is a maximally charitable interpretation of events I personally witnessed. tldr: he had some fashy militia types who were just there for the chance to fight antifa running volunteer security at the first lambdaconf after the moldbug thing. I ended up talking bodyweight exercise w/ them, this is based on direct conversation, not just perceived bad vibes.
+
+Please also note that [the post](https://meta.plasm.us/posts/2019/09/01/jdg-and-the-fp-community/) does not make any claims about whether or not De Goes "believes in" white supremacy; it only argues that he has helped to create an environment that is friendly to white supremacists by defending individuals like Yarvin and ClarkHat.
 
 ### De Goes defending Curtis Yarvin, ClarkHat, and the Neoreactionary movement
 
